@@ -1,0 +1,461 @@
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(ggplot2)
+library(patchwork)
+library(NatParksPalettes)
+order(CL_TLs$ntaxa)
+order(CL_TLs$ntaxa, decreasing = TRUE)
+sort(CL_TLs$ntaxa, decreasing = TRUE)
+# TL sizes per variant
+x <- CL_TLs[sort(CL_TLs$ntaxa, decreasing = TRUE)]
+# TL sizes per variant
+x <- CL_TLs[sort(CL_TLs$ntaxa, decreasing = TRUE),]
+ggplot(x,
+aes(x = lineage, y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+View(x)
+# TL sizes per variant
+x <- CL_TLs[order(CL_TLs$ntaxa, decreasing = TRUE),]
+ggplot(x,
+aes(x = lineage, y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+ggplot(x,
+aes(y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+is.factor(x$lineage)
+ggplot(x,
+aes(x = fct_reorder(x, ntaxa), y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+ggplot(x,
+aes(x = as.factor(fct_reorder(x, ntaxa)), y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+x <- fct_reorder(CL_TLs, ntaxa)
+# TL sizes per variant
+x <- fct_reorder(CL_TLs, as.factor(ntaxa))
+# TL sizes per variant
+CL_TLs %>% fct_reorder(lineage, as.factor(ntaxa))
+## Transmission lineages
+CL_TLs <- CL_fertree %>% filter(ntaxa != 1) %>% select(-taxa) %>% mutate(lineage = as.factor(lineage))
+# TL sizes per variant
+CL_TLs %>% fct_reorder(lineage, ntaxa)
+# TL sizes per variant
+CL_TLs %>% fct_reorder(ntaxa, lineage)
+?fct_reorder
+is.numeric(ntaxa)
+CL_TLs %>% is.numeric(ntaxa)
+colnames(CL_TLs)
+fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa)
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa), y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE), y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_color_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE), y = ntaxa, fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "No. of sequences per TL",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE), y = log(ntaxa), fill = variant)) +
+geom_col() +
+labs(x = "Transmission lineage",
+y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+install.packages(scales)
+install.packages('scales')
+install.packages('scales')
+library(scales)
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = logntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(ggplot2)
+library(scales)
+library(patchwork)
+library(NatParksPalettes)
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = logntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12)) +
+annotation_logticks()
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks() +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "r") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+?annotation_logticks
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "r", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_minimal() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_bw() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12))
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_bw() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12),
+axis.ticks.x = FALSE )
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineage", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_bw() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12),
+axis.ticks.x = element_blank())
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineages", y = "Log(No. of sequences per TL)",
+fill = "Variant") +
+theme_bw() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12),
+axis.ticks.x = element_blank())
+# TL sizes per variant
+CL_TLs %>%
+ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
+y = ntaxa, fill = variant)) + geom_col() +
+labs(x = "Transmission lineages", y = "No. of sequences per TL",
+fill = "Variant") +
+theme_bw() + scale_fill_manual(values = vocs_colors) +
+scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+labels = trans_format("log10", math_format(10^.x))) +
+annotation_logticks(sides = "l", outside = TRUE) +
+coord_cartesian(clip = "off") +
+theme(axis.title.x = element_text(size = 14),
+axis.title.y = element_text(size = 14),
+axis.text.x = element_blank(),
+axis.text.y = element_text(size = 12),
+legend.title = element_text(size = 14),
+legend.text = element_text(size = 12),
+axis.ticks.x = element_blank())
+nrow(CL_TLs[CL_TLs$ntaxa < 10,])
+nrow(CL_TLs[CL_TLs$ntaxa < 20,])
+nrow(CL_TLs[CL_TLs$ntaxa > 10,])
+nrow(CL_TLs[CL_TLs$ntaxa > 20,])
+nrow(CL_TLs[CL_TLs$ntaxa > 50,])
+nrow(CL_TLs[CL_TLs$ntaxa >= 50,])
+nrow(CL_TLs[CL_TLs$ntaxa >= 100,])
+CL_TLs$variant[CL_TLs$ntaxa >= 100]
+CL_TLs$variant[CL_TLs$ntaxa >= 90]
+CL_TLs$variant[CL_TLs$ntaxa >= 80]
+CL_TLs$variant[CL_TLs$ntaxa >= 70]
+CL_TLs$variant[CL_TLs$ntaxa >= 60]
+nrow(CL_TLs[CL_TLs$ntaxa >= 50,])
+nrow(CL_TLs[CL_TLs$ntaxa >= 60,])
+CL_TLs$ntaxa[CL_TLs$ntaxa >= 60,]
+CL_TLs$ntaxa[CL_TLs$ntaxa >= 60]
+## Transmission lineages >= 60 sequences extracted
+rm(x)
+CL_TLs %>% filter(ntaxa >= 60)
+## Transmission lineages >= 60 sequences extracted
+CL_large_TLs <- CL_TLs %>% filter(ntaxa >= 60)
+## Transmission lineages >= 60 sequences extracted
+CL_large_TLs <- CL_fertree %>% filter(ntaxa >= 60)
+CL_large_TLs
+View(CL_large_TLs)
+CL_large_TLs_taxa <- CL_large_TLs$taxa
+as.list(CL_large_TLs_taxa)
+as.vector(CL_large_TLs_taxa[1])
+as.vector(CL_large_TLs_taxa[1])
+as.vector(CL_large_TLs_taxa[1])
+########################## Export TL summaries #################################
+## Singletons
+write.table(CL_singletons)
+as.vector(CL_large_TLs_taxa[1])
+?as.vector
+?strsplit
+strsplit(CL_large_TLs_taxa[1], ";")
+strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector()
+library(stringr)
+strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector() %>% str_trim(side = "both")
+strsplit(CL_large_TLs_taxa[1], ";") %>% str_trim(side = "both")%>% as.vector()
+strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector() %>% mutate(str_trim(side = "both"))
+strsplit(CL_large_TLs_taxa[1], ";") %>% lapply(str_trim(side = "both")) %>% as.vector()
+strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector()
+strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector() %>% str_trim()
+x <- strsplit(CL_large_TLs_taxa[1], ";") %>% as.vector()
+View(x)
+strsplit(CL_large_TLs_taxa[1], ";") %>% unlist() %>% str_trim()
+x <- strsplit(CL_large_TLs_taxa[1], ";") %>% unlist() %>% str_trim()
+## Extract lists of taxa per each TL
+CL_large_TLs_taxa <- CL_large_TLs$taxa %>% separate()
+rm(CL_large_TLs_taxa)
+## Extract lists of taxa per each TL
+taxalist <- list()
+for(i in 1:nrow(CL_large_TLs)){
+taxa = strsplit(CL_large_TLs$taxa[i], ";") %>%
+unlist() %>%
+str_trim()
+taxalist[[i]] = taxa
+}
+View(taxalist)
+rm(x)
+names(taxalist)
+CL_large_TLs$lineage
+names(taxalist) <- c(CL_large_TLs$lineage)
+View(taxalist)
