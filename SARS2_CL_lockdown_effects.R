@@ -224,6 +224,74 @@ new_m3_between$phat <- predict(m3_between, new_m3_between, type = "response")
 new_m3_between
 
 
+## Estimate frequency of branching events under different lockdown tiers
+# Counts of unique occurrences of comunas as 'head' nodes
+ancestor_total_counts <- CL_invasions %>%
+  group_by(head_comuna) %>%
+  summarise(count = n())
+
+# All LD tiers
+counts_all_tiers <- CL_invasions %>%
+  group_by(head_comuna, tail_comuna) %>%
+  summarise(count = n())
+ancestor_counts_all_tiers <- counts_all_tiers %>%
+  filter(head_comuna == tail_comuna) %>%
+  group_by(head_comuna) %>%
+  summarise(branching = sum(count, na.rm = TRUE))
+
+# Full lockdown
+counts_full_ld <- CL_invasions %>%
+  filter(head_lockdown_tier_recoded == "Full lockdown") %>%
+  group_by(head_comuna, tail_comuna) %>%
+  summarise(count = n())
+ancestor_counts_full_ld <- counts_full_ld %>%
+  filter(head_comuna == tail_comuna) %>%
+  group_by(head_comuna) %>%
+  summarise(branching = sum(count, na.rm = TRUE))
+
+# Weekend lockdown
+counts_weekend_ld <- CL_invasions %>%
+  filter(head_lockdown_tier_recoded == "Weekend lockdown") %>%
+  group_by(head_comuna, tail_comuna) %>%
+  summarise(count = n())
+ancestor_counts_weekend_ld <- counts_weekend_ld %>%
+  filter(head_comuna == tail_comuna) %>%
+  group_by(head_comuna) %>%
+  summarise(branching = sum(count, na.rm = TRUE))
+
+# No lockdown
+counts_no_ld <- CL_invasions %>%
+  filter(head_lockdown_tier_recoded == "No lockdown") %>%
+  group_by(head_comuna, tail_comuna) %>%
+  summarise(count = n())
+ancestor_counts_no_ld <- counts_no_ld %>%
+  filter(head_comuna == tail_comuna) %>%
+  group_by(head_comuna) %>%
+  summarise(branching = sum(count, na.rm = TRUE))
+
+branching_all_tiers <- left_join(ancestor_total_counts, ancestor_counts_all_tiers) %>%
+  mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
+  mutate(branching_freq = branching / count)
+
+branching_full_ld <- left_join(ancestor_total_counts, ancestor_counts_full_ld) %>%
+  mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
+  mutate(branching_freq = branching / count)
+
+branching_weekend_ld <- left_join(ancestor_total_counts, ancestor_counts_weekend_ld) %>%
+  mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
+  mutate(branching_freq = branching / count)
+
+branching_no_ld <- left_join(ancestor_total_counts, ancestor_counts_no_ld) %>%
+  mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
+  mutate(branching_freq = branching / count)
+
+
+CL_invasions %>%
+  select(head_comuna, tail_comuna) %>%
+  filter(head_comuna == "Alhue" | tail_comuna == "Alhue")
+
+
+
 ### Sandbox ####
 ## Model 3: LM of within-comuna movements, accounting for new cases and dates
 CL_invasions_MEM_time_within$tail_date_min <- min(CL_invasions_MEM_time_within$tail_date)
@@ -273,9 +341,3 @@ exp(m4_between$coefficients)
 # Observed vs predicted values of cross-comuna movements
 m4_between_pred <- predict(m4_between)
 plot(CL_invasions_MEM_time_between$count, m4_between_pred)
-
-
-### TODO
-### Look for reporting changes, retrospective prevalence or seroprevalence estimates
-### Clarify question answered by models ("importations when at least one importation was detected")
-### Poisson vs linear, model comparison (AIC, R-squared, neg binomial included as a model)
