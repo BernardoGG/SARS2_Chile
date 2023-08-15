@@ -226,7 +226,15 @@ new_m3_between
 
 ## Estimate frequency of branching events under different lockdown tiers
 # Counts of unique occurrences of comunas as 'head' nodes
+# Corresponds to all branching event taking place per comuna
 ancestor_total_counts <- CL_invasions %>%
+  group_by(head_comuna) %>%
+  summarise(count = n())
+
+# Counts of unique occurrences of comunas as 'head' nodes with the same 'tail' node
+# Corresponds to all branching events resulting in descendants within the same comuna
+ancestor_local_counts <- CL_invasions %>%
+  filter(head_comuna == tail_comuna) %>%
   group_by(head_comuna) %>%
   summarise(count = n())
 
@@ -269,28 +277,101 @@ ancestor_counts_no_ld <- counts_no_ld %>%
   group_by(head_comuna) %>%
   summarise(branching = sum(count, na.rm = TRUE))
 
-branching_all_tiers <- left_join(ancestor_total_counts, ancestor_counts_all_tiers) %>%
+branching_all_tiers <- left_join(ancestor_local_counts, ancestor_counts_all_tiers) %>%
   mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
   mutate(branching_freq = branching / count)
 
-branching_full_ld <- left_join(ancestor_total_counts, ancestor_counts_full_ld) %>%
+branching_full_ld <- left_join(ancestor_local_counts, ancestor_counts_full_ld) %>%
   mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
   mutate(branching_freq = branching / count)
 
-branching_weekend_ld <- left_join(ancestor_total_counts, ancestor_counts_weekend_ld) %>%
+branching_weekend_ld <- left_join(ancestor_local_counts, ancestor_counts_weekend_ld) %>%
   mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
   mutate(branching_freq = branching / count)
 
-branching_no_ld <- left_join(ancestor_total_counts, ancestor_counts_no_ld) %>%
+branching_no_ld <- left_join(ancestor_local_counts, ancestor_counts_no_ld) %>%
   mutate(branching = ifelse(is.na(branching), 0, branching)) %>%
   mutate(branching_freq = branching / count)
 
+## Plot frequencies of branching events under different lockdown tiers
+# Frequencies of branching events
+full_hist <- ggplot(branching_full_ld) +
+  geom_histogram(aes(x = branching_freq), fill = "#B81D13", bins = 21) +
+  scale_y_continuous(limits = c(0, 110)) +
+  labs(x = "", y = "Full lockdown") + theme_minimal()
 
-CL_invasions %>%
-  select(head_comuna, tail_comuna) %>%
-  filter(head_comuna == "Alhue" | tail_comuna == "Alhue")
+weekend_hist <- ggplot(branching_weekend_ld) +
+  geom_histogram(aes(x = branching_freq), fill = "#EFB700", bins = 21) +
+  scale_y_continuous(limits = c(0, 110)) +
+  labs(x = "", y = "Weekend lockdown") + theme_minimal()
 
+no_hist <- ggplot(branching_no_ld) +
+  geom_histogram(aes(x = branching_freq), fill = "#008450", bins = 21) +
+  scale_y_continuous(limits = c(0, 110)) +
+  labs(x = "Within-comuna branching frequency", y = "No lockdown") + theme_minimal()
 
+full_hist / weekend_hist / no_hist
+
+ggsave("../Figures/CL_branching_frequencies_hist.pdf", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+ggsave("../Figures/CL_branching_frequencies_hist.png", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+
+# Counts of branching events
+ref_c <- ggplot(ancestor_total_counts) +
+  geom_histogram(aes(x = count), bins = 10)
+
+full_hist_c <- ggplot(branching_full_ld) +
+  geom_histogram(aes(x = branching), fill = "#B81D13", bins = 36) +
+  scale_x_continuous(limits = c(-6, 400)) +
+  scale_y_continuous(limits = c(0, 180)) +
+  labs(x = "", y = "Full lockdown") + theme_minimal()
+
+weekend_hist_c <- ggplot(branching_weekend_ld) +
+  geom_histogram(aes(x = branching), fill = "#EFB700", bins = 36) +
+  scale_x_continuous(limits = c(-6, 400)) +
+  scale_y_continuous(limits = c(0, 180)) +
+  labs(x = "", y = "Weekend lockdown") + theme_minimal()
+
+no_hist_c <- ggplot(branching_no_ld) +
+  geom_histogram(aes(x = branching), fill = "#008450", bins = 36) +
+  scale_x_continuous(limits = c(-6, 400)) +
+  scale_y_continuous(limits = c(0, 180)) +
+  labs(x = "Within-comuna branching events", y = "No lockdown") + theme_minimal()
+
+full_hist_c / weekend_hist_c / no_hist_c
+
+# Comparison of branching frequencies
+left_join(
+  left_join(
+    branching_full_ld %>% rename(branching_freq_full = branching_freq) %>%
+      select(head_comuna, branching_freq_full),
+    branching_weekend_ld %>% rename(branching_freq_wkd = branching_freq) %>%
+      select(head_comuna, branching_freq_wkd)
+  ),
+  branching_no_ld %>% rename(branching_freq_no = branching_freq) %>%
+    select(head_comuna, branching_freq_no)
+) %>%
+  pivot_longer(
+    !head_comuna, names_to = "lockdown_tier", values_to = "branching_freq"
+  ) %>%
+  ggplot(aes(x = lockdown_tier,
+             y = branching_freq, fill = lockdown_tier)) +
+  geom_boxplot(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
+              outlier.shape = NA) +
+  geom_dotplot(binaxis = 'y', stackdir = 'center', stroke = 0.5,
+               stackratio = 0.1, dotsize = 0.6, alpha = 0.1,
+               position = position_jitter(
+                 width = 0.2, height = 0.05)) +
+  scale_fill_manual(values = c("#B81D13", "#EFB700", "#008450")) +
+  scale_x_discrete(labels = c("Full lockdown", "Weekend lockdown", "No lockdown")) +
+  labs(x = "", colour = "",
+       y = "Within-comuna branching frequency") +
+  theme_classic() + theme(axis.text.x = element_text(size = 15),
+                          axis.text.y = element_text(size = 10),
+                          axis.title.y = element_text(size = 15),
+                          axis.ticks.x = element_blank(),
+                          legend.position = "none")
 
 ### Sandbox ####
 ## Model 3: LM of within-comuna movements, accounting for new cases and dates
