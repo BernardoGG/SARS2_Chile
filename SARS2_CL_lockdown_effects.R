@@ -5,6 +5,7 @@
 # Source scripts, packages and data
 source("/Users/user/Documents/SARS2_Chile_local/SARS2_Chile/SARS2_CL_master.R")
 library(MASS)
+library(pscl)
 library(rcompanion)
 library(tidyverse)
 library(lubridate)
@@ -317,6 +318,32 @@ ggsave("../Figures/CL_branching_frequencies_hist.pdf", dpi = 300,
 ggsave("../Figures/CL_branching_frequencies_hist.png", dpi = 300,
        height = 7.15, width = 10, bg = "white")
 
+
+full_dens <- ggplot(branching_full_ld) +
+  geom_density(aes(x = branching_freq), kernel = "gaussian", fill = "#B81D13",
+               alpha = 0.5) +
+  scale_y_continuous(limits = c(0, 4)) +
+  labs(x = "", y = "Full lockdown") + theme_minimal()
+
+weekend_dens <- ggplot(branching_weekend_ld) +
+  geom_density(aes(x = branching_freq), kernel = "gaussian", fill = "#EFB700",
+               alpha = 0.5) +
+  scale_y_continuous(limits = c(0, 4)) +
+  labs(x = "", y = "Weekend lockdown") + theme_minimal()
+
+no_dens <- ggplot(branching_no_ld) +
+  geom_density(aes(x = branching_freq), kernel = "gaussian", fill = "#008450",
+               alpha = 0.5) +
+  scale_y_continuous(limits = c(0, 4)) +
+  labs(x = "Within-comuna branching frequency", y = "No lockdown") + theme_minimal()
+
+full_dens / weekend_dens / no_dens
+
+ggsave("../Figures/CL_branching_frequencies_dens.pdf", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+ggsave("../Figures/CL_branching_frequencies_dens.png", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+
 # Counts of branching events
 ref_c <- ggplot(ancestor_total_counts) +
   geom_histogram(aes(x = count), bins = 10)
@@ -373,7 +400,79 @@ left_join(
                           axis.ticks.x = element_blank(),
                           legend.position = "none")
 
-### Sandbox ####
+
+## Set model test for branching events within comunas under lockdown tiers
+CL_invasions_branching <- left_join(
+  left_join(
+    branching_full_ld %>% rename(`Full lockdown` = branching) %>%
+      select(head_comuna, `Full lockdown`),
+    branching_weekend_ld %>% rename(`Weekend lockdown` = branching) %>%
+      select(head_comuna, `Weekend lockdown`)
+  ),
+  branching_no_ld %>% rename(`No lockdown` = branching) %>%
+    select(head_comuna, `No lockdown`)
+) %>%
+  pivot_longer(
+    !head_comuna, names_to = "lockdown_tier", values_to = "branching_count"
+  ) %>%
+  left_join(CL_invasions %>%
+              select(head_comuna, head_lockdown_tier_recoded, head_date_new_cases) %>%
+              group_by(head_comuna, head_lockdown_tier_recoded) %>%
+              summarise(total_cases = sum(head_date_new_cases)),
+            by = c("head_comuna" = "head_comuna",
+                   "lockdown_tier" = "head_lockdown_tier_recoded"))
+
+
+## Model 4: LM of within-comuna branching events, accounting for new cases
+m4_branching <- glm(branching_count ~ lockdown_tier + total_cases,
+                 data = CL_invasions_branching)
+
+# Observed vs predicted values of within-comuna branching events
+m4_branching_pred <- predict(m4_branching)
+plot(m4_branching_pred, CL_invasions_branching$branching_count)
+
+
+## Model 5: Poisson GLM of within-comuna branching events, accounting for new cases
+m5_branching <- glm(branching_count ~ lockdown_tier + total_cases,
+                    data = CL_invasions_branching,
+                    family = "poisson")
+
+# Observed vs predicted values of within-comuna branching events
+m5_branching_pred <- predict(m5_branching)
+plot(m5_branching_pred, CL_invasions_branching$branching_count)
+
+
+## Model 6: Negative binomial GLM of within-comuna branching events, accounting for new cases
+m6_branching <- glm.nb(branching_count ~ lockdown_tier + total_cases,
+                    data = CL_invasions_branching)
+
+# Observed vs predicted values of within-comuna branching events
+m6_branching_pred <- predict(m6_branching)
+plot(m6_branching_pred, CL_invasions_branching$branching_count)
+
+
+## Model 7: Zero-inflated Poisson model of within-comuna branching events, accounting for new cases
+m7_branching <- zeroinfl(branching_count ~
+                           lockdown_tier + total_cases |lockdown_tier + total_cases,
+                         data = CL_invasions_branching,
+                         dist = "poisson")
+m7_branching_pred <- predict(m7_branching)
+
+# Observed vs predicted values of within-comuna branching events
+m7_branching_pred <- predict(m7_branching)
+plot(m7_branching_pred, CL_invasions_branching$branching_count)
+
+
+### Model test and comparisons
+summary(m4_branching)
+summary(m5_branching)
+summary(m6_branching)
+summary(m7_branching)
+
+
+
+
+############# Sandbox ##############
 ## Model 3: LM of within-comuna movements, accounting for new cases and dates
 CL_invasions_MEM_time_within$tail_date_min <- min(CL_invasions_MEM_time_within$tail_date)
 CL_invasions_MEM_time_within <- CL_invasions_MEM_time_within %>%
