@@ -132,8 +132,43 @@ lockdowns_timeseries <- lockdowns_timeseries %>%
   mutate(new_cases_per_million = as.double(new_cases_per_million)) %>%
   mutate(new_cases_smoothed_per_million = as.double(new_cases_smoothed_per_million))
 
+## Create df for lockdown durations in Chile
+lockdowns_duration <- lockdowns %>%
+  dplyr::select(comuna_residencia, Fecha, lockdown_tier) %>%
+  group_by(comuna_residencia, lockdown_tier) %>%
+  arrange(Fecha) %>%
+  mutate(stringency_change = lockdown_tier !=
+           lag(lockdown_tier, default = first(lockdown_tier)) |
+           as.integer(Fecha - lag(Fecha, default = first(Fecha))) > 1,
+         stringency_group = cumsum(stringency_change)) %>%
+  group_by(comuna_residencia, lockdown_tier, stringency_group) %>%
+  summarise(start_date = min(Fecha), end_date = max(Fecha), duration = n()) %>%
+  dplyr::select(-stringency_group) %>%
+  arrange(lockdown_tier, comuna_residencia, start_date)
+
 
 ################################# Plots ########################################
+## Plot distribution of lockdown duration times for each stringency tier ####
+lockdowns_duration %>%
+  filter(lockdown_tier != "Opening") %>%
+  ggplot() +
+  geom_histogram(aes(x = round(duration / 7, digits = 0),
+                     fill = lockdown_tier,
+                     group = lockdown_tier),
+                 bins = max(round(lockdowns_duration$duration / 7, digits = 0)),
+                 alpha = 0.5) +
+  scale_fill_manual(values = c("#B81D13", "#EFB700", "#008450")) +
+  scale_x_continuous(limits = c(0, 63), breaks = seq(0, 64, 2)) +
+  theme_minimal() + labs(x = "Lockdown duration (weeks)", y = "") +
+  theme(legend.position = "none", strip.text.x = element_text(size = 12)) +
+  facet_wrap(vars(lockdown_tier), 3, 1)
+
+ggsave("../Figures/CL_lockdown_durations.png", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+ggsave("../Figures/CL_lockdown_durations.pdf", dpi = 300,
+       height = 7.15, width = 10, bg = "white")
+
+
 ## Plot case counts and population under full lockdown ####
 ggplot(lockdowns_timeseries) +
   geom_col(aes(x = Fecha,
