@@ -79,7 +79,7 @@ chile_isp_metadata <-
 
 # Call sequence Variants from Pango lineage designation 
 chile_isp_metadata <-
-  chile_isp_metadata %>%
+  chile_isp_metadata |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -101,12 +101,12 @@ chile_isp_metadata <-
                              TRUE ~ "Other"))
 
 # Add column specifying epiweek
-chile_isp_metadata <- chile_isp_metadata %>%
+chile_isp_metadata <- chile_isp_metadata |>
   mutate(Date = as.Date(Date, "%Y-%m-%d"),
          epiweek = epiweek(Date))
 
 # Add column specifying cumulative epiweek
-chile_isp_metadata <- chile_isp_metadata %>%
+chile_isp_metadata <- chile_isp_metadata |>
   mutate(c_epiweek = epiweek(Date),
          c_epiweek = ifelse(year(Date) == 2021 &
                             epiweek < 53, 53 + epiweek, epiweek),
@@ -116,7 +116,7 @@ chile_isp_metadata <- chile_isp_metadata %>%
                             epiweek == 158, -52 + epiweek, epiweek))
 
 # Add column specifying epiweek start date
-chile_isp_metadata <- chile_isp_metadata %>%
+chile_isp_metadata <- chile_isp_metadata |>
   mutate(epiyear = epiyear(Date))
 
 tmp <- vector()
@@ -176,10 +176,10 @@ first_CL_seq <- as.Date(min(chile_isp_metadata$Date))
 last_CL_seq <- as.Date(max(chile_isp_metadata$Date))
 
 # Filter GISAID metadata to only contain sequences from ISP study period
-GISAID_final <- GISAID.processed %>%
+GISAID_final <- GISAID.processed |>
   filter(Date >= first_CL_seq & Date <= last_CL_seq)
 
-GISAID_final <- GISAID_final %>%
+GISAID_final <- GISAID_final |>
   mutate(Date = as.Date(Date, "%Y-%m-%d"),
          epiweek = epiweek(Date),
          epiweek = ifelse(year(Date) == 2021 &
@@ -194,7 +194,7 @@ GISAID_final <- GISAID_final %>%
 
 # Filter global metadata to match Chile metadata dates and
 # include column specifying VOI/VOC variant designation
-GISAID_CL <- GISAID_final[GISAID_final$Country == "Chile",] %>%
+GISAID_CL <- GISAID_final[GISAID_final$Country == "Chile",] |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -234,13 +234,13 @@ GISAID_CL_delta <- GISAID_CL[GISAID_CL$Variant=="Delta",]
 
 # Load Transmission lineage data
 # Data set version 30 June (single tree, algorithmic matching)
-tl <- read.csv("30June_TLs/30June_chile_TL_summaries_v2.csv") %>%
+tl <- read.csv("30June_TLs/30June_chile_TL_summaries_v2.csv") |>
   select(-taxa)
 tl$tmrca <- ymd(tl$tmrca)
 tl$first_sample_date <- ymd(tl$first_sample_date)
 tl$last_sample_date <- ymd(tl$last_sample_date)
 
-tl_nosingletons <- tl[tl$singleton=="False",] %>% select(-singleton)
+tl_nosingletons <- tl[tl$singleton=="False",] |> select(-singleton)
 tl_nosingletons$earliest_taxa_state_comp[
   tl_nosingletons$earliest_taxa_state_comp == "{'airport': 1, 'community': 1}"] <-
   "Undetermined"
@@ -259,7 +259,7 @@ vocs_colors <- c("Alpha" = "#A8201A", "Delta" = "#CA5D22",  "Gamma" = "#EC9A29",
 ### Create South American countries colour palette
 latam <- c("Argentina", "Brazil", "Peru", "Uruguay", "Paraguay",
            "Ecuador", "Colombia", "Venezuela", "Bolivia")
-latam_palette <- NatParksPalettes$Acadia[1] %>% unlist()
+latam_palette <- NatParksPalettes$Acadia[1] |> unlist()
 names(latam_palette) <- latam
 
 

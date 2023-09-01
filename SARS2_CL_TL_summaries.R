@@ -22,15 +22,15 @@ phylogeo_CL <- read.csv(
 x <- vector()
 for(i in 1:nrow(CL_fertree)){
   x[i] <- str_extract_all(CL_fertree$taxa[i],
-                          regex("((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])")) %>%
-    unlist() %>% as.Date() %>% min() %>% as.character()
+                          regex("((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])")) |>
+    unlist() |> as.Date() |> min() |> as.character()
 }
 
 first_taxa <- NULL
 for(i in 1:nrow(CL_fertree)){
-  y <- CL_fertree$taxa[i] %>%
+  y <- CL_fertree$taxa[i] |>
     str_extract_all(paste0("\\bEPI_ISL_\\d{7,8}\\b(?=[^>|]*?\\|", x[i], ")"),
-                    simplify = T) %>% as.vector()
+                    simplify = T) |> as.vector()
   first_taxa <- c(y, first_taxa)
 }
 
@@ -42,35 +42,35 @@ first_comuna_alpha <- data.frame(
   Province = chile_metadata_alpha$State[
     chile_metadata_alpha$`Accession ID` %in% first_taxa],
   Comuna = chile_metadata_alpha$comuna[
-    chile_metadata_alpha$`Accession ID` %in% first_taxa] %>%
+    chile_metadata_alpha$`Accession ID` %in% first_taxa] |>
     str_to_title())
 
 first_comuna_gamma <- data.frame(
   Province = chile_metadata_gamma$State[
     chile_metadata_gamma$`Accession ID` %in% first_taxa],
   Comuna = chile_metadata_gamma$comuna[
-    chile_metadata_gamma$`Accession ID` %in% first_taxa] %>%
+    chile_metadata_gamma$`Accession ID` %in% first_taxa] |>
     str_to_title())
 
 first_comuna_lambda <- data.frame(
   Province = chile_metadata_lambda$State[
     chile_metadata_lambda$`Accession ID` %in% first_taxa],
   Comuna = chile_metadata_lambda$comuna[
-    chile_metadata_lambda$`Accession ID` %in% first_taxa] %>%
+    chile_metadata_lambda$`Accession ID` %in% first_taxa] |>
     str_to_title())
 
 first_comuna_mu <- data.frame(
   Province = chile_metadata_mu$State[
     chile_metadata_mu$`Accession ID` %in% first_taxa],
   Comuna = chile_metadata_mu$comuna[
-    chile_metadata_mu$`Accession ID` %in% first_taxa] %>%
+    chile_metadata_mu$`Accession ID` %in% first_taxa] |>
     str_to_title())
 
 first_comuna_delta <- data.frame(
   Province = chile_metadata_delta$State[
     chile_metadata_delta$`Accession ID` %in% first_taxa],
   Comuna = chile_metadata_delta$comuna[
-    chile_metadata_delta$`Accession ID` %in% first_taxa] %>%
+    chile_metadata_delta$`Accession ID` %in% first_taxa] |>
     str_to_title())
 
 ## Clean up comuna names
@@ -119,11 +119,11 @@ first_comuna_delta$Comuna[
 
 ######################### Mapping first detections #############################
 # Read map
-cl_map <- sf::st_read("Data/Comunas_de_Chile.geojson") %>%
+cl_map <- sf::st_read("Data/Comunas_de_Chile.geojson") |>
   sf::st_make_valid()
 
 # Add centroids
-cl_map <- cl_map  %>%
+cl_map <- cl_map  |>
   mutate(lon = map_dbl(geometry, ~sf::st_centroid(.x)[[1]]),
          lat = map_dbl(geometry, ~sf::st_centroid(.x)[[2]]))
 
@@ -133,33 +133,33 @@ cl_map$comuna <- stringi::stri_trans_general(cl_map$comuna, "Latin-ASCII")
 cl_map$comuna <- str_replace(cl_map$comuna, " De ", " de ")
 
 # Add columns showing number of 'first detections' per comuna per VOC
-alpha_seeds <- table(first_comuna_alpha$Comuna) %>% as.data.frame() %>%
+alpha_seeds <- table(first_comuna_alpha$Comuna) |> as.data.frame() |>
   rename(comuna = Var1)
-gamma_seeds <- table(first_comuna_gamma$Comuna) %>% as.data.frame() %>%
+gamma_seeds <- table(first_comuna_gamma$Comuna) |> as.data.frame() |>
   rename(comuna = Var1)
-lambda_seeds <- table(first_comuna_lambda$Comuna) %>% as.data.frame() %>%
+lambda_seeds <- table(first_comuna_lambda$Comuna) |> as.data.frame() |>
   rename(comuna = Var1)
-mu_seeds <- table(first_comuna_mu$Comuna) %>% as.data.frame() %>%
+mu_seeds <- table(first_comuna_mu$Comuna) |> as.data.frame() |>
   rename(comuna = Var1)
-delta_seeds <- table(first_comuna_delta$Comuna) %>% as.data.frame() %>%
+delta_seeds <- table(first_comuna_delta$Comuna) |> as.data.frame() |>
   rename(comuna = Var1)
 
-cl_map <- left_join(cl_map, alpha_seeds, by = "comuna") %>%
+cl_map <- left_join(cl_map, alpha_seeds, by = "comuna") |>
   rename(alpha_seeds = Freq)
-cl_map <- left_join(cl_map, gamma_seeds, by = "comuna") %>%
+cl_map <- left_join(cl_map, gamma_seeds, by = "comuna") |>
   rename(gamma_seeds = Freq)
-cl_map <- left_join(cl_map, lambda_seeds, by = "comuna") %>%
+cl_map <- left_join(cl_map, lambda_seeds, by = "comuna") |>
   rename(lambda_seeds = Freq)
-cl_map <- left_join(cl_map, mu_seeds, by = "comuna") %>%
+cl_map <- left_join(cl_map, mu_seeds, by = "comuna") |>
   rename(mu_seeds = Freq)
-cl_map <- left_join(cl_map, delta_seeds, by = "comuna") %>%
+cl_map <- left_join(cl_map, delta_seeds, by = "comuna") |>
   rename(delta_seeds = Freq)
 
 # Add marker column for border crossings
 # Data from 'SARS2_CL_EIIs.R'
-border_crossings <- crossings %>%
-  group_by(commune) %>%
-  summarise(total_crossings = sum(value)) %>%
+border_crossings <- crossings |>
+  group_by(commune) |>
+  summarise(total_crossings = sum(value)) |>
   rename(comuna = commune)
 
 cl_map <- left_join(cl_map, border_crossings, by = "comuna")

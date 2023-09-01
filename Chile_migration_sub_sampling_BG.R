@@ -93,45 +93,45 @@ migration_to_chile$num_delta_GISAID <-
 
 # Add the expected sequences by country over the variant circulation time span 
 # to get a time-invariant subsample
-CL_migration_alpha_ISP <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_alpha_ISP <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_alpha_ISP = sum(num_alpha_ISP))
 
-CL_migration_gamma_ISP <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_gamma_ISP <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_gamma_ISP = sum(num_gamma_ISP))
 
-CL_migration_lambda_ISP <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_lambda_ISP <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_lambda_ISP = sum(num_lambda_ISP))
 
-CL_migration_mu_ISP <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_mu_ISP <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_mu_ISP = sum(num_mu_ISP))
 
-CL_migration_delta_ISP <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_delta_ISP <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_delta_ISP = sum(num_delta_ISP))
 
 
-CL_migration_alpha_GISAID <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_alpha_GISAID <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_alpha_GISAID = sum(num_alpha_GISAID))
 
-CL_migration_gamma_GISAID <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_gamma_GISAID <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_gamma_GISAID = sum(num_gamma_GISAID))
 
-CL_migration_lambda_GISAID <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_lambda_GISAID <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_lambda_GISAID = sum(num_lambda_GISAID))
 
-CL_migration_mu_GISAID <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_mu_GISAID <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_mu_GISAID = sum(num_mu_GISAID))
 
-CL_migration_delta_GISAID <- migration_to_chile %>%
-  group_by(origin_admin_0) %>%
+CL_migration_delta_GISAID <- migration_to_chile |>
+  group_by(origin_admin_0) |>
   dplyr :: summarise(num_delta_GISAID = sum(num_delta_GISAID))
 
 # Round to the nearest whole number
@@ -156,7 +156,7 @@ Colombia_sequences <- filter (GISAID_final, Country == 'Colombia')
 Peru_sequences <- filter (GISAID_final, Country == 'Peru')
 
 # Add Variant identification in country-specific data sets
-Argentina_sequences <- Argentina_sequences %>%
+Argentina_sequences <- Argentina_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -175,7 +175,7 @@ Argentina_sequences <- Argentina_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-Bolivia_sequences <- Bolivia_sequences %>%
+Bolivia_sequences <- Bolivia_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -194,7 +194,7 @@ Bolivia_sequences <- Bolivia_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-Brazil_sequences <- Brazil_sequences %>%
+Brazil_sequences <- Brazil_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -214,7 +214,7 @@ Brazil_sequences <- Brazil_sequences %>%
                              TRUE ~ "Other"))
 
 
-Colombia_sequences <- Colombia_sequences %>%
+Colombia_sequences <- Colombia_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -233,7 +233,7 @@ Colombia_sequences <- Colombia_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-Peru_sequences <- Peru_sequences %>%
+Peru_sequences <- Peru_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -279,41 +279,41 @@ set.seed(5)
 
 ## Alpha
 # Sample Argentina, Alpha, ISP
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_ISP[CL_migration_alpha_ISP$origin_admin_0=="Argentina",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_ISP_alpha <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Alpha",] %>%
-                           group_by(epiweek) %>%
+ARG_ISP_alpha <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Alpha",] |>
+                           group_by(epiweek) |>
                            slice(sample(min(max, n()))))
 
 # Sample Bolivia, Alpha => No Alpha sequences from Bolivia available
 
 # Sample Brazil, Alpha, ISP
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_ISP[CL_migration_alpha_ISP$origin_admin_0=="Brazil",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_ISP_alpha <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Alpha",] %>%
-                                 group_by(epiweek) %>%
+BRA_ISP_alpha <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Alpha",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n())))) # <-- Brazil is over-represented with 1 seq per epiweek
 
 # Sample Colombia, Alpha, ISP
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_ISP[CL_migration_alpha_ISP$origin_admin_0=="Colombia",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_ISP_alpha <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Alpha",] %>%
-                                 group_by(epiweek) %>%
+COL_ISP_alpha <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Alpha",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Peru, Alpha, ISP => All Alpha sequences from Peru included to match expected number
@@ -321,41 +321,41 @@ PER_ISP_alpha <- Peru_sequences[Peru_sequences$Variant=="Alpha",]
 
 
 # Sample Argentina, Alpha, GISAID
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_GISAID[CL_migration_alpha_GISAID$origin_admin_0=="Argentina",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_GISAID_alpha <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Alpha",] %>%
-                                 group_by(epiweek) %>%
+ARG_GISAID_alpha <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Alpha",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Bolivia, Alpha => No Alpha sequences from Bolivia available
 
 # Sample Brazil, Alpha, GISAID
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_GISAID[CL_migration_alpha_GISAID$origin_admin_0=="Brazil",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_GISAID_alpha <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Alpha",] %>%
-                                 group_by(epiweek) %>%
+BRA_GISAID_alpha <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Alpha",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n())))) # <-- Brazil is over-represented with 1 seq per epiweek
 
 # Sample Colombia, Alpha, GISAID
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Alpha",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Alpha",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_alpha_GISAID[CL_migration_alpha_GISAID$origin_admin_0=="Colombia",2])/wk_alpha)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_GISAID_alpha <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Alpha",] %>%
-                                 group_by(epiweek) %>%
+COL_GISAID_alpha <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Alpha",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Peru, Alpha, GISAID => All Alpha sequences from Peru included to match expected number
@@ -364,102 +364,102 @@ PER_GISAID_alpha <- Peru_sequences[Peru_sequences$Variant=="Alpha",]
 
 ## Gamma
 # Sample Argentina, Gamma, ISP
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_ISP[CL_migration_gamma_ISP$origin_admin_0=="Argentina",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_ISP_gamma <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+ARG_ISP_gamma <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Bolivia, Gamma => All Gamma sequences from Bolivia used
 BOL_ISP_gamma <- Bolivia_sequences[Bolivia_sequences$Variant=="Gamma",]
 
 # Sample Brazil, Gamma, ISP
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_ISP[CL_migration_gamma_ISP$origin_admin_0=="Brazil",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_ISP_gamma <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+BRA_ISP_gamma <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n())))) # <-- Brazil is over-represented
 
 # Sample Colombia, Gamma, ISP => All Gamma sequences from Peru included to match expected number
 COL_ISP_gamma <- Colombia_sequences[Colombia_sequences$Variant=="Gamma",]
 
 # Sample Peru, Gamma, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_ISP[CL_migration_gamma_ISP$origin_admin_0=="Peru",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_ISP_gamma <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+PER_ISP_gamma <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 
 # Sample Argentina, Gamma, GISAID
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_GISAID[CL_migration_gamma_GISAID$origin_admin_0=="Argentina",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_GISAID_gamma <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+ARG_GISAID_gamma <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Bolivia, Gamma => All Gamma sequences from Bolivia used
 BOL_GISAID_gamma <- Bolivia_sequences[Bolivia_sequences$Variant=="Gamma",]
 
 # Sample Brazil, Gamma, ISP
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_GISAID[CL_migration_gamma_GISAID$origin_admin_0=="Brazil",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_GISAID_gamma <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+BRA_GISAID_gamma <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n())))) # <-- Brazil is over-represented
 
 # Sample Colombia, Gamma, ISP => All Gamma sequences from Peru included to match expected number
 COL_GISAID_gamma <- Colombia_sequences[Colombia_sequences$Variant=="Gamma",]
 
 # Sample Peru, Gamma, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Gamma",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Gamma",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_gamma_GISAID[CL_migration_gamma_GISAID$origin_admin_0=="Peru",2])/wk_gamma)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_GISAID_gamma <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Gamma",] %>%
-                                 group_by(epiweek) %>%
+PER_GISAID_gamma <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Gamma",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 
 ## Lambda
 # Sample Argentina, Lambda, ISP
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Lambda",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Lambda",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_lambda_ISP[CL_migration_lambda_ISP$origin_admin_0=="Argentina",2])/wk_lambda)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_ISP_lambda <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Lambda",] %>%
-                                 group_by(epiweek) %>%
+ARG_ISP_lambda <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Lambda",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Bolivia, Lambda => All Lambda sequences from Bolivia used
@@ -472,28 +472,28 @@ BRA_ISP_lambda <- Brazil_sequences[Brazil_sequences$Variant=="Lambda",]
 COL_ISP_lambda <- Colombia_sequences[Colombia_sequences$Variant=="Lambda",]
 
 # Sample Peru, Lambda, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Lambda",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Lambda",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_lambda_ISP[CL_migration_lambda_ISP$origin_admin_0=="Peru",2])/wk_lambda)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_ISP_lambda <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Lambda",] %>%
-                                 group_by(epiweek) %>%
+PER_ISP_lambda <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Lambda",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 
 # Sample Argentina, Lambda, GISAID
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Lambda",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Lambda",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_lambda_GISAID[CL_migration_lambda_GISAID$origin_admin_0=="Argentina",2])/wk_lambda)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_GISAID_lambda <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Lambda",] %>%
-                                  group_by(epiweek) %>%
+ARG_GISAID_lambda <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Lambda",] |>
+                                  group_by(epiweek) |>
                                   slice(sample(min(max, n()))))
 
 # Sample Bolivia, Lambda => All Lambda sequences from Bolivia used
@@ -506,15 +506,15 @@ BRA_GISAID_lambda <- Brazil_sequences[Brazil_sequences$Variant=="Lambda",]
 COL_GISAID_lambda <- Colombia_sequences[Colombia_sequences$Variant=="Lambda",]
 
 # Sample Peru, Lambda, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Lambda",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Lambda",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_lambda_GISAID[CL_migration_lambda_GISAID$origin_admin_0=="Peru",2])/wk_lambda)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_GISAID_lambda <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Lambda",] %>%
-                                  group_by(epiweek) %>%
+PER_GISAID_lambda <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Lambda",] |>
+                                  group_by(epiweek) |>
                                   slice(sample(min(max, n()))))
 
 
@@ -529,27 +529,27 @@ BOL_ISP_mu <- Bolivia_sequences[Bolivia_sequences$Variant=="Mu",]
 BRA_ISP_mu <- Brazil_sequences[Brazil_sequences$Variant=="Mu",]
 
 # Sample Colombia, Mu, ISP
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Mu",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Mu",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_mu_ISP[CL_migration_mu_ISP$origin_admin_0=="Colombia",2])/wk_mu)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_ISP_mu <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Mu",] %>%
-                              group_by(epiweek) %>%
+COL_ISP_mu <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Mu",] |>
+                              group_by(epiweek) |>
                               slice(sample(min(max, n()))))
 
 # Sample Peru, Mu, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Mu",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Mu",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_mu_ISP[CL_migration_mu_ISP$origin_admin_0=="Peru",2])/wk_mu)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_ISP_mu <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Mu",] %>%
-                                  group_by(epiweek) %>%
+PER_ISP_mu <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Mu",] |>
+                                  group_by(epiweek) |>
                                   slice(sample(min(max, n()))))
 
 # Sample Argentina, Mu => All Mu sequences from Argentina included to match expected number
@@ -562,79 +562,79 @@ BOL_GISAID_mu <- Bolivia_sequences[Bolivia_sequences$Variant=="Mu",]
 BRA_GISAID_mu <- Brazil_sequences[Brazil_sequences$Variant=="Mu",]
 
 # Sample Colombia, Mu, ISP
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Mu",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Mu",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_mu_GISAID[CL_migration_mu_GISAID$origin_admin_0=="Colombia",2])/wk_mu)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_GISAID_mu <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Mu",] %>%
-                              group_by(epiweek) %>%
+COL_GISAID_mu <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Mu",] |>
+                              group_by(epiweek) |>
                               slice(sample(min(max, n()))))
 
 # Sample Peru, Mu, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Mu",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Mu",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_mu_GISAID[CL_migration_mu_GISAID$origin_admin_0=="Peru",2])/wk_mu)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_GISAID_mu <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Mu",] %>%
-                              group_by(epiweek) %>%
+PER_GISAID_mu <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Mu",] |>
+                              group_by(epiweek) |>
                               slice(sample(min(max, n()))))
 
 ## Delta
 # Sample Argentina, Delta, ISP
-sample <- Argentina_sequences[Argentina_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Argentina_sequences[Argentina_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_ISP[CL_migration_delta_ISP$origin_admin_0=="Argentina",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-ARG_ISP_delta <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Delta",] %>%
-                                  group_by(epiweek) %>%
+ARG_ISP_delta <- as.data.frame(Argentina_sequences[Argentina_sequences$Variant=="Delta",] |>
+                                  group_by(epiweek) |>
                                   slice(sample(min(max, n()))))
 
 # Sample Bolivia, Delta => All Delta sequences from Bolivia used
 BOL_ISP_delta <- Bolivia_sequences[Bolivia_sequences$Variant=="Delta",]
 
 # Sample Brazil, Delta => All Delta sequences from Brazil used
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_ISP[CL_migration_delta_ISP$origin_admin_0=="Brazil",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_ISP_delta <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Delta",] %>%
-                                 group_by(epiweek) %>%
+BRA_ISP_delta <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Delta",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Colombia, Delta => All Delta sequences from Colombia included to match expected number
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_ISP[CL_migration_delta_ISP$origin_admin_0=="Colombia",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_ISP_delta <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Delta",] %>%
-                                 group_by(epiweek) %>%
+COL_ISP_delta <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Delta",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Peru, Delta, ISP
-sample <- Peru_sequences[Peru_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_ISP[CL_migration_delta_ISP$origin_admin_0=="Peru",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_ISP_delta <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Delta",] %>%
-                                  group_by(epiweek) %>%
+PER_ISP_delta <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Delta",] |>
+                                  group_by(epiweek) |>
                                   slice(sample(min(max, n()))))
 
 # Sample Argentina, Delta, GISAID => All Delta sequences from Argentina included to match expected number
@@ -644,39 +644,39 @@ ARG_GISAID_delta <- Argentina_sequences[Argentina_sequences$Variant=="Delta",]
 BOL_GISAID_delta <- Bolivia_sequences[Bolivia_sequences$Variant=="Delta",]
 
 # Sample Brazil, Delta, GISAID
-sample <- Brazil_sequences[Brazil_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Brazil_sequences[Brazil_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_GISAID[CL_migration_delta_GISAID$origin_admin_0=="Brazil",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-BRA_GISAID_delta <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Delta",] %>%
-                                 group_by(epiweek) %>%
+BRA_GISAID_delta <- as.data.frame(Brazil_sequences[Brazil_sequences$Variant=="Delta",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Colombia, Delta, GISAID
-sample <- Colombia_sequences[Colombia_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Colombia_sequences[Colombia_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_GISAID[CL_migration_delta_GISAID$origin_admin_0=="Colombia",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-COL_GISAID_delta <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Delta",] %>%
-                                 group_by(epiweek) %>%
+COL_GISAID_delta <- as.data.frame(Colombia_sequences[Colombia_sequences$Variant=="Delta",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 # Sample Peru, Delta, GISAID
-sample <- Peru_sequences[Peru_sequences$Variant=="Delta",] %>%
-  group_by(epiweek) %>%
-  summarise(count = n()) %>%
+sample <- Peru_sequences[Peru_sequences$Variant=="Delta",] |>
+  group_by(epiweek) |>
+  summarise(count = n()) |>
   as.data.frame()
 max <- ceiling(as.numeric(CL_migration_delta_GISAID[CL_migration_delta_GISAID$origin_admin_0=="Peru",2])/wk_delta)
 sample$count <- ifelse(sample$count>max, max, sample$count)
 
-PER_GISAID_delta <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Delta",] %>%
-                                 group_by(epiweek) %>%
+PER_GISAID_delta <- as.data.frame(Peru_sequences[Peru_sequences$Variant=="Delta",] |>
+                                 group_by(epiweek) |>
                                  slice(sample(min(max, n()))))
 
 
@@ -691,7 +691,7 @@ USA_sequences <- filter (GISAID_final, Country == 'USA')
 UK_sequences <- filter (GISAID_final, Country == 'United Kingdom')
 
 # Add Variant column
-Mexico_sequences <- Mexico_sequences %>%
+Mexico_sequences <- Mexico_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -711,7 +711,7 @@ Mexico_sequences <- Mexico_sequences %>%
                              TRUE ~ "Other"))
 
 
-Canada_sequences <- Canada_sequences %>%
+Canada_sequences <- Canada_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -730,7 +730,7 @@ Canada_sequences <- Canada_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-France_sequences <- France_sequences %>%
+France_sequences <- France_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -749,7 +749,7 @@ France_sequences <- France_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-Panama_sequences <- Panama_sequences %>%
+Panama_sequences <- Panama_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -768,7 +768,7 @@ Panama_sequences <- Panama_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-Spain_sequences <- Spain_sequences %>%
+Spain_sequences <- Spain_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -787,7 +787,7 @@ Spain_sequences <- Spain_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-USA_sequences <- USA_sequences %>%
+USA_sequences <- USA_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -806,7 +806,7 @@ USA_sequences <- USA_sequences %>%
                                `Pango lineage` == "BB.2" ~ "Mu",
                              TRUE ~ "Other"))
 
-UK_sequences <- UK_sequences %>%
+UK_sequences <- UK_sequences |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -841,232 +841,232 @@ mu_GISAID_ext <- ceiling((numseq_GISAIDCL_mu/7)/wk_mu)
 delta_GISAID_ext <- ceiling((numseq_GISAIDCL_delta/7)/wk_delta)
 
 # Generate sampled data sets
-Mexico_sequences_alpha_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_alpha_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-Mexico_sequences_gamma_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_gamma_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-Mexico_sequences_lambda_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Lambda",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_lambda_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Lambda",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(lambda_ISP_ext, n()))))
-Mexico_sequences_mu_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_mu_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_ISP_ext, n()))))
-Mexico_sequences_delta_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_delta_ISP <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-Mexico_sequences_alpha_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_alpha_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_GISAID_ext, n()))))
-Mexico_sequences_gamma_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_gamma_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_GISAID_ext, n()))))
-Mexico_sequences_lambda_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+Mexico_sequences_lambda_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_GISAID_ext, n()))))
-Mexico_sequences_mu_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+Mexico_sequences_mu_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_GISAID_ext, n()))))
-Mexico_sequences_delta_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+Mexico_sequences_delta_GISAID <- as.data.frame(Mexico_sequences[Mexico_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_GISAID_ext, n()))))
 
-Canada_sequences_alpha_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+Canada_sequences_alpha_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-Canada_sequences_gamma_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+Canada_sequences_gamma_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-Canada_sequences_lambda_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+Canada_sequences_lambda_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_ISP_ext, n()))))
-Canada_sequences_mu_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+Canada_sequences_mu_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_ISP_ext, n()))))
-Canada_sequences_delta_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+Canada_sequences_delta_ISP <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-Canada_sequences_alpha_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
+Canada_sequences_alpha_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(alpha_GISAID_ext, n()))))
-Canada_sequences_gamma_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
+Canada_sequences_gamma_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(gamma_GISAID_ext, n()))))
-Canada_sequences_lambda_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
+Canada_sequences_lambda_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
                                                   slice(sample(min(lambda_GISAID_ext, n()))))
-Canada_sequences_mu_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+Canada_sequences_mu_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_GISAID_ext, n()))))
-Canada_sequences_delta_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
+Canada_sequences_delta_GISAID <- as.data.frame(Canada_sequences[Canada_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(delta_GISAID_ext, n()))))
 
-France_sequences_alpha_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+France_sequences_alpha_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-France_sequences_gamma_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+France_sequences_gamma_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-France_sequences_lambda_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+France_sequences_lambda_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_ISP_ext, n()))))
-France_sequences_mu_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+France_sequences_mu_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_ISP_ext, n()))))
-France_sequences_delta_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+France_sequences_delta_ISP <- as.data.frame(France_sequences[France_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-France_sequences_alpha_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
+France_sequences_alpha_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(alpha_GISAID_ext, n()))))
-France_sequences_gamma_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
+France_sequences_gamma_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(gamma_GISAID_ext, n()))))
-France_sequences_lambda_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
+France_sequences_lambda_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
                                                   slice(sample(min(lambda_GISAID_ext, n()))))
-France_sequences_mu_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+France_sequences_mu_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_GISAID_ext, n()))))
-France_sequences_delta_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
-                                                 slice(sample(min(delta_GISAID_ext, n()))))
-
-
-Panama_sequences_alpha_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
-                                              slice(sample(min(alpha_ISP_ext, n()))))
-Panama_sequences_gamma_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
-                                              slice(sample(min(gamma_ISP_ext, n()))))
-Panama_sequences_lambda_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
-                                               slice(sample(min(lambda_ISP_ext, n()))))
-Panama_sequences_mu_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
-                                           slice(sample(min(mu_ISP_ext, n()))))
-Panama_sequences_delta_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
-                                              slice(sample(min(delta_ISP_ext, n()))))
-
-Panama_sequences_alpha_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
-                                                 slice(sample(min(alpha_GISAID_ext, n()))))
-Panama_sequences_gamma_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
-                                                 slice(sample(min(gamma_GISAID_ext, n()))))
-Panama_sequences_lambda_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
-                                                  slice(sample(min(lambda_GISAID_ext, n()))))
-Panama_sequences_mu_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
-                                              slice(sample(min(mu_GISAID_ext, n()))))
-Panama_sequences_delta_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
+France_sequences_delta_GISAID <- as.data.frame(France_sequences[France_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(delta_GISAID_ext, n()))))
 
 
-Spain_sequences_alpha_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+Panama_sequences_alpha_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-Spain_sequences_gamma_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+Panama_sequences_gamma_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-Spain_sequences_lambda_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+Panama_sequences_lambda_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_ISP_ext, n()))))
-Spain_sequences_mu_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+Panama_sequences_mu_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_ISP_ext, n()))))
-Spain_sequences_delta_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+Panama_sequences_delta_ISP <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-Spain_sequences_alpha_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
+Panama_sequences_alpha_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(alpha_GISAID_ext, n()))))
-Spain_sequences_gamma_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
+Panama_sequences_gamma_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(gamma_GISAID_ext, n()))))
-Spain_sequences_lambda_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
+Panama_sequences_lambda_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
                                                   slice(sample(min(lambda_GISAID_ext, n()))))
-Spain_sequences_mu_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+Panama_sequences_mu_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_GISAID_ext, n()))))
-Spain_sequences_delta_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
+Panama_sequences_delta_GISAID <- as.data.frame(Panama_sequences[Panama_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(delta_GISAID_ext, n()))))
 
 
-USA_sequences_alpha_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+Spain_sequences_alpha_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-USA_sequences_gamma_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+Spain_sequences_gamma_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-USA_sequences_lambda_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+Spain_sequences_lambda_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_ISP_ext, n()))))
-USA_sequences_mu_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+Spain_sequences_mu_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_ISP_ext, n()))))
-USA_sequences_delta_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+Spain_sequences_delta_ISP <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-USA_sequences_alpha_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
+Spain_sequences_alpha_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(alpha_GISAID_ext, n()))))
-USA_sequences_gamma_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
+Spain_sequences_gamma_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(gamma_GISAID_ext, n()))))
-USA_sequences_lambda_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
+Spain_sequences_lambda_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
                                                   slice(sample(min(lambda_GISAID_ext, n()))))
-USA_sequences_mu_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+Spain_sequences_mu_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_GISAID_ext, n()))))
-USA_sequences_delta_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
+Spain_sequences_delta_GISAID <- as.data.frame(Spain_sequences[Spain_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(delta_GISAID_ext, n()))))
 
 
-UK_sequences_alpha_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Alpha",] %>%
-                                              group_by(epiweek) %>%
+USA_sequences_alpha_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(alpha_ISP_ext, n()))))
-UK_sequences_gamma_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Gamma",] %>%
-                                              group_by(epiweek) %>%
+USA_sequences_gamma_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(gamma_ISP_ext, n()))))
-UK_sequences_lambda_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Lambda",] %>%
-                                               group_by(epiweek) %>%
+USA_sequences_lambda_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
                                                slice(sample(min(lambda_ISP_ext, n()))))
-UK_sequences_mu_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Mu",] %>%
-                                           group_by(epiweek) %>%
+USA_sequences_mu_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
                                            slice(sample(min(mu_ISP_ext, n()))))
-UK_sequences_delta_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Delta",] %>%
-                                              group_by(epiweek) %>%
+USA_sequences_delta_ISP <- as.data.frame(USA_sequences[USA_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(delta_ISP_ext, n()))))
 
-UK_sequences_alpha_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Alpha",] %>%
-                                                 group_by(epiweek) %>%
+USA_sequences_alpha_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(alpha_GISAID_ext, n()))))
-UK_sequences_gamma_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Gamma",] %>%
-                                                 group_by(epiweek) %>%
+USA_sequences_gamma_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(gamma_GISAID_ext, n()))))
-UK_sequences_lambda_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Lambda",] %>%
-                                                  group_by(epiweek) %>%
+USA_sequences_lambda_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
                                                   slice(sample(min(lambda_GISAID_ext, n()))))
-UK_sequences_mu_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Mu",] %>%
-                                              group_by(epiweek) %>%
+USA_sequences_mu_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
                                               slice(sample(min(mu_GISAID_ext, n()))))
-UK_sequences_delta_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Delta",] %>%
-                                                 group_by(epiweek) %>%
+USA_sequences_delta_GISAID <- as.data.frame(USA_sequences[USA_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
+                                                 slice(sample(min(delta_GISAID_ext, n()))))
+
+
+UK_sequences_alpha_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Alpha",] |>
+                                              group_by(epiweek) |>
+                                              slice(sample(min(alpha_ISP_ext, n()))))
+UK_sequences_gamma_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Gamma",] |>
+                                              group_by(epiweek) |>
+                                              slice(sample(min(gamma_ISP_ext, n()))))
+UK_sequences_lambda_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Lambda",] |>
+                                               group_by(epiweek) |>
+                                               slice(sample(min(lambda_ISP_ext, n()))))
+UK_sequences_mu_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Mu",] |>
+                                           group_by(epiweek) |>
+                                           slice(sample(min(mu_ISP_ext, n()))))
+UK_sequences_delta_ISP <- as.data.frame(UK_sequences[UK_sequences$Variant=="Delta",] |>
+                                              group_by(epiweek) |>
+                                              slice(sample(min(delta_ISP_ext, n()))))
+
+UK_sequences_alpha_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Alpha",] |>
+                                                 group_by(epiweek) |>
+                                                 slice(sample(min(alpha_GISAID_ext, n()))))
+UK_sequences_gamma_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Gamma",] |>
+                                                 group_by(epiweek) |>
+                                                 slice(sample(min(gamma_GISAID_ext, n()))))
+UK_sequences_lambda_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Lambda",] |>
+                                                  group_by(epiweek) |>
+                                                  slice(sample(min(lambda_GISAID_ext, n()))))
+UK_sequences_mu_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Mu",] |>
+                                              group_by(epiweek) |>
+                                              slice(sample(min(mu_GISAID_ext, n()))))
+UK_sequences_delta_GISAID <- as.data.frame(UK_sequences[UK_sequences$Variant=="Delta",] |>
+                                                 group_by(epiweek) |>
                                                  slice(sample(min(delta_GISAID_ext, n()))))
 
 

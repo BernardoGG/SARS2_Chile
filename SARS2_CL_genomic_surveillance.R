@@ -10,10 +10,10 @@ source("/Users/user/Documents/SARS2_Chile_local/SARS2_Chile/SARS2_CL_master.R")
 #### Plot variants from various surveillance contexts ###
 ## Contextualize ISP databases versus available genomic data on GISAID ####
 # GISAID data
-lins_cl_gisaid <- GISAID_CL %>%
-  arrange(epiweek, Variant) %>%
-  group_by(epiweek, Variant) %>%
-  summarize(count = n()) %>%
+lins_cl_gisaid <- GISAID_CL |>
+  arrange(epiweek, Variant) |>
+  group_by(epiweek, Variant) |>
+  summarize(count = n()) |>
   mutate(percentage = count / sum(count))
 
 
@@ -27,10 +27,10 @@ gisaid_panel <- ggplot(data = lins_cl_gisaid , aes(x = epiweek, y = percentage, 
         panel.grid.minor.y = element_blank())
 
 # ISP surveillance databases
-lins_cl <- chile_metadata %>%
-  arrange(epiweek, Variant) %>%
-  group_by(epiweek, Variant) %>%
-  summarize(count = n()) %>%
+lins_cl <- chile_metadata |>
+  arrange(epiweek, Variant) |>
+  group_by(epiweek, Variant) |>
+  summarize(count = n()) |>
   mutate(percentage = count / sum(count))
 
 
@@ -48,10 +48,10 @@ gisaid_panel / isp_panel
 
 ## Compare airport versus community surveillance data sets
 # Community surveillance
-lins_comm <- chile_isp_metadata[chile_isp_metadata$surveillance == "Community",] %>%
-  arrange(epiweek_start, Variant) %>%
-  group_by(epiweek_start, Variant) %>%
-  summarize(count = n()) %>%
+lins_comm <- chile_isp_metadata[chile_isp_metadata$surveillance == "Community",] |>
+  arrange(epiweek_start, Variant) |>
+  group_by(epiweek_start, Variant) |>
+  summarize(count = n()) |>
   mutate(percentage = count / sum(count))
 
 
@@ -67,10 +67,10 @@ comm_panel <- ggplot(data = lins_comm , aes(x = epiweek_start, y = percentage,
 
 
 # Airport surveillance
-lins_airp <- chile_isp_metadata[chile_isp_metadata$surveillance == "Airport",] %>%
-  arrange(epiweek_start, Variant) %>%
-  group_by(epiweek_start, Variant) %>%
-  summarize(count = n()) %>%
+lins_airp <- chile_isp_metadata[chile_isp_metadata$surveillance == "Airport",] |>
+  arrange(epiweek_start, Variant) |>
+  group_by(epiweek_start, Variant) |>
+  summarize(count = n()) |>
   mutate(percentage = count / sum(count))
 
 airp_panel <- ggplot(data = lins_airp , aes(x = epiweek_start, y = percentage,
@@ -100,9 +100,9 @@ surv_intensity_epiweeks <- full_join(as.data.frame(table(GISAID_CL$epiweek)),
                                      by = "Var1")
 colnames(surv_intensity_epiweeks) <- c("Epiweek", "GISAID", "ISP")
 
-gisaid_vars <- group_by(GISAID_CL, epiweek, Variant) %>%
+gisaid_vars <- group_by(GISAID_CL, epiweek, Variant) |>
   summarize(count = n())
-isp_vars <- group_by(chile_metadata, epiweek, Variant) %>%
+isp_vars <- group_by(chile_metadata, epiweek, Variant) |>
   summarize(count = n())
 surv_intensity_epiweeks_vars <- full_join(gisaid_vars, isp_vars,
                                           by = c("epiweek", "Variant"))
@@ -110,7 +110,7 @@ colnames(surv_intensity_epiweeks_vars) <- c("Epiweek", "Variant", "GISAID", "ISP
 surv_intensity_epiweeks_vars$ISP[is.na(surv_intensity_epiweeks_vars$ISP)] <- 0
 
 # Epiweeks plots of coverage between data sets
-epiweeks_plot <- surv_intensity_epiweeks %>%
+epiweeks_plot <- surv_intensity_epiweeks |>
   pivot_longer(c(ISP, GISAID), "Surveillance")
 
 ggplot(data = epiweeks_plot,
@@ -124,7 +124,7 @@ ggplot(data = epiweeks_plot,
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 # Epiweeks plots of coverage between data sets per variant
-epiweeks_plot_vars <- surv_intensity_epiweeks_vars %>%
+epiweeks_plot_vars <- surv_intensity_epiweeks_vars |>
   pivot_longer(c(ISP, GISAID), "Surveillance")
 
 v_plot <- "Mu"
@@ -157,16 +157,16 @@ ggplot(data = epiweeks_plot_vars,
 # Create data frame containing number of sequences per region per data set
 surv_intensity_cl <- full_join(as.data.frame(table(GISAID_CL$State)),
                                as.data.frame(table(chile_metadata$State)),
-                               by = "Var1") %>% slice(-14)
+                               by = "Var1") |> slice(-14)
 colnames(surv_intensity_cl) <- c("Region", "GISAID", "ISP")
 surv_intensity_cl$ISP[is.na(surv_intensity_cl$ISP)] <- 0
 
 # Semi-log scales plot
-plot_ly(surv_intensity_cl, x = ~GISAID, y = ~ISP) %>% add_markers() %>%
+plot_ly(surv_intensity_cl, x = ~GISAID, y = ~ISP) |> add_markers() |>
   layout(fig, xaxis = list(type = "log"), yaxis = list(type = "log"))
 
 # Untransformed scales plot
-surv_plot <- surv_intensity_cl %>%
+surv_plot <- surv_intensity_cl |>
   pivot_longer(c(ISP, GISAID), "Surveillance")
 
 ggplot(data = surv_plot , aes(x = Region, y = value, fill = as.factor(Surveillance))) +

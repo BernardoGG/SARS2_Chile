@@ -54,7 +54,7 @@ GISAID_SA <- GISAID_final[GISAID_final$Country=="Argentina" |
                             GISAID_final$Country=="Paraguay" |
                             GISAID_final$Country=="Peru" |
                             GISAID_final$Country=="Uruguay" |
-                            GISAID_final$Country=="Venezuela",] %>%
+                            GISAID_final$Country=="Venezuela",] |>
   mutate(Variant = case_when(`Pango lineage` == "B.1.1.7" |
                                `Pango lineage` == "Q.1" ~ "Alpha",
                              `Pango lineage` %in%
@@ -101,10 +101,10 @@ colnames(VOCs_T4) <- c("VOC", "Country", "Count")
 
 # Add column with total number of sequences per country for that epoch
 # *NOTE*: 'Tot' is sensitive to order of functions being executed
-Total_T1 <- VOCs_T1 %>% group_by(Country) %>% summarise(sum(Count))
-Total_T2 <- VOCs_T2 %>% group_by(Country) %>% summarise(sum(Count))
-Total_T3 <- VOCs_T3 %>% group_by(Country) %>% summarise(sum(Count))
-Total_T4 <- VOCs_T4 %>% group_by(Country) %>% summarise(sum(Count))
+Total_T1 <- VOCs_T1 |> group_by(Country) |> summarise(sum(Count))
+Total_T2 <- VOCs_T2 |> group_by(Country) |> summarise(sum(Count))
+Total_T3 <- VOCs_T3 |> group_by(Country) |> summarise(sum(Count))
+Total_T4 <- VOCs_T4 |> group_by(Country) |> summarise(sum(Count))
 
 Tot <- vector()
 for(i in 1:nrow(Total_T1)){
@@ -132,7 +132,7 @@ VOCs_T4$Total <- Tot
 
 # Create data frame with VOC proportions over four epochs
 voc_props <- data.frame(
-  country = unique(GISAID_SA$Country) %>% sort(),
+  country = unique(GISAID_SA$Country) |> sort(),
   gamma_t1 = VOCs_T1[VOCs_T1$VOC=="Gamma",]$Count/
     VOCs_T1[VOCs_T1$VOC=="Gamma",]$Total,
   gamma_t2 = VOCs_T2[VOCs_T2$VOC=="Gamma",]$Count/
@@ -501,10 +501,10 @@ ggsave(plot = plot, "Figures/SouthAm_VOCs_map.pdf", dpi = 300,
 
 ####################### VOC proportion timelines ###############################
 # Generate data frame counting sequences by country and epiweek
-lins_sa_gisaid <- GISAID_SA %>%
-  arrange(epiweek, Variant) %>%
-  group_by(Country, epiweek, Variant) %>%
-  summarize(count = n()) %>%
+lins_sa_gisaid <- GISAID_SA |>
+  arrange(epiweek, Variant) |>
+  group_by(Country, epiweek, Variant) |>
+  summarize(count = n()) |>
   mutate(percentage = count / sum(count))
 
 # Plot proportions

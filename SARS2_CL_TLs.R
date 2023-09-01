@@ -24,48 +24,48 @@ library(tidyverse)
 #### Files generated using fertree
 ## Import TLs function
 read_TLs <- function(x){
-  read.table(x, sep = "\t") %>%
-    row_to_names(row_number = 1) %>%
-    select(-tree, -source) %>%
-    mutate(ntaxa = as.numeric(ntaxa)) %>%
-    mutate(tmrca = as.numeric(tmrca)) %>%
-    mutate(ptmrca = as.numeric(ptmrca)) %>%
-    mutate(first_seen = as.numeric(first_seen)) %>%
-    mutate(last_seen = as.numeric(last_seen)) %>%
-    mutate(tmrca = decimal_date(last_CL_seq) - tmrca) %>%
-    mutate(ptmrca = decimal_date(last_CL_seq) - ptmrca) %>%
-    mutate(first_seen = decimal_date(last_CL_seq) - first_seen) %>%
-    mutate(last_seen = decimal_date(last_CL_seq) - last_seen) %>%
-    mutate(tmrca_date = as.Date(date_decimal(tmrca))) %>%
-    mutate(ptmrca_date = as.Date(date_decimal(ptmrca))) %>%
-    mutate(first_seen_date = as.Date(date_decimal(first_seen))) %>%
-    mutate(last_seen_date = as.Date(date_decimal(last_seen))) %>%
+  read.table(x, sep = "\t") |>
+    row_to_names(row_number = 1) |>
+    select(-tree, -source) |>
+    mutate(ntaxa = as.numeric(ntaxa)) |>
+    mutate(tmrca = as.numeric(tmrca)) |>
+    mutate(ptmrca = as.numeric(ptmrca)) |>
+    mutate(first_seen = as.numeric(first_seen)) |>
+    mutate(last_seen = as.numeric(last_seen)) |>
+    mutate(tmrca = decimal_date(last_CL_seq) - tmrca) |>
+    mutate(ptmrca = decimal_date(last_CL_seq) - ptmrca) |>
+    mutate(first_seen = decimal_date(last_CL_seq) - first_seen) |>
+    mutate(last_seen = decimal_date(last_CL_seq) - last_seen) |>
+    mutate(tmrca_date = as.Date(date_decimal(tmrca))) |>
+    mutate(ptmrca_date = as.Date(date_decimal(ptmrca))) |>
+    mutate(first_seen_date = as.Date(date_decimal(first_seen))) |>
+    mutate(last_seen_date = as.Date(date_decimal(last_seen))) |>
     mutate(lineage = c(1, 1:tail(lineage, n = 1)+ 1))
 }
 
 ## Alpha
 alpha_tl <-
-  read_TLs("Phylogenetics/DTA_Alpha_ISP/DTA_Alpha_ISP_transmission_lineages.tsv") %>%
+  read_TLs("Phylogenetics/DTA_Alpha_ISP/DTA_Alpha_ISP_transmission_lineages.tsv") |>
   mutate(lineage = paste0("Alpha_TL_", lineage))
 
 ## Gamma
 gamma_tl <-
-  read_TLs("Phylogenetics/DTA_Gamma_ISP/DTA_Gamma_ISP_transmission_lineages.tsv") %>%
+  read_TLs("Phylogenetics/DTA_Gamma_ISP/DTA_Gamma_ISP_transmission_lineages.tsv") |>
   mutate(lineage = paste0("Gamma_TL_", lineage))
 
 ## Lambda
 lambda_tl <-
-  read_TLs("Phylogenetics/DTA_Lambda_ISP/DTA_Lambda_ISP_transmission_lineages.tsv") %>%
+  read_TLs("Phylogenetics/DTA_Lambda_ISP/DTA_Lambda_ISP_transmission_lineages.tsv") |>
   mutate(lineage = paste0("Lambda_TL_", lineage))
 
 ## Mu
 mu_tl <-
-  read_TLs("Phylogenetics/DTA_Mu_ISP/DTA_Mu_ISP_transmission_lineages.tsv") %>%
+  read_TLs("Phylogenetics/DTA_Mu_ISP/DTA_Mu_ISP_transmission_lineages.tsv") |>
   mutate(lineage = paste0("Mu_TL_", lineage))
 
 ## Delta
 delta_tl <-
-  read_TLs("Phylogenetics/DTA_Delta_ISP/DTA_Delta_ISP_transmission_lineages.tsv") %>%
+  read_TLs("Phylogenetics/DTA_Delta_ISP/DTA_Delta_ISP_transmission_lineages.tsv") |>
   mutate(lineage = paste0("Delta_TL_", lineage))
 
 #### Unify data sets
@@ -96,11 +96,11 @@ CL_fertree <- data.frame(variant = c(rep("Alpha", nrow(alpha_tl)), rep("Gamma", 
 
 
 ## Singletons
-CL_singletons <- CL_fertree %>% filter(ntaxa == 1) %>% mutate(seen = first_seen) %>% mutate(seen_date = first_seen_date) %>%
+CL_singletons <- CL_fertree |> filter(ntaxa == 1) |> mutate(seen = first_seen) |> mutate(seen_date = first_seen_date) |>
   select(-ntaxa, -first_seen, -first_seen_date, -last_seen, -last_seen_date)
 
 ## Transmission lineages
-CL_TLs <- CL_fertree %>% filter(ntaxa != 1) %>% select(-taxa) %>% mutate(lineage = as.factor(lineage))
+CL_TLs <- CL_fertree |> filter(ntaxa != 1) |> select(-taxa) |> mutate(lineage = as.factor(lineage))
 
 #### Annotate with airport metadata
 ## Transmission lineages/singletons containing airport sequences
@@ -247,14 +247,14 @@ rm(d, tmp)
 
 ### Sequence geocoding for ISP data set ####
 ## Read geocoding data
-geocode_CL_full <- as.data.frame(fread('Data/CL_geocoded_ISP_seq.csv')) %>%
-  select(accession, collection_date, comuna, variant, surveillance, X, Y) %>%
-  filter(accession %in% chile_isp_metadata$`Accession ID`) %>%
+geocode_CL_full <- as.data.frame(fread('Data/CL_geocoded_ISP_seq.csv')) |>
+  select(accession, collection_date, comuna, variant, surveillance, X, Y) |>
+  filter(accession %in% chile_isp_metadata$`Accession ID`) |>
   rename(long = X, lat = Y)
 
 ## Generate geocoding file with tip names
-geocode_CL_full <- geocode_CL_full %>% arrange(accession)
-name_lib <- chile_isp_metadata %>% arrange(`Accession ID`)
+geocode_CL_full <- geocode_CL_full |> arrange(accession)
+name_lib <- chile_isp_metadata |> arrange(`Accession ID`)
 
 geocode_CL_full$virus_name <- name_lib$`Virus name`[
   geocode_CL_full$accession %in% name_lib$`Accession ID`
@@ -269,7 +269,7 @@ chile_isp_metadata$Taxa <- str_c(chile_isp_metadata$`Virus name`, "|",
                                  chile_isp_metadata$Date)
 
 ## Remove missing data
-geocode_CL <- geocode_CL_full %>% drop_na(long, lat)
+geocode_CL <- geocode_CL_full |> drop_na(long, lat)
 
 ## Create vector of accession numbers with missing data
 geocode_CL_missing <- geocode_CL_full$accession[geocode_CL_full$comuna=="desconocido"]
@@ -280,18 +280,18 @@ for(i in 1:length(taxalist)){
   x <- unlist(taxalist[[i]])
   taxaunlist <- c(taxaunlist, x)
 }
-taxaunlist <- data.frame(taxa = taxaunlist) %>% arrange(taxa)
+taxaunlist <- data.frame(taxa = taxaunlist) |> arrange(taxa)
 
 taxa_df <- taxaunlist
-taxaunlist <- str_split_fixed(taxaunlist$taxa, fixed("|"), 3) %>%
-  as.data.frame() %>%
+taxaunlist <- str_split_fixed(taxaunlist$taxa, fixed("|"), 3) |>
+  as.data.frame() |>
   rename(virus_name = V1, accession = V2, collection_date = V3)
 taxaunlist <- bind_cols(taxa_df, taxaunlist)
 
-geocode_TLs <- geocode_CL %>%
+geocode_TLs <- geocode_CL |>
   filter(accession %in% taxaunlist$accession)
 
-geocode_TLs_file <- geocode_TLs %>% select(taxa, lat, long)
+geocode_TLs_file <- geocode_TLs |> select(taxa, lat, long)
 
 ## Save geocoding metadata file
 write.table(geocode_TLs_file,
@@ -304,13 +304,13 @@ write.table(geocode_TLs_file,
 
 ### Extract TL subtrees ####
 ## Transmission lineages >= 60 sequences extracted
-CL_large_TLs <- CL_fertree %>% filter(ntaxa >= 60)  # <- Expect 20 TLs
+CL_large_TLs <- CL_fertree |> filter(ntaxa >= 60)  # <- Expect 20 TLs
 
 ## Extract lists of taxa per each TL
 taxalist <- list()
 for(i in 1:nrow(CL_large_TLs)){
-  taxa = strsplit(CL_large_TLs$taxa[i], ";") %>%
-    unlist() %>%
+  taxa = strsplit(CL_large_TLs$taxa[i], ";") |>
+    unlist() |>
     str_trim()
   taxalist[[i]] = taxa
 }
@@ -329,21 +329,21 @@ VOCs_fasta <- c(Alpha_ISP_fasta, Gamma_ISP_fasta, Lambda_ISP_fasta,
                 Mu_ISP_fasta, Delta_ISP_fasta)
 
 # Object with TL names, sequence names and sequence EPI_ISL
-TL_names <- names(taxalist) %>% paste0("_aln")
+TL_names <- names(taxalist) |> paste0("_aln")
 seq_names <- names(VOCs_fasta)
-seq_acce <- str_split_fixed(names(VOCs_fasta), fixed("|"),3) %>%
-  as.data.frame() %>%
-  select(V2) %>% rename(accession = V2)
+seq_acce <- str_split_fixed(names(VOCs_fasta), fixed("|"),3) |>
+  as.data.frame() |>
+  select(V2) |> rename(accession = V2)
 
 # Rename sequences as EPI_ISL
 names(VOCs_fasta) <- seq_acce$accession
 accelist <- list()
 for(i in 1:nrow(CL_large_TLs)){
-  taxa = strsplit(CL_large_TLs$taxa[i], ";") %>%
-    unlist() %>%
-    str_trim() %>%
-    str_split_fixed(fixed("|"), 3) %>%
-    as.data.frame() %>%
+  taxa = strsplit(CL_large_TLs$taxa[i], ";") |>
+    unlist() |>
+    str_trim() |>
+    str_split_fixed(fixed("|"), 3) |>
+    as.data.frame() |>
     select(V2)
   accelist[[i]] = taxa
 }
@@ -381,7 +381,7 @@ lapply(1:length(TL_seqs),
          quote = FALSE))
 
 # Export lat-long for individual transmission lineages
-geocode_TLs_extract <- geocode_TLs_file %>%
+geocode_TLs_extract <- geocode_TLs_file |>
   mutate(taxa = str_extract(taxa, "(EPI_ISL_\\d+)"))
 
 lapply(1:length(TL_seqs),
@@ -411,23 +411,23 @@ lapply(1:length(TL_seqs),
 ## Import invasion trees data frame function
 invasions_folder <- "Phylogenetics/SC2_CL_TLs/BEAST_TL_continuous_phylogeo/"
 read_invasions <- function(variant, tl){
-  read.table(paste0(invasions_folder, variant, "_TL_", tl, ".tsv"), sep = "\t") %>%
-    row_to_names(row_number = 1) %>%
+  read.table(paste0(invasions_folder, variant, "_TL_", tl, ".tsv"), sep = "\t") |>
+    row_to_names(row_number = 1) |>
     select(-head_node, -tail_node, -length, -geo_distance,
-           -head_comuna_amb, -tail_comuna_amb) %>%
-    mutate(lineage =  paste0(variant, "_TL_", tl)) %>%
-    mutate(variant =  variant) %>%
-    mutate(head_lat_3395 = as.numeric(head_lat_3395)) %>%
-    mutate(head_long_3395 = as.numeric(head_long_3395)) %>%
-    mutate(tail_lat_3395 = as.numeric(tail_lat_3395)) %>%
-    mutate(tail_long_3395 = as.numeric(tail_long_3395)) %>%
-    mutate(head_lat_4326 = as.numeric(head_lat_4326)) %>%
-    mutate(head_long_4326 = as.numeric(head_long_4326)) %>%
-    mutate(tail_lat_4326 = as.numeric(tail_lat_4326)) %>%
-    mutate(tail_long_4326 = as.numeric(tail_long_4326)) %>%
-    mutate(head_dec_date = as.numeric(head_dec_date)) %>%
-    mutate(tail_dec_date = as.numeric(tail_dec_date)) %>%
-    mutate(head_date = as.Date(head_date)) %>%
+           -head_comuna_amb, -tail_comuna_amb) |>
+    mutate(lineage =  paste0(variant, "_TL_", tl)) |>
+    mutate(variant =  variant) |>
+    mutate(head_lat_3395 = as.numeric(head_lat_3395)) |>
+    mutate(head_long_3395 = as.numeric(head_long_3395)) |>
+    mutate(tail_lat_3395 = as.numeric(tail_lat_3395)) |>
+    mutate(tail_long_3395 = as.numeric(tail_long_3395)) |>
+    mutate(head_lat_4326 = as.numeric(head_lat_4326)) |>
+    mutate(head_long_4326 = as.numeric(head_long_4326)) |>
+    mutate(tail_lat_4326 = as.numeric(tail_lat_4326)) |>
+    mutate(tail_long_4326 = as.numeric(tail_long_4326)) |>
+    mutate(head_dec_date = as.numeric(head_dec_date)) |>
+    mutate(tail_dec_date = as.numeric(tail_dec_date)) |>
+    mutate(head_date = as.Date(head_date)) |>
     mutate(tail_date = as.Date(tail_date))
 }
 
@@ -478,7 +478,7 @@ comunas_to_fix_head <- data.frame(
   to_fix = unique(
     CL_invasions$head_comuna[
       !CL_invasions$head_comuna %in% unique(
-        lockdowns$comuna_residencia)]) %>% sort(),
+        lockdowns$comuna_residencia)]) |> sort(),
   fixed = c("Aysen", "Casablanca", "Coyhaique", "Puyehue", "La Union",
             "Llay-Llay", "Llanquihue", "Canela", "Quilaco", "Quilleco",
             "Ranquil", "Ranquil", "Requinoa", "San Rosendo",
@@ -489,7 +489,7 @@ comunas_to_fix_tail <- data.frame(
   to_fix = unique(
     CL_invasions$tail_comuna[
       !CL_invasions$tail_comuna %in% unique(
-        lockdowns$comuna_residencia)]) %>% sort(),
+        lockdowns$comuna_residencia)]) |> sort(),
   fixed = c("Aysen", "Casablanca", "Coyhaique", "Puyehue", "La Union",
             "La Union", "Llay-Llay", "Llanquihue", "Canela", "Quilaco",
             "Quilleco", "Ranquil", "Ranquil", "Requinoa", "San Rosendo",
@@ -516,27 +516,27 @@ for(i in 1:nrow(CL_invasions)){
 rm(comunas_to_fix_head, comunas_to_fix_tail)
 
 ## Add column with lockdown tier over time period of transition
-CL_invasions <- CL_invasions %>%
+CL_invasions <- CL_invasions |>
   left_join(lockdowns, by = c("head_comuna" = "comuna_residencia",
-                              "head_date" = "Fecha")) %>%
+                              "head_date" = "Fecha")) |>
   select(-region_residencia, head_lockdown_tier = Paso)
 
-CL_invasions <- CL_invasions %>%
+CL_invasions <- CL_invasions |>
   left_join(lockdowns, by = c("tail_comuna" = "comuna_residencia",
-                              "tail_date" = "Fecha")) %>%
+                              "tail_date" = "Fecha")) |>
   select(-region_residencia, tail_lockdown_tier = Paso)
 
 ## Add column with recoded lockdown tier
-CL_invasions <- CL_invasions %>%
+CL_invasions <- CL_invasions |>
   mutate(head_lockdown_tier_recoded = case_when(
     head_lockdown_tier == 1 ~ "Full lockdown",
     head_lockdown_tier == 2 ~ "Weekend lockdown",
-    head_lockdown_tier == 3 | head_lockdown_tier == 4 ~ "No lockdown")) %>%
+    head_lockdown_tier == 3 | head_lockdown_tier == 4 ~ "No lockdown")) |>
   mutate(tail_lockdown_tier_recoded = case_when(
     tail_lockdown_tier == 1 ~ "Full lockdown",
     tail_lockdown_tier == 2 ~ "Weekend lockdown",
-    tail_lockdown_tier == 3 | tail_lockdown_tier == 4 ~ "No lockdown")) %>%
-  mutate(head_lockdown_tier_recoded = as.factor(head_lockdown_tier_recoded)) %>%
+    tail_lockdown_tier == 3 | tail_lockdown_tier == 4 ~ "No lockdown")) |>
+  mutate(head_lockdown_tier_recoded = as.factor(head_lockdown_tier_recoded)) |>
   mutate(tail_lockdown_tier_recoded = as.factor(tail_lockdown_tier_recoded))
 CL_invasions$head_lockdown_tier_recoded <- factor(
   CL_invasions$head_lockdown_tier_recoded,
@@ -567,7 +567,7 @@ CL_TLs
 
 
 # TL sizes per variant
-CL_TLs %>%
+CL_TLs |>
   ggplot(aes(x = fct_reorder(CL_TLs$lineage, CL_TLs$ntaxa, .desc = TRUE),
              y = ntaxa, fill = variant)) + geom_col() +
   labs(x = "Transmission lineages", y = "No. of sequences per TL",
@@ -586,7 +586,7 @@ CL_TLs %>%
         axis.ticks.x = element_blank())
 
 # TL persistence in time colored by variant
-CL_TLs %>% ggplot() +
+CL_TLs |> ggplot() +
   geom_linerange(aes(x = fct_reorder(lineage, first_seen_date, .desc = FALSE),
                      ymin = first_seen_date, ymax = last_seen_date, color = variant),
                  linewidth = 0.7, lineend='round') +
@@ -694,7 +694,7 @@ ggplot(CL_singletons) +
   geom_histogram(aes(x = tmrca_date, fill = variant))
 
 ### Manuscript plots
-a <- CL_fertree %>% select(-taxa) %>%
+a <- CL_fertree |> select(-taxa) |>
   ggplot(aes(x = tmrca_date, fill = variant, color = variant)) +
   geom_density(linewidth = 0.6, alpha = 0.05) +
   labs(x = "TL TMRCA",
@@ -722,33 +722,33 @@ ggsave("Figures/CL_introductions_density_plot.pdf", dpi = 300,
 
 ### Plot invasions according to lockdown tiers ####
 # Normalising factor by transmission lineage
-norm_tl <- CL_invasions$lineage %>% table()
+norm_tl <- CL_invasions$lineage |> table()
 
 # Normalising factor by variant
-norm_voc <- CL_invasions$variant %>% table()
+norm_voc <- CL_invasions$variant |> table()
 
 # Normalising factor by lockdown tier
-norm_tier_head <- CL_invasions$head_lockdown_tier_recoded %>% table()
-norm_tier_tail <- CL_invasions$tail_lockdown_tier_recoded %>% table()
+norm_tier_head <- CL_invasions$head_lockdown_tier_recoded |> table()
+norm_tier_tail <- CL_invasions$tail_lockdown_tier_recoded |> table()
 
 # Normalising factor by comuna
-norm_comuna_head <- CL_invasions$head_comuna %>% table()
-norm_comuna_tail <- CL_invasions$tail_comuna %>% table()
+norm_comuna_head <- CL_invasions$head_comuna |> table()
+norm_comuna_tail <- CL_invasions$tail_comuna |> table()
 
 # Normalising factor by comuna, imports vs internal counts
-norm_comuna_tail_within <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>% select(tail_comuna) %>% table()
-norm_comuna_tail_between <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>% select(tail_comuna) %>% table()
+norm_comuna_tail_within <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |> select(tail_comuna) |> table()
+norm_comuna_tail_between <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |> select(tail_comuna) |> table()
 
 # Viral movements (normalised) by lockdown tier
-within_h <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(variant, lineage, head_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+within_h <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(variant, lineage, head_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_voc[
-    as.character(variant)]) %>%
+    as.character(variant)]) |>
   ggplot(aes(x = head_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_boxplot(position = position_dodge(0.6), alpha = 0.3,
@@ -761,13 +761,13 @@ within_h <- CL_invasions %>%
        y = "Proportion of movements out of all\ntransitions inferred for each variant") +
   theme_classic() + theme(axis.text.x = element_blank(), legend.position = "none")
 
-within_t <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(variant, lineage, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+within_t <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(variant, lineage, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_voc[
-    as.character(variant)]) %>%
+    as.character(variant)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_boxplot(position = position_dodge(0.6), alpha = 0.3,
@@ -780,13 +780,13 @@ within_t <- CL_invasions %>%
        y = "") +
   theme_classic() + theme(axis.text.x = element_blank())
 
-between_h <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(variant, lineage, head_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+between_h <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(variant, lineage, head_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_voc[
-    as.character(variant)]) %>%
+    as.character(variant)]) |>
   ggplot(aes(x = head_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_boxplot(position = position_dodge(0.6), alpha = 0.3,
@@ -799,13 +799,13 @@ between_h <- CL_invasions %>%
        y = "Proportion of movements out of all\ntransitions inferred for each variant") +
   theme_classic() + theme(legend.position = "none")
 
-between_t <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(variant, lineage, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+between_t <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(variant, lineage, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_voc[
-    as.character(variant)]) %>%
+    as.character(variant)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_boxplot(position = position_dodge(0.6), alpha = 0.3,
@@ -826,15 +826,15 @@ between_t <- CL_invasions %>%
 CL_invasions
 
 # Plot
-within_t2 <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(variant, lineage, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
-  mutate(variant = as.factor(variant)) %>%
-  mutate(variant = fct_relevel(variant, "Delta", after = Inf)) %>%
+within_t2 <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(variant, lineage, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
+  mutate(variant = as.factor(variant)) |>
+  mutate(variant = fct_relevel(variant, "Delta", after = Inf)) |>
   mutate(norm_count = count / norm_tier_tail[
-    as.character(tail_lockdown_tier_recoded)]) %>%
+    as.character(tail_lockdown_tier_recoded)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_dotplot(binaxis = 'y', stackdir = 'center',
@@ -854,15 +854,15 @@ within_t2 <- CL_invasions %>%
   theme_classic() + theme(axis.text.x = element_blank(),
                           legend.position = "none")
 
-between_t2 <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(variant, lineage, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
-  mutate(variant = as.factor(variant)) %>%
-  mutate(variant = fct_relevel(variant, "Delta", after = Inf)) %>%
+between_t2 <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(variant, lineage, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
+  mutate(variant = as.factor(variant)) |>
+  mutate(variant = fct_relevel(variant, "Delta", after = Inf)) |>
   mutate(norm_count = count / norm_tier_tail[
-    as.character(tail_lockdown_tier_recoded)]) %>%
+    as.character(tail_lockdown_tier_recoded)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = variant)) +
   geom_dotplot(binaxis = 'y', stackdir = 'center',
@@ -892,13 +892,13 @@ ggsave("Figures/SC2_CL_lockdown_tiers_transitions_imports.png", dpi = 300,
 
 ## Viral movements into individual comunas by lockdown tier
 # Imports
-imports_c <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+imports_c <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_comuna_tail_between[
-    as.character(tail_comuna)]) %>%
+    as.character(tail_comuna)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = count, fill = tail_lockdown_tier_recoded)) +
   geom_violin(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -916,13 +916,13 @@ imports_c <- CL_invasions %>%
                           legend.position = "none")
 
 # Movements within comunas
-movements_c <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+movements_c <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_comuna_tail_within[
-    as.character(tail_comuna)]) %>%
+    as.character(tail_comuna)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = count, fill = tail_lockdown_tier_recoded)) +
   geom_violin(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -978,11 +978,11 @@ geocode_CL_full[geocode_CL_full$taxa=="hCoV-19/Chile/LR-262486/2020|EPI_ISL_1167
 
 ################################ SANDBOX #######################################
 ## Viral importations
-CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = count, fill = tail_lockdown_tier_recoded)) +
   geom_boxplot(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -998,13 +998,13 @@ CL_invasions %>%
   theme_classic() + theme(axis.text.x = element_text(size = 10),
                           legend.position = "none")
 
-CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_comuna_tail[
-    as.character(tail_comuna)]) %>%
+    as.character(tail_comuna)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = tail_lockdown_tier_recoded)) +
   geom_boxplot(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -1021,11 +1021,11 @@ CL_invasions %>%
                           legend.position = "none")
 
 ## Movements within comunas
-CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = count, fill = tail_lockdown_tier_recoded)) +
   geom_boxplot(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -1041,13 +1041,13 @@ CL_invasions %>%
   theme_classic() + theme(axis.text.x = element_text(size = 10),
                           legend.position = "none")
 
-CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
+CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
   mutate(norm_count = count / norm_comuna_tail[
-    as.character(tail_comuna)]) %>%
+    as.character(tail_comuna)]) |>
   ggplot(aes(x = tail_lockdown_tier_recoded,
              y = norm_count, fill = tail_lockdown_tier_recoded)) +
   geom_boxplot(alpha = 0.5, linewidth = 0.6, width = 0.2, colour = "#555555",
@@ -1064,23 +1064,23 @@ CL_invasions %>%
                           legend.position = "none")
 
 
-CL_invasions_MEM_within <- CL_invasions %>%
-  filter(head_comuna == tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
-  mutate(count = as.numeric(count)) %>%
-  mutate(tail_comuna = as.factor(tail_comuna)) %>%
+CL_invasions_MEM_within <- CL_invasions |>
+  filter(head_comuna == tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
+  mutate(count = as.numeric(count)) |>
+  mutate(tail_comuna = as.factor(tail_comuna)) |>
   mutate(norm_count = as.numeric(count / norm_comuna_tail[
     as.character(tail_comuna)]))
 
-CL_invasions_MEM_between <- CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(tail_comuna, tail_lockdown_tier_recoded) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
-  mutate(count = as.numeric(count)) %>%
-  mutate(tail_comuna = as.factor(tail_comuna)) %>%
+CL_invasions_MEM_between <- CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(tail_comuna, tail_lockdown_tier_recoded) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
+  mutate(count = as.numeric(count)) |>
+  mutate(tail_comuna = as.factor(tail_comuna)) |>
   mutate(norm_count = as.numeric(count / norm_comuna_tail[
     as.character(tail_comuna)]))
 
@@ -1113,16 +1113,16 @@ ggplot(data = CL_invasions_MEM_between,
        subtitle = "add colours for different comunas and regression lines")
 
 
-CL_invasions %>%
-  filter(head_comuna != tail_comuna) %>%
-  group_by(tail_comuna) %>%
-  summarise(count = n()) %>%
-  as.data.frame() %>%
-  mutate(count = as.numeric(count)) %>%
-  mutate(tail_comuna = as.factor(tail_comuna)) %>%
+CL_invasions |>
+  filter(head_comuna != tail_comuna) |>
+  group_by(tail_comuna) |>
+  summarise(count = n()) |>
+  as.data.frame() |>
+  mutate(count = as.numeric(count)) |>
+  mutate(tail_comuna = as.factor(tail_comuna)) |>
   mutate(norm_count = as.numeric(count / norm_comuna_tail[
-    as.character(tail_comuna)])) %>%
-  select(norm_count) %>% hist(breaks = 20)
+    as.character(tail_comuna)])) |>
+  select(norm_count) |> hist(breaks = 20)
 
 
 
@@ -1135,16 +1135,16 @@ ggplot(CL_invasions) + geom_histogram(aes(x = tail_date - head_date)) +
   labs(x = "Branch lenghts (days)", y = "") +
   theme_minimal()
 
-lockdowns %>%
-  group_by(comuna_residencia) %>%
+lockdowns |>
+  group_by(comuna_residencia) |>
   arrange(Fecha)
 
 
 lockdowns$lockdown_tier[lockdowns$comuna_residencia == "Santiago"]
 
-CL_invasions %>% arrange(tail_date) %>%
-  filter(tail_comuna == "Santiago") %>%
-  select(tail_lockdown_tier_recoded) %>%
+CL_invasions |> arrange(tail_date) |>
+  filter(tail_comuna == "Santiago") |>
+  select(tail_lockdown_tier_recoded) |>
   as.vector()
 
 lockdowns$

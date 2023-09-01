@@ -29,8 +29,8 @@ flights$source <- ifelse(flights$Adm0 != "United States of America" &
                          flights$Adm1)
 
 ## Create data sets for the Santiago de Chile airport and all other airports
-flights_scl <- flights %>% filter(Airport == "Santiago") %>%
-  select(source, Adm0, Sep_2020:Dec_2021) %>%
+flights_scl <- flights |> filter(Airport == "Santiago") |>
+  select(source, Adm0, Sep_2020:Dec_2021) |>
   gather(month, passenger_volume, Sep_2020:Dec_2021)
 
 flights_scl$month <- factor(flights_scl$month,
@@ -39,10 +39,10 @@ flights_scl$date <- rep(seq(as.Date("2020/09/01"), by = "month",
                             length.out = length(unique(flights_scl$month))),
                         each = nrow(flights_scl[
                           flights_scl$month == "Nov_2020",]))
-flights_scl <- flights_scl %>% replace(is.na(.), 0)
+flights_scl <- flights_scl |> replace(is.na(.), 0)
 
-flights_other <- flights %>% filter(Airport != "Santiago") %>%
-  select(source, Adm0, Sep_2020:Dec_2021) %>%
+flights_other <- flights |> filter(Airport != "Santiago") |>
+  select(source, Adm0, Sep_2020:Dec_2021) |>
   gather(month, passenger_volume, Sep_2020:Dec_2021)
 flights_other$month <- factor(flights_other$month,
                             levels = colnames(flights)[7:22])
@@ -50,7 +50,7 @@ flights_other$date <- rep(seq(as.Date("2020/09/01"), by = "month",
                             length.out = length(unique(flights_other$month))),
                         each = nrow(flights_other[
                           flights_other$month == "Nov_2020",]))
-flights_other <- flights_other %>% replace(is.na(.), 0)
+flights_other <- flights_other |> replace(is.na(.), 0)
 
 flights_cl <- bind_rows(flights_scl, flights_other)
 flights_cl$airport <- factor(c(rep("SCL", nrow(flights_scl),),
@@ -62,16 +62,16 @@ flights_cl$airport <- factor(c(rep("SCL", nrow(flights_scl),),
 # Obtained from the Information Transparency Agency of Chile
 # Request placed by Leo Ferres
 crossings <- read.csv("Data/EII_data/crossings.csv",
-                    sep =",") %>%
-  mutate(value =  as.numeric(gsub(",","",value))) %>%
-  mutate(commune = stringi::stri_trans_general(commune, "Latin-ASCII")) %>%
-  mutate(region = stringi::stri_trans_general(region, "Latin-ASCII")) %>%
+                    sep =",") |>
+  mutate(value =  as.numeric(gsub(",","",value))) |>
+  mutate(commune = stringi::stri_trans_general(commune, "Latin-ASCII")) |>
+  mutate(region = stringi::stri_trans_general(region, "Latin-ASCII")) |>
   mutate(region = ifelse(region == "Arica y Parinacota (XV)",
                          "Arica y Parinacota",
-                         region)) %>%
+                         region)) |>
   mutate(region = ifelse(region == "Antofagasta (II)",
                          "Antofagasta",
-                         region)) %>%
+                         region)) |>
   mutate(date = case_when(month == "enero" ~ as.Date("2021-01-01"),
                           month == "febrero" ~ as.Date("2021-02-01"),
                           month == "marzo" ~ as.Date("2021-03-01"),
@@ -83,9 +83,9 @@ crossings <- read.csv("Data/EII_data/crossings.csv",
                           month == "septiembre" ~ as.Date("2021-09-01"),
                           month == "octubre" ~ as.Date("2021-10-01"),
                           month == "noviembre" ~ as.Date("2021-11-01"),
-                          month == "diciembre" ~ as.Date("2021-12-01"))) %>%
-  filter(type == "entry") %>%
-  filter(by == "land") %>%
+                          month == "diciembre" ~ as.Date("2021-12-01"))) |>
+  filter(type == "entry") |>
+  filter(by == "land") |>
   select(-type, -by, -year, -month)
 
 # Create column with cross-border country
@@ -113,19 +113,19 @@ for(i in 1:nrow(crossings)){
 ## Combined data set for land and air imports for neighboring countries ####
 neighbours <- flights_cl[flights_cl$Adm0 == "Argentina" |
                            flights_cl$Adm0 == "Bolivia" |
-                           flights_cl$Adm0 == "Peru",] %>%
-  select(-Adm0) %>%
-  group_by(source, date) %>%
-  summarise(traveler_volume = sum(passenger_volume)) %>%
-  ungroup() %>%
-  mutate(port_of_entry = rep("airport", length(unique(flights_cl$date))*3)) %>%
-  bind_rows(crossings %>%
-              select(border_with, date, value) %>%
-              group_by(border_with, date) %>%
-              summarise(traveler_volume = sum(value)) %>%
-              ungroup() %>%
+                           flights_cl$Adm0 == "Peru",] |>
+  select(-Adm0) |>
+  group_by(source, date) |>
+  summarise(traveler_volume = sum(passenger_volume)) |>
+  ungroup() |>
+  mutate(port_of_entry = rep("airport", length(unique(flights_cl$date))*3)) |>
+  bind_rows(crossings |>
+              select(border_with, date, value) |>
+              group_by(border_with, date) |>
+              summarise(traveler_volume = sum(value)) |>
+              ungroup() |>
               mutate(port_of_entry = rep("border crossing",
-                                         length(unique(crossings$date))*3)) %>%
+                                         length(unique(crossings$date))*3)) |>
               rename(source = border_with))
 
 
@@ -147,11 +147,11 @@ ggplot(flights_scl) +
 
 
 # South American flights by month
-ggplot(flights_scl[flights_scl$Adm0 %in% latam,] %>%
-         filter(month != "Sep_2020") %>%
-         filter(month != "Oct_2020") %>%
-         filter(month != "Nov_2020") %>%
-         filter(month != "Nov_2021") %>%
+ggplot(flights_scl[flights_scl$Adm0 %in% latam,] |>
+         filter(month != "Sep_2020") |>
+         filter(month != "Oct_2020") |>
+         filter(month != "Nov_2020") |>
+         filter(month != "Nov_2021") |>
          filter(month != "Dec_2021")) +
   geom_col(aes(x = month,
                y = passenger_volume,
@@ -192,12 +192,12 @@ ggplot(neighbours) +
 
 
 # South American flights by month (2021) - stacked
-a <- ggplot(flights_scl[flights_scl$Adm0 %in% latam,] %>%
-              filter(month != "Sep_2020") %>%
-              filter(month != "Oct_2020") %>%
-              filter(month != "Nov_2020") %>%
-              filter(month != "Dec_2020") %>%
-              filter(month != "Nov_2021") %>%
+a <- ggplot(flights_scl[flights_scl$Adm0 %in% latam,] |>
+              filter(month != "Sep_2020") |>
+              filter(month != "Oct_2020") |>
+              filter(month != "Nov_2020") |>
+              filter(month != "Dec_2020") |>
+              filter(month != "Nov_2021") |>
               filter(month != "Dec_2021")) +
   geom_col(aes(x = date,
                y = passenger_volume,
@@ -229,12 +229,12 @@ ggsave("Figures/CL_intl_travel_stacked.pdf", dpi = 300,
 
 
 # South American flights by month (2021)
-a <- ggplot(flights_scl[flights_scl$Adm0 %in% latam,] %>%
-              filter(month != "Sep_2020") %>%
-              filter(month != "Oct_2020") %>%
-              filter(month != "Nov_2020") %>%
-              filter(month != "Dec_2020") %>%
-              filter(month != "Nov_2021") %>%
+a <- ggplot(flights_scl[flights_scl$Adm0 %in% latam,] |>
+              filter(month != "Sep_2020") |>
+              filter(month != "Oct_2020") |>
+              filter(month != "Nov_2020") |>
+              filter(month != "Dec_2020") |>
+              filter(month != "Nov_2021") |>
               filter(month != "Dec_2021")) +
   geom_col(aes(x = date,
                y = passenger_volume,
@@ -271,7 +271,7 @@ ggsave("Figures/CL_intl_travel.pdf", dpi = 300,
 
 tmp <- aggregate(flights_scl$passenger_volume[flights_scl$Adm0 %in% latam],
                  by = list(flights_scl$month[flights_scl$Adm0 %in% latam]),
-                 FUN = sum) %>% data.frame()
+                 FUN = sum) |> data.frame()
 
 props <- flights_scl[flights_scl$Adm0 %in% latam,]
 for(i in 1:nrow(props)){

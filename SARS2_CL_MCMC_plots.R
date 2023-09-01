@@ -14,7 +14,7 @@ library(NatParksPalettes)
 ########################### Renaming function ##################################
 
 #### Rename parameters - airport v community
-transitions.renaming <- function(X) {X %>%
+transitions.renaming <- function(X) {X |>
   mutate(Count = case_when(Parameter == 'c_airport_background.count[1]' ~
                              'Background to Airport',
                            Parameter == 'c_airport_community.count[1]' ~
@@ -26,7 +26,7 @@ transitions.renaming <- function(X) {X %>%
                            Parameter == 'c_community_airport.count[1]' ~
                              'Airport to Community',
                            Parameter == 'c_community_background.count[1]' ~
-                             'Background to Community')) %>%
+                             'Background to Community')) |>
   mutate(Description = case_when(Parameter == 'c_airport_background.count[1]' ~
                                    'Imports to airport',
                                  Parameter == 'c_airport_community.count[1]' ~
@@ -41,7 +41,7 @@ transitions.renaming <- function(X) {X %>%
                                    'Imports directly to community'))
 }
 
-transitions.renaming.2 <- function(X) {X %>%
+transitions.renaming.2 <- function(X) {X |>
     mutate(Count = case_when(Parameter == 'c_import.count[1]' ~
                                'Introductions',
                              Parameter == 'c_export.count[1]' ~
@@ -50,24 +50,24 @@ transitions.renaming.2 <- function(X) {X %>%
 
 #### Read BEAST log - airport v community
 read_BEAST_counts <- function(x){
-  read.table(x, sep = "\t") %>%
-    row_to_names(row_number = 1) %>%
-    mutate_if(is.character,as.numeric) %>%
+  read.table(x, sep = "\t") |>
+    row_to_names(row_number = 1) |>
+    mutate_if(is.character,as.numeric) |>
     select(`c_airport_community.count[1]`, `c_airport_background.count[1]`,
            `c_background_community.count[1]`, `c_background_airport.count[1]`,
-           `c_community_airport.count[1]`, `c_community_background.count[1]`) %>%
-    mcmc() %>% ggs() %>% select(-Chain) %>% filter(Iteration < 500) %>%
-    transitions.renaming() %>% mutate(across(c(Count, Description), factor))
+           `c_community_airport.count[1]`, `c_community_background.count[1]`) |>
+    mcmc() |> ggs() |> select(-Chain) |> filter(Iteration < 500) |>
+    transitions.renaming() |> mutate(across(c(Count, Description), factor))
 }
 
 #### Read BEAST log - importations v exportations
 read_BEAST_imports <- function(x){
-  read.table(x, sep = "\t") %>%
-    row_to_names(row_number = 1) %>%
-    mutate_if(is.character,as.numeric) %>%
-    select(`c_import.count[1]`, `c_export.count[1]`) %>%
-    mcmc() %>% ggs() %>% select(-Chain) %>% filter(Iteration < 500) %>%
-    transitions.renaming.2() %>% mutate(across(Count, factor))
+  read.table(x, sep = "\t") |>
+    row_to_names(row_number = 1) |>
+    mutate_if(is.character,as.numeric) |>
+    select(`c_import.count[1]`, `c_export.count[1]`) |>
+    mcmc() |> ggs() |> select(-Chain) |> filter(Iteration < 500) |>
+    transitions.renaming.2() |> mutate(across(Count, factor))
 }
 
 ################ Metadata files from filtered phylogenies ######################
@@ -192,7 +192,7 @@ imports <- data.frame(Alpha = alpha_dta_ive$value[alpha_dta_ive$Count=="Introduc
                       Gamma = gamma_dta_ive$value[gamma_dta_ive$Count=="Introductions"],
                       Lambda = lambda_dta_ive$value[lambda_dta_ive$Count=="Introductions"],
                       Mu = mu_dta_ive$value[mu_dta_ive$Count=="Introductions"],
-                      Delta = delta_dta_ive$value[delta_dta_ive$Count=="Introductions"]) %>%
+                      Delta = delta_dta_ive$value[delta_dta_ive$Count=="Introductions"]) |>
   gather(key = "VOC", value = "Introductions")
 
 impvocs <- ggplot(imports, aes(x = fct_relevel(VOC, "Alpha", "Gamma", "Lambda", "Mu"),
