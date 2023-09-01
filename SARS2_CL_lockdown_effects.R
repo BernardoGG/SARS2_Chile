@@ -151,7 +151,7 @@ CL_invasions_MobPassVar_between <- CL_invasions |>
     as.character(tail_comuna)]))
 
 
-### Models and statistical testing ####
+### Model setup ####
 ####### Model 1 #######
 ## LM of within-comuna movements, accounting for new cases
 m1_within <- glm(count ~ tail_lockdown_tier_recoded + total_cases,
@@ -224,7 +224,7 @@ m5_between_pred <- predict(m5_between)
 ####### Model 6 #######
 ## Negative binomial GLM of within-comuna movements, accounting for new cases and date
 m6_within <- glm.nb(count ~ tail_lockdown_tier_recoded + total_cases + MobPass,
-                    data = CL_invasions_MobPassVar_between, maxit = 1000)
+                    data = CL_invasions_MobPassVar_within, maxit = 1000)
 # Observed vs predicted values of cross-comuna movements
 m6_within_pred <- predict(m6_within)
 
@@ -235,8 +235,8 @@ m6_between <- glm.nb(count ~ tail_lockdown_tier_recoded + total_cases + MobPass,
 m6_between_pred <- predict(m6_between)
 
 
-### Model test and comparisons
-## Within comunas
+### Model test and comparisons ####
+####### Within comunas #######
 summary(m1_within)
 summary(m2_within)
 summary(m3_within)
@@ -247,7 +247,7 @@ summary(m6_within)
 # Compare models under different distn families
 compareGLM(m1_within, m2_within, m3_within, m4_within, m5_within, m6_within)
 
-## Between comunas
+####### Between comunas #######
 summary(m1_between)
 summary(m2_between)
 summary(m3_between)
@@ -258,6 +258,7 @@ summary(m6_between)
 # Compare models under different distn families
 compareGLM(m1_between, m2_between, m3_between, m4_between, m5_between, m6_between)
 
+####### Model tests #######
 ## LRT between Poisson and NB models to test goodness of fit based on dispersion
 ## parameter
 pchisq(2 * (logLik(m3_within) - logLik(m2_within)), df = 1, lower.tail = FALSE)
@@ -267,15 +268,14 @@ pchisq(2 * (logLik(m6_within) - logLik(m5_within)), df = 1, lower.tail = FALSE)
 pchisq(2 * (logLik(m6_between) - logLik(m5_between)), df = 1, lower.tail = FALSE)
 
 (est_within <- cbind(Estimate = coef(m3_within), confint(m3_within)))
-exp(est_within)
 (est_between <- cbind(Estimate = coef(m3_between), confint(m3_between)))
+exp(est_within)
 exp(est_between)
 
 (est_within <- cbind(Estimate = coef(m6_within), confint(m6_within)))
-exp(est_within)
 (est_between <- cbind(Estimate = coef(m6_between), confint(m6_between)))
+exp(est_within)
 exp(est_between)
-
 
 ## Plot deviance residuals against predicted values to evaluate model fit
 # NOTE: Dev. resid. expected between -2 and 2, tighter values show better model
@@ -393,7 +393,61 @@ new_m3_between <-
 new_m3_between$phat <- predict(m3_between, new_m3_between, type = "response")
 new_m3_between
 
+## Plot predicted viral movement estimates over the range of possible new cases
+## by lockdown tier
+new_m3_within_plot <- data.frame(
+  total_cases = rep(seq(from = min(CL_invasions_model_within$total_cases),
+                        to = max(CL_invasions_model_within$total_cases),
+                        length.out = 100), 3),
+  tail_lockdown_tier_recoded = factor(rep(1:3, each = 100),
+                                          levels = 1:3,
+                                          labels = levels(
+                       CL_invasions_model_within$tail_lockdown_tier_recoded)))
 
+new_m3_within_plot <- cbind(new_m3_within_plot,
+                            predict(m3_within, new_m3_within_plot, type = "link",
+                              se.fit = TRUE))
+
+new_m3_within_plot <- within(new_m3_within_plot, {
+  count = exp(fit)
+  LL <- exp(fit - 1.96*se.fit)
+  UL <- exp(fit + 1.96*se.fit)
+})
+
+new_m3_between_plot <- data.frame(
+  total_cases = rep(seq(from = min(CL_invasions_model_between$total_cases),
+                        to = max(CL_invasions_model_between$total_cases),
+                        length.out = 100), 3),
+  tail_lockdown_tier_recoded = factor(rep(1:3, each = 100),
+                                          levels = 1:3,
+                                          labels = levels(
+                       CL_invasions_model_between$tail_lockdown_tier_recoded)))
+
+new_m3_between_plot <- cbind(new_m3_between_plot,
+                            predict(m3_between, new_m3_between_plot, type = "link",
+                              se.fit = TRUE))
+
+new_m3_between_plot <- within(new_m3_between_plot, {
+  count = exp(fit)
+  LL <- exp(fit - 1.96*se.fit)
+  UL <- exp(fit + 1.96*se.fit)
+})
+
+# Plots
+ggplot(new_m3_within_plot, aes(total_cases, count)) +
+  geom_ribbon(aes(ymin = LL, ymax = UL, fill = tail_lockdown_tier_recoded),
+              alpha = .25) +
+  geom_line(aes(colour = tail_lockdown_tier_recoded), size = 2) +
+  labs(x = "Total cases per comuna", y = "Predicted viral movements")
+
+ggplot(new_m3_between_plot, aes(total_cases, count)) +
+  geom_ribbon(aes(ymin = LL, ymax = UL, fill = tail_lockdown_tier_recoded),
+              alpha = .25) +
+  geom_line(aes(colour = tail_lockdown_tier_recoded), size = 2) +
+  labs(x = "Total cases per comuna", y = "Predicted viral movements")
+
+
+### Model setup - within viral movements as branching events ####
 ## Estimate frequency of branching events under different lockdown tiers
 # Counts of unique occurrences of comunas as 'head' nodes
 # Corresponds to all branching event taking place per comuna
@@ -580,18 +634,18 @@ left_join(
 CL_invasions_branching <- left_join(
   left_join(
     branching_full_ld |> rename(`Full lockdown` = branching) |>
-      select(head_comuna, `Full lockdown`),
+      dplyr::select(head_comuna, `Full lockdown`),
     branching_weekend_ld |> rename(`Weekend lockdown` = branching) |>
-      select(head_comuna, `Weekend lockdown`)
+      dplyr::select(head_comuna, `Weekend lockdown`)
   ),
   branching_no_ld |> rename(`No lockdown` = branching) |>
-    select(head_comuna, `No lockdown`)
+    dplyr::select(head_comuna, `No lockdown`)
 ) |>
   pivot_longer(
     !head_comuna, names_to = "lockdown_tier", values_to = "branching_count"
   ) |>
   left_join(CL_invasions |>
-              select(head_comuna, head_lockdown_tier_recoded, head_date_new_cases) |>
+              dplyr::select(head_comuna, head_lockdown_tier_recoded, head_date_new_cases) |>
               group_by(head_comuna, head_lockdown_tier_recoded) |>
               summarise(total_cases = sum(head_date_new_cases)),
             by = c("head_comuna" = "head_comuna",
