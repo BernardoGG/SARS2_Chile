@@ -244,9 +244,6 @@ summary(m4_within)
 summary(m5_within)
 summary(m6_within)
 
-# Compare models under different distn families
-compareGLM(m1_within, m2_within, m3_within, m4_within, m5_within, m6_within)
-
 ####### Between comunas #######
 summary(m1_between)
 summary(m2_between)
@@ -255,10 +252,16 @@ summary(m4_between)
 summary(m5_between)
 summary(m6_between)
 
-# Compare models under different distn families
-compareGLM(m1_between, m2_between, m3_between, m4_between, m5_between, m6_between)
-
 ####### Model tests #######
+# Compare models with and without Mobility Pass variable
+compareGLM(m1_within, m4_within)
+compareGLM(m2_within, m5_within)
+compareGLM(m3_within, m6_within)
+
+compareGLM(m1_between, m4_between)
+compareGLM(m2_between, m5_between)
+compareGLM(m3_between, m6_between)
+
 ## LRT between Poisson and NB models to test goodness of fit based on dispersion
 ## parameter
 pchisq(2 * (logLik(m3_within) - logLik(m2_within)), df = 1, lower.tail = FALSE)
