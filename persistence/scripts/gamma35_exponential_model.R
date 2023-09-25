@@ -86,9 +86,17 @@ slope_full <- coef(g35_expfit_full)[2]
 slope_wknd <- coef(g35_expfit_wknd)[2]
 slope_no <- coef(g35_expfit_no)[2]
 
-rate_full <- exp(slope_full) -1
-rate_wknd <- exp(slope_wknd) -1
-rate_no <- exp(slope_no) -1
+rate_full <- exp(slope_full) - 1
+rate_wknd <- exp(slope_wknd) - 1
+rate_no <- exp(slope_no) - 1
+
+slope_hpd_full <- coef(g35_expfit_hpd_full)[2]
+slope_hpd_wknd <- coef(g35_expfit_hpd_wknd)[2]
+slope_hpd_no <- coef(g35_expfit_hpd_no)[2]
+
+rate_hpd_full <- exp(slope_hpd_full) - 1
+rate_hpd_wknd <- exp(slope_hpd_wknd) - 1
+rate_hpd_no <- exp(slope_hpd_no) - 1
 
 
 ## Plot Gamma TL 35 proportion of lineages over time per lockdown tier
@@ -173,3 +181,7 @@ g35_fitted_no <- data.frame(time = fitted_time_no,
      xlim(0,15) + labs(x = "Weeks after lockdown implementation") +
      theme_minimal() + theme(axis.title.y = element_blank()))
 
+ggsave("../Figures/Gamma_35_persitence_decay.pdf", dpi = 300,
+       height = 10, width = 7.15, bg = "white")
+ggsave("../Figures/Gamma_35_persitence_decay.png", dpi = 300,
+       height = 10, width = 7.15, bg = "white")
