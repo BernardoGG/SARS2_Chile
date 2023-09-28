@@ -285,15 +285,20 @@ ggsave("Figures/CL_lockdown_tiers.pdf", dpi = 300,
 
 
 # Plot new cases in the same style as the lockdown tier plot
-lockdowns |>
-  filter(is.na(casos_nuevos) == FALSE) |>
+lockdowns_min <- lockdowns |>
+  filter(is.na(casos_nuevos) == FALSE)
+
+lockdowns_min |>
   mutate(casos_nuevos = na.locf(casos_nuevos)) |>
   ggplot(aes(x = as.factor(Fecha), y = comuna_residencia, fill = log(casos_nuevos))) +
   geom_tile() +
   viridis::scale_fill_viridis() +
-  labs(x = "Date", y = "Comuna", fill = "New cases (log10)") +
-  theme_void() +
-  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+  labs(x = "", y = "Comuna", fill = "New cases (log10)") +
+  scale_x_discrete(breaks = c(unique(lockdowns_min$Fecha)[
+    seq(10, length(unique(lockdowns_min$Fecha))-10, 10)]) |> as.factor()) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.6),
+        axis.text.y = element_blank(), axis.ticks.y = element_blank(),
         strip.text.y = element_text(angle = 0, hjust = 0, size = 4),
         legend.position = "top") +
   facet_grid(rows = vars(region_residencia), space = "free", scales = "free_y")
