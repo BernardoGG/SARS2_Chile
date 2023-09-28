@@ -302,3 +302,6 @@ lockdowns_min |>
         strip.text.y = element_text(angle = 0, hjust = 0, size = 4),
         legend.position = "top") +
   facet_grid(rows = vars(region_residencia), space = "free", scales = "free_y")
+
+ggsave("Figures/CL_new_cases_log.pdf", dpi = 300,
+       height = 7.15, width = 10, bg = "white") # Region letters to be edited
