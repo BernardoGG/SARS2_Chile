@@ -579,6 +579,17 @@ n <- min(lag$selection)
 lmtest::grangertest(all_imports ~ l_EII, order = n, data = alpha_all)
 lmtest::grangertest(l_EII ~ all_imports, order = n, data = alpha_all)
 
+# Global EII
+lag <- alpha_all |>
+  select(EII, l_EII, all_imports) |>
+  mutate(EII = EII + l_EII) |>
+  select(EII, all_imports) |>
+  vars::VARselect(lag.max = 12, type = "both")
+n <- min(lag$selection)
+
+lmtest::grangertest(all_imports ~ all_EII, order = n, data = alpha_all |>
+                      mutate(all_EII = EII + l_EII))
+
 ### Florida (US), all imports
 lag <- alpha_florida |>
   select(EII, all_imports) |>
@@ -738,6 +749,17 @@ n <- min(lag$selection)
 
 lmtest::grangertest(all_imports ~ l_EII, order = n, data = gamma_all)
 lmtest::grangertest(l_EII ~ all_imports, order = n, data = gamma_all)
+
+# Global EII
+lag <- gamma_all |>
+  select(EII, l_EII, all_imports) |>
+  mutate(EII = EII + l_EII) |>
+  select(EII, all_imports) |>
+  vars::VARselect(lag.max = 12, type = "both")
+n <- min(lag$selection)
+
+lmtest::grangertest(all_imports ~ all_EII, order = n, data = gamma_all |>
+                      mutate(all_EII = EII + l_EII))
 
 ### Rio de Janeiro (BR), all imports
 lag <- gamma_rio |>
@@ -930,6 +952,17 @@ n <- min(lag$selection)
 lmtest::grangertest(all_imports ~ l_EII, order = n, data = lambda_all)
 lmtest::grangertest(l_EII ~ all_imports, order = n, data = lambda_all)
 
+# Global EII
+lag <- lambda_all |>
+  select(EII, l_EII, all_imports) |>
+  mutate(EII = EII + l_EII) |>
+  select(EII, all_imports) |>
+  vars::VARselect(lag.max = 12, type = "both")
+n <- min(lag$selection)
+
+lmtest::grangertest(all_imports ~ all_EII, order = n, data = lambda_all |>
+                      mutate(all_EII = EII + l_EII))
+
 ### Argentina, all imports
 lag <- lambda_arg |>
   select(EII, all_imports) |>
@@ -1051,6 +1084,17 @@ n <- min(lag$selection)
 
 lmtest::grangertest(all_imports ~ l_EII, order = n, data = mu_all)
 lmtest::grangertest(l_EII ~ all_imports, order = n, data = mu_all)
+
+# Global EII
+lag <- mu_all |>
+  select(EII, l_EII, all_imports) |>
+  mutate(EII = EII + l_EII) |>
+  select(EII, all_imports) |>
+  vars::VARselect(lag.max = 12, type = "both")
+n <- min(lag$selection)
+
+lmtest::grangertest(all_imports ~ all_EII, order = n, data = mu_all |>
+                      mutate(all_EII = EII + l_EII))
 
 ### Colombia, all imports
 lag <- mu_col |>
@@ -1204,6 +1248,17 @@ n <- min(lag$selection)
 
 lmtest::grangertest(all_imports ~ l_EII, order = n, data = delta_all)
 lmtest::grangertest(l_EII ~ all_imports, order = n, data = delta_all)
+
+# Global EII
+lag <- delta_all |>
+  select(EII, l_EII, all_imports) |>
+  mutate(EII = EII + l_EII) |>
+  select(EII, all_imports) |>
+  vars::VARselect(lag.max = 12, type = "both")
+n <- min(lag$selection)
+
+lmtest::grangertest(all_imports ~ all_EII, order = n, data = delta_all |>
+                      mutate(all_EII = EII + l_EII))
 
 ### Sao Paulo (BRA), all imports
 lag <- delta_sp |>
@@ -1436,10 +1491,13 @@ sources <- unique(c(unique(sources_alpha), unique(sources_gamma),
 countries <- unique(c(unique(alpha_comp$country), unique(gamma_comp$country), 
                       unique(lambda_comp$country), unique(mu_comp$country), 
                       unique(delta_comp$country)))
-s_palette <- c(NatParksPalettes$BryceCanyon[1] |> unlist(), "lightgrey")
+s_palette <- c(wes_palette("Chevalier1", 7, type = "continuous") |> unlist(),
+               "lightgrey")
 names(s_palette) <- c(countries, "Other")
 s_palette_2 <- c(s_palette,
-                 latam_palette[names(latam_palette) %in% unique(neighbours$source)])
+                 latam_palette[names(latam_palette) %in%
+                                 unique(neighbours$source)])
+s_palette_2[4] <- "#DFC87C"
 
 # Alpha
 a <- SARS2_CL_epiweeks |>
@@ -1800,9 +1858,13 @@ a <- ggplot() +
     names(s_palette_2) %in% alpha_comp$Source[alpha_comp$Source != "Other"]]) +
   geom_line(data = alpha_comp,
             aes(x = week, y = l_EII, color = country),
-            linetype = "dashed") +
+            linetype = "dotted") +
   geom_point(data = alpha_comp,
-             aes(x = week, y = l_EII, color = country)) +
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  annotate(geom = "text", size = 3, colour = s_palette_2[1],
+           x = alpha_comp$week[alpha_comp$EII == max(alpha_comp$EII)] - 20,
+           y = alpha_comp$EII[alpha_comp$EII == max(alpha_comp$EII)] - 1,
+           label = "Florida") +
   scale_y_continuous(name = element_blank()) +
   scale_x_date(breaks = "1 month", labels = NULL) +
   labs(title = "Alpha", x = "", color = NULL) + theme_minimal() +
@@ -1818,9 +1880,13 @@ b <- ggplot() +
     names(s_palette_2) %in% gamma_comp$Source[gamma_comp$Source != "Other"]]) +
   geom_line(data = gamma_comp,
             aes(x = week, y = l_EII, color = country),
-            linetype = "dashed") +
+            linetype = "dotted") +
   geom_point(data = gamma_comp,
-             aes(x = week, y = l_EII, color = country)) +
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  annotate(geom = "text", size = 3, colour = s_palette_2[4],
+           x = gamma_comp$week[gamma_comp$EII == max(gamma_comp$EII)] - 32,
+           y = gamma_comp$EII[gamma_comp$EII == max(gamma_comp$EII)],
+           label = "Sao Paulo") +
   scale_y_continuous(name = element_blank()) +
   scale_x_date(breaks = "1 month", labels = NULL) +
   labs(title = "Gamma", x = "", color = NULL) + theme_minimal() +
@@ -1836,9 +1902,9 @@ c <- ggplot() +
     names(s_palette_2) %in% lambda_comp$Source[lambda_comp$Source != "Other"]]) +
   geom_line(data = lambda_comp,
             aes(x = week, y = l_EII, color = country),
-            linetype = "dashed") +
+            linetype = "dotted") +
   geom_point(data = lambda_comp,
-             aes(x = week, y = l_EII, color = country)) +
+             aes(x = week, y = l_EII, color = country), shape = 15) +
   scale_y_continuous(name = "EII by location") +
   scale_x_date(breaks = "1 month", labels = NULL) +
   labs(title = "Lambda", x = "", color = NULL) + theme_minimal() +
@@ -1855,9 +1921,9 @@ d <- ggplot() +
     names(s_palette_2) %in% mu_comp$Source[mu_comp$Source != "Other"]]) +
   geom_line(data = mu_comp,
             aes(x = week, y = l_EII, color = country),
-            linetype = "dashed") +
+            linetype = "dotted") +
   geom_point(data = mu_comp,
-             aes(x = week, y = l_EII, color = country)) +
+             aes(x = week, y = l_EII, color = country), shape = 15) +
   scale_y_continuous(name = element_blank()) +
   scale_x_date(breaks = "1 month", labels = NULL) +
   labs(title = "Mu", x = "", color = NULL) + theme_minimal() +
@@ -1873,9 +1939,23 @@ e <- ggplot() +
     names(s_palette_2) %in% delta_comp$Source[delta_comp$Source != "Other"]]) +
   geom_line(data = delta_comp,
             aes(x = week, y = l_EII, color = country),
-            linetype = "dashed") +
+            linetype = "dotted") +
   geom_point(data = delta_comp,
-             aes(x = week, y = l_EII, color = country)) +
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  annotate(geom = "text", size = 3, colour = s_palette_2[1],
+           x = delta_comp$week[delta_comp$EII == max(delta_comp$EII)] - 30,
+           y = delta_comp$EII[delta_comp$EII == max(delta_comp$EII)] - 2,
+           label = "Florida") +
+  annotate(geom = "text", size = 3, colour = s_palette_2[1],
+           x = delta_comp$week[delta_comp$EII == delta_comp |>
+                                 filter(source != "Florida" &
+                                          Source == "USA") |>
+                                 select(EII) |> max()] - 5,
+           y = delta_comp$EII[delta_comp$EII == delta_comp |>
+                                 filter(source != "Florida" &
+                                          Source == "USA") |>
+                                 select(EII) |> max()] + 1.2,
+           label = "Texas") +
   scale_y_continuous(name = element_blank()) +
   scale_x_date(breaks = "1 month", date_labels = "%b %Y") +
   labs(title = "Delta", x = "", color = NULL) + theme_minimal() +
@@ -1890,6 +1970,120 @@ ggsave("Figures/all_EIIs_plot.png", height = 10,
 ggsave("Figures/all_EIIs_plot.pdf", height = 10,
        width = 7, dpi = 300, units = "in")
 
+
+## VOC Global EIIs
+v <- ggplot() +
+  geom_line(data = alpha_comp,
+            aes(x = week,y = EII, group = source, color = Source)) +
+  geom_point(data = alpha_comp,
+             aes(x = week, y = EII, group = source, color = Source)) +
+  geom_line(data = alpha_comp,
+            aes(x = week, y = l_EII, color = country),
+            linetype = "dotted") +
+  geom_point(data = alpha_comp,
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  scale_colour_manual(values = s_palette_2) +
+  geom_line(data = alpha_all,
+            aes(x = week, y = (EII + l_EII) / 2), alpha = 0.2, linewidth = 2,
+            color = "darkred") +
+  scale_x_date(breaks = "1 month", labels = NULL) +
+  scale_y_continuous(name = "",
+                     sec.axis = sec_axis(trans = ~.*2,
+                                         name = "")) +
+  theme(legend.position = "top") +
+  labs(title = "Alpha", x = "", color = NULL) + theme_minimal()
+
+w <- ggplot() +
+  geom_line(data = gamma_comp,
+            aes(x = week,y = EII, group = source, color = Source)) +
+  geom_point(data = gamma_comp,
+             aes(x = week, y = EII, group = source, color = Source)) +
+  geom_line(data = gamma_comp,
+            aes(x = week, y = l_EII, color = country),
+            linetype = "dotted") +
+  geom_point(data = gamma_comp,
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  scale_colour_manual(values = s_palette_2) +
+  geom_line(data = gamma_all,
+            aes(x = week, y = (EII + l_EII)), alpha = 0.2, linewidth = 2,
+            color = "darkred") +
+  scale_x_date(breaks = "1 month", labels = NULL) +
+  scale_y_continuous(name = "",
+                     sec.axis = sec_axis(trans = ~.*1,
+                                         name = "")) +
+  theme(legend.position = "top") +
+  labs(title = "Gamma", x = "", color = NULL) + theme_minimal()
+
+x <- ggplot() +
+  geom_line(data = lambda_comp,
+            aes(x = week,y = EII, group = source, color = Source)) +
+  geom_point(data = lambda_comp,
+             aes(x = week, y = EII, group = source, color = Source)) +
+  geom_line(data = lambda_comp,
+            aes(x = week, y = l_EII, color = country),
+            linetype = "dotted") +
+  geom_point(data = lambda_comp,
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  scale_colour_manual(values = s_palette_2) +
+  geom_line(data = lambda_all,
+            aes(x = week, y = (EII + l_EII)), alpha = 0.2, linewidth = 2,
+            color = "darkred") +
+  scale_x_date(breaks = "1 month", labels = NULL) +
+  scale_y_continuous(name = "EII by location",
+                     sec.axis = sec_axis(trans = ~.*1,
+                                         name = "EII global (faded red)")) +
+  theme(legend.position = "top") +
+  labs(title = "Lambda", x = "", color = NULL) + theme_minimal()
+
+y <- ggplot() +
+  geom_line(data = mu_comp,
+            aes(x = week,y = EII, group = source, color = Source)) +
+  geom_point(data = mu_comp,
+             aes(x = week, y = EII, group = source, color = Source)) +
+  geom_line(data = mu_comp,
+            aes(x = week, y = l_EII, color = country),
+            linetype = "dotted") +
+  geom_point(data = mu_comp,
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  scale_colour_manual(values = s_palette_2) +
+  geom_line(data = mu_all,
+            aes(x = week, y = (EII + l_EII)), alpha = 0.2, linewidth = 2,
+            color = "darkred") +
+  scale_x_date(breaks = "1 month", labels = NULL) +
+  scale_y_continuous(name = "",
+                     sec.axis = sec_axis(trans = ~.*1,
+                                         name = "")) +
+  theme(legend.position = "top") +
+  labs(title = "Mu", x = "", color = NULL) + theme_minimal()
+
+z <- ggplot() +
+  geom_line(data = delta_comp,
+            aes(x = week,y = EII, group = source, color = Source)) +
+  geom_point(data = delta_comp,
+             aes(x = week, y = EII, group = source, color = Source)) +
+  geom_line(data = delta_comp,
+            aes(x = week, y = l_EII, color = country),
+            linetype = "dotted") +
+  geom_point(data = delta_comp,
+             aes(x = week, y = l_EII, color = country), shape = 15) +
+  scale_colour_manual(values = s_palette_2) +
+  geom_line(data = delta_all,
+            aes(x = week, y = (EII + l_EII) / 2), alpha = 0.2, linewidth = 2,
+            color = "darkred") +
+  scale_y_continuous(name = "",
+                     sec.axis = sec_axis(trans = ~.*2,
+                                         name = "")) +
+  scale_x_date(breaks = "1 month", date_labels = "%b %Y") +
+  theme(legend.position = "top") +
+  labs(title = "Delta", x = "", color = NULL) + theme_minimal()
+
+Supp_fig <- v / w / x / y / z
+ggsave("Figures/global_EIIs_plot.png", height = 10,
+       width = 7, dpi = 300, units = "in")
+
+ggsave("Figures/global_EIIs_plot.pdf", height = 10,
+       width = 7, dpi = 300, units = "in")
+
 ########################### Mixed effects model ################################
 anova(lm(alpha_all$all_imports ~ alpha_all$EII))
 anova(lm(alpha_florida$all_imports ~ alpha_florida$EII))
@@ -1902,145 +2096,4 @@ anova(lm(lambda_per$all_imports ~ lambda_per$EII))
 
 plot(lambda_per$all_imports, lambda_per$EII)
 hist(lambda_per$EII)
-
-################################# Sandbox ######################################
-
-ggplot(SARS2_CL_epiweeks) +
-  geom_line(aes(x = epiweek_start, y = airport_seqs), color = "red") +
-  geom_col(aes(x = epiweek_start, y = all_airport_tmrca), fill = "blue") +
-  theme_minimal() +
-  xlim(min(CL_TLs$tmrca_date), max(CL_TLs$last_seen_date)) +
-  labs(x = "Epidemiological week",
-       y = "Count")
-
-ggplot(SARS2_CL_epiweeks) +
-  geom_line(aes(x = epiweek_start,
-                y = all_airport_tmrca),
-            color = "darkred",
-            linewidth = 1.5) +
-  geom_line(aes(x = epiweek_start,
-                y = all_imports),
-            color = "darkgreen",
-            linewidth = 1.5) +
-  theme_minimal()
-
-
-ggplot(SARS2_CL_epiweeks) +
-  geom_col(aes(x = epiweek_start, y = all_airport_tmrca/all_imports)) +
-  theme_minimal()
-
-ggplot(SARS2_CL_epiweeks) +
-  geom_col(aes(x = epiweek_start, y = all_airport_observed/airport_seqs))
-
-
-
-
-a <- SARS2_CL_epiweeks |>
-  select(epiweek_start, airport_gamma, all_gamma) |>
-  pivot_longer(!epiweek_start, names_to = "Importation_route",
-               values_to = "Count") |>
-  as.data.frame()
-
-imp_palette <- (NatParksPalettes$KingsCanyon[1] |> unlist())[3:4]
-names(imp_palette) <- unique(a$Importation_route)
-
-y <- ggplot(a, aes(x = epiweek_start, y = Count, fill = Importation_route)) +
-  geom_col(position = "dodge") +
-  scale_fill_manual(values = imp_palette) +
-  labs(x = "", y = "New introductions (weekly)") + theme_minimal()
-
-
-b <- weekly_voccasecounts$Gamma.prop[
-  weekly_voccasecounts$location %in% unique(sources_gamma) |
-    weekly_voccasecounts$location == "Argentina"]
-
-z <- weekly_totalcasecounts |>
-  filter(location %in% unique(sources_gamma) |
-           location == "Argentina") |>
-  mutate(Source = ifelse(location == "Rio de Janeiro" |
-                           location == "Santa Catarina" |
-                           location == "Sao Paulo",
-                         "Brazil", location)) |>
-  mutate(Transparency = ifelse(location == "Argentina", "Yes", "No")) |>
-  ggplot() +
-  geom_line(aes(x = week,
-                y = new_cases * b,
-                group = location,
-                color = Source,
-                alpha = Transparency),
-            linewidth = 1) +
-  scale_alpha_discrete(range = c(0.2, 1), guide = FALSE) +
-  labs(x = "", y = "Estimated new Gamma cases") + theme_minimal()
-
-y / z
-
-
-
-y <- ggplot() +
-  geom_line(data = gamma_comp_neigh,
-            aes(x = week,y = EII, group = source, color = Source)) +
-  geom_point(data = gamma_comp_neigh,
-             aes(x = week, y = EII, group = source, color = Source)) +
-  scale_y_continuous(name = "EII by location") +
-  theme(legend.position = "top") +
-  labs(title = "Gamma (with neighbouring countries)", x = "") + theme_minimal()
-
-b <- weekly_voccasecounts$Gamma.prop[
-  weekly_voccasecounts$location %in% unique(sources_gamma) |
-    weekly_voccasecounts$location == "Argentina" |
-    weekly_voccasecounts$location == "Bolivia"]
-
-z <- weekly_totalcasecounts |>
-  filter(location %in% unique(sources_gamma) |
-           location == "Argentina" |
-           location == "Bolivia") |>
-  mutate(Source = ifelse(location == "Rio de Janeiro" |
-                           location == "Santa Catarina" |
-                           location == "Sao Paulo",
-                         "Brazil", location)) |>
-  ggplot(aes(x = week,
-             y = new_cases * b,
-             group = location, color = Source)) +
-  geom_line(linewidth = 1) +
-  labs(x = "", y = "Estimated new Gamma cases") + theme_minimal()
-
-y / z
-
-
-
-## Full Alpha, airport imports
-lag <- alpha_all |>
-  select(EII, airport_imports) |>
-  vars::VARselect(lag.max = 12, type = "both")
-n <- min(lag$selection)
-
-lmtest::grangertest(airport_imports ~ EII, order = n, data = alpha_all)
-lmtest::grangertest(EII ~ airport_imports, order = n, data = alpha_all)
-
-## Florida (US), airport imports
-lag <- alpha_florida |>
-  select(EII, airport_imports) |>
-  vars::VARselect(lag.max = 12, type = "both")
-n <- min(lag$selection)
-
-lmtest::grangertest(airport_imports ~ EII, order = n, data = alpha_florida)
-lmtest::grangertest(EII ~ airport_imports, order = n, data = alpha_florida)
-
-## France, airport imports
-lag <- alpha_france |>
-  select(EII, airport_imports) |>
-  vars::VARselect(lag.max = 12, type = "both")
-n <- min(lag$selection)
-
-lmtest::grangertest(airport_imports ~ EII, order = n, data = alpha_france)
-lmtest::grangertest(EII ~ airport_imports, order = n, data = alpha_france)
-
-## Spain, airport imports
-lag <- alpha_spain |>
-  select(EII, airport_imports) |>
-  vars::VARselect(lag.max = 12, type = "both")
-n <- min(lag$selection)
-
-lmtest::grangertest(airport_imports ~ EII, order = n, data = alpha_spain)
-lmtest::grangertest(EII ~ airport_imports, order = n, data = alpha_spain)
 
