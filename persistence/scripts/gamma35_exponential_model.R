@@ -10,7 +10,7 @@ library(tidyr)
 library(coda)
 library(khroma)
 
-## Import Gamma TL 35 summary file
+###### Import Gamma TL 35 summary file ####
 gamma35_persistence <- read.csv("persistence/summarized_outputs/Gamma_TL_35/Gamma_TL_35_summarized.tsv",
                                 sep = "\t") |>
   group_by(lockdown_tier, diff_weeks) |>
@@ -185,3 +185,44 @@ ggsave("../Figures/Gamma_35_persitence_decay.pdf", dpi = 300,
        height = 10, width = 7.15, bg = "white")
 ggsave("../Figures/Gamma_35_persitence_decay.png", dpi = 300,
        height = 10, width = 7.15, bg = "white")
+
+
+### Stan model
+model <- stan_model("persistence/scripts/gamma35_exponential_model_bayesian_2.stan")
+stan_data <- list(
+  n_obs = nrow(gamma35_persistence_full),
+  weeks = gamma35_persistence_full$diff_weeks,
+  prop_lins = gamma35_persistence_full$propPersistentFromUnique_median
+)
+
+model <- stan_model("persistence/scripts/gamma35_exponential_model_bayesian.stan")
+
+stan_data <- list(
+  n_obs = nrow(gamma35_persistence_full),
+  weeks = gamma35_persistence_full$diff_weeks,
+  all_lins = (gamma35_persistence_full$persistentsFromUnique_median +
+    gamma35_persistence_full$introductionsFromUnique_median)*2,
+  pers_lins = (gamma35_persistence_full$persistentsFromUnique_median)*2
+)
+
+
+
+fit <- sampling(model, stan_data, iter = 2000, chains = 1)
+summary(fit)
+
+# sanity checks
+post_lambda <- quantile(rstan::extract(fit, "lambda")[[1]], probs = c(0.025, 0.5, 0.975))
+post_theta <- quantile(rstan::extract(fit, "theta")[[1]], prob =  0.5)
+
+weeks_sim <- seq(1, nrow(gamma35_persistence_full), by = 0.1)
+weeks_sim <- weeks_sim |>
+  as.data.frame() |>
+  mutate(prop_pers_sim_2.5 = post_theta*exp(-post_lambda[1]*weeks_sim),
+         prop_pers_sim_50 = post_theta*exp(-post_lambda[2]*weeks_sim),
+         prop_pers_sim_97.5 = post_theta*exp(-post_lambda[3]*weeks_sim))
+
+ggplot(weeks_sim) + geom_line(aes(x = weeks_sim, y = prop_pers_sim_50)) +
+  geom_ribbon(aes(x = weeks_sim, ymax = prop_pers_sim_97.5, ymin = prop_pers_sim_2.5),
+              alpha = 0.1) +
+  geom_line(data = gamma35_persistence_full, aes(x = diff_weeks, y = propPersistentFromUnique_median),
+            colour = "red")
