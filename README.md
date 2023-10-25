@@ -1,7 +1,7 @@
 # Routes of importation and spatial dynamics of SARS-CoV-2 variants during localised interventions in Chile
 Interdisciplinary analysis of the spatial dynamics of SARS-CoV-2 variants in Chile.
 
-Bernardo Gutierrez<sup>1,2,*,†</sup>, Joseph L.-H. Tsui<sup>1,*</sup>, Giulia Pullano<sup>3,4,*</sup>, Mattia Mazzoli<sup>4,5,*</sup>, Karthik Gangavarapu<sup>6,*</sup>, Rhys P.D. Inward<sup>1</sup>, Sumali Bajaj<sup>1</sup>, Rosario Evans Pena<sup>1</sup>, Simon Busch-Moreno<sup>1</sup>, Marc A. Suchard<sup>6,7,8</sup>, Oliver G. Pybus<sup>1,9,10</sup>, Alejandra Dunner<sup>11</sup>, Rodrigo Puentes<sup>11</sup>, Salvador Ayala<sup>11</sup>, Jorge Fernandez<sup>11</sup>, Rafael Araos<sup>12</sup>, Leo Ferres<sup>5,13,14,$,†</sup>, Vittoria Colizza<sup>4,15,$,†</sup>, Moritz U.G. Kraemer<sup>1,9,$,†</sup>
+Bernardo Gutierrez<sup>1,2,\*,†</sup>, Joseph L.-H. Tsui<sup>1,\*</sup>, Giulia Pullano<sup>3,4,\*</sup>, Mattia Mazzoli<sup>4,5,\*</sup>, Karthik Gangavarapu<sup>6,\*</sup>, Rhys P.D. Inward<sup>1</sup>, Sumali Bajaj<sup>1</sup>, Rosario Evans Pena<sup>1</sup>, Simon Busch-Moreno<sup>1</sup>, Marc A. Suchard<sup>6,7,8</sup>, Oliver G. Pybus<sup>1,9,10</sup>, Alejandra Dunner<sup>11</sup>, Rodrigo Puentes<sup>11</sup>, Salvador Ayala<sup>11</sup>, Jorge Fernandez<sup>11</sup>, Rafael Araos<sup>12</sup>, Leo Ferres<sup>5,13,14,$,†</sup>, Vittoria Colizza<sup>4,15,$,†</sup>, Moritz U.G. Kraemer<sup>1,9,$,†</sup>
 
 <sup><sup>1</sup>Department of Biology, University of Oxford, Oxford, UK.
 <sup>2</sup>Colegio de Ciencias Biológicas y Ambientales, Universidad San Francisco de Quito USFQ, Quito, Ecuador.
