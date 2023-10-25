@@ -18,8 +18,8 @@ Bernardo Gutierrez<sup>1,2,\*,†</sup>, Joseph L.-H. Tsui<sup>1,\*</sup>, Giuli
 <sup>13</sup>Data Science Institute, Universidad del Desarrollo, Santiago, Chile.
 <sup>14</sup>Telefónica, Santiago, Chile.
 <sup>15</sup>Tokyo Tech World Research Hub Initiative, Institute of Innovative Research, Tokyo Institute of Technology, Tokyo, Japan.
-<sup>\*</sup>Contributed equally as first author
-<sup>$</sup>Contributed equally as senior authors
+<sup>\*</sup>Contributed equally as first authors.
+<sup>$</sup>Contributed equally as senior authors.
 <sup>†</sup>Correspondence should be addressed to bernardo.gutierrez@biology.ox.ac.uk, vittoria.colizza@inserm.fr, moritz.kraemer@biology.ox.ac.uk, lferres@udd.cl</sup>
 
 
