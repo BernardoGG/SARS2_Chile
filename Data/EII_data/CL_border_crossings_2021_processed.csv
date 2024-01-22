@@ -1,0 +1,85 @@
+source,date,traveler_volume,port_of_entry
+Argentina,2020-09-01,7857,airport
+Argentina,2020-10-01,0,airport
+Argentina,2020-11-01,4996,airport
+Argentina,2020-12-01,11373,airport
+Argentina,2021-01-01,9232,airport
+Argentina,2021-02-01,9556,airport
+Argentina,2021-03-01,8651,airport
+Argentina,2021-04-01,1383,airport
+Argentina,2021-05-01,1586,airport
+Argentina,2021-06-01,1238,airport
+Argentina,2021-07-01,0,airport
+Argentina,2021-08-01,1259,airport
+Argentina,2021-09-01,1604,airport
+Argentina,2021-10-01,7827,airport
+Argentina,2021-11-01,22578,airport
+Argentina,2021-12-01,35331,airport
+Bolivia,2020-09-01,126,airport
+Bolivia,2020-10-01,819,airport
+Bolivia,2020-11-01,1197,airport
+Bolivia,2020-12-01,2559,airport
+Bolivia,2021-01-01,1686,airport
+Bolivia,2021-02-01,1309,airport
+Bolivia,2021-03-01,1397,airport
+Bolivia,2021-04-01,319,airport
+Bolivia,2021-05-01,269,airport
+Bolivia,2021-06-01,361,airport
+Bolivia,2021-07-01,559,airport
+Bolivia,2021-08-01,846,airport
+Bolivia,2021-09-01,627,airport
+Bolivia,2021-10-01,1037,airport
+Bolivia,2021-11-01,1172,airport
+Bolivia,2021-12-01,2426,airport
+Peru,2020-09-01,0,airport
+Peru,2020-10-01,8405,airport
+Peru,2020-11-01,13502,airport
+Peru,2020-12-01,26740,airport
+Peru,2021-01-01,22763,airport
+Peru,2021-02-01,15369,airport
+Peru,2021-03-01,15530,airport
+Peru,2021-04-01,3483,airport
+Peru,2021-05-01,2383,airport
+Peru,2021-06-01,3831,airport
+Peru,2021-07-01,5793,airport
+Peru,2021-08-01,14719,airport
+Peru,2021-09-01,14342,airport
+Peru,2021-10-01,20275,airport
+Peru,2021-11-01,29976,airport
+Peru,2021-12-01,43773,airport
+Argentina,2021-01-01,37817,border crossing
+Argentina,2021-02-01,37210,border crossing
+Argentina,2021-03-01,29220,border crossing
+Argentina,2021-04-01,21407,border crossing
+Argentina,2021-05-01,32117,border crossing
+Argentina,2021-06-01,30257,border crossing
+Argentina,2021-07-01,35578,border crossing
+Argentina,2021-08-01,32938,border crossing
+Argentina,2021-09-01,39636,border crossing
+Argentina,2021-10-01,50683,border crossing
+Argentina,2021-11-01,52978,border crossing
+Argentina,2021-12-01,70802,border crossing
+Bolivia,2021-01-01,10763,border crossing
+Bolivia,2021-02-01,9508,border crossing
+Bolivia,2021-03-01,10845,border crossing
+Bolivia,2021-04-01,9319,border crossing
+Bolivia,2021-05-01,9809,border crossing
+Bolivia,2021-06-01,10141,border crossing
+Bolivia,2021-07-01,11167,border crossing
+Bolivia,2021-08-01,12820,border crossing
+Bolivia,2021-09-01,12770,border crossing
+Bolivia,2021-10-01,12945,border crossing
+Bolivia,2021-11-01,13092,border crossing
+Bolivia,2021-12-01,11355,border crossing
+Peru,2021-01-01,3221,border crossing
+Peru,2021-02-01,3249,border crossing
+Peru,2021-03-01,3670,border crossing
+Peru,2021-04-01,3412,border crossing
+Peru,2021-05-01,2777,border crossing
+Peru,2021-06-01,4206,border crossing
+Peru,2021-07-01,4117,border crossing
+Peru,2021-08-01,4366,border crossing
+Peru,2021-09-01,4444,border crossing
+Peru,2021-10-01,4837,border crossing
+Peru,2021-11-01,4713,border crossing
+Peru,2021-12-01,4654,border crossing

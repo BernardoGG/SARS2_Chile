@@ -1,0 +1,91 @@
+id,status,code,region,continent,name,LON,LAT,layer
+1,Member State,ARG,South America,Americas,Argentina,,,name_Argentina
+2,Member State,AUS,Australia and New Zealand,Oceania,Australia,,,name_Australia
+3,Member State,BOL,South America,Americas,Bolivia,,,name_Bolivia
+4,Member State,BRA,South America,Americas,Brazil,,,name_Brazil
+5,Member State,CAN,Northern America,Americas,Canada,,,name_Canada
+6,Member State,CHL,South America,Americas,Chile,,,name_Chile
+7,Member State,CHN,Eastern Asia,Asia,China,,,name_China
+8,Member State,COL,South America,Americas,Colombia,,,name_Colombia
+9,Member State,CRI,Central America,Americas,Costa Rica,,,name_Costa Rica
+10,Member State,CUB,Caribbean,Americas,Cuba,,,name_Cuba
+11,Member State,DOM,Caribbean,Americas,Dominican Republic,,,name_Dominican Republic
+12,Member State,ECU,South America,Americas,Ecuador,,,name_Ecuador
+13,Member State,FRA,Western Europe,Europe,France,,,name_France
+14,FR Territory,FRA,Polynesia,Oceania,French Polynesia,,,name_French Polynesia
+15,Member State,DEU,Western Europe,Europe,Germany,,,name_Germany
+16,Member State,HTI,Caribbean,Americas,Haiti,,,name_Haiti
+17,Member State,IND,Southern Asia,Asia,India,,,name_India
+18,Member State,ISR,Western Asia,Asia,Israel,,,name_Israel
+19,Member State,ITA,Southern Europe,Europe,Italy,,,name_Italy
+20,Member State,MEX,Central America,Americas,Mexico,,,name_Mexico
+21,Member State,NLD,Western Europe,Europe,Netherlands,,,name_Netherlands
+22,Member State,NZL,Australia and New Zealand,Oceania,New Zealand,,,name_New Zealand
+23,Member State,PAN,Central America,Americas,Panama,,,name_Panama
+24,Member State,PRY,South America,Americas,Paraguay,,,name_Paraguay
+25,Member State,PER,South America,Americas,Peru,,,name_Peru
+26,Member State,ESP,Southern Europe,Europe,Spain,,,name_Spain
+27,Member State,THA,South-Eastern Asia,Asia,Thailand,,,name_Thailand
+28,Member State,GBR,Northern Europe,Europe,U.K. of Great Britain and Northern Ireland,,,name_U.K. of Great Britain and Northern Ireland name_U
+29,Member State,ARE,Western Asia,Asia,United Arab Emirates,,,name_United Arab Emirates
+30,Member State,URY,South America,Americas,Uruguay,,,name_Uruguay
+31,Member State,VEN,South America,Americas,Venezuela,,,name_Venezuela
+32,US State,AK,Northern America,Americas,Alaska,-152.24098,64.24019,STATE_AK
+33,US State,AL,Northern America,Americas,Alabama,-86.82676,32.79354,STATE_AL
+34,US State,AR,Northern America,Americas,Arkansas,-92.4392,34.89977,STATE_AR
+35,US State,AS,Northern America,Americas,American Samoa,-170.37215,-14.26486,STATE_AS
+36,US State,AZ,Northern America,Americas,Arizona,-111.66457,34.29323,STATE_AZ
+37,US State,CA,Northern America,Americas,California,-119.60818,37.24537,STATE_CA
+38,US State,CO,Northern America,Americas,Colorado,-105.54783,38.99855,STATE_CO
+39,US State,CT,Northern America,Americas,Connecticut,-72.72623,41.62196,STATE_CT
+40,US State,DC,Northern America,Americas,District of Columbia,-77.01464,38.90932,STATE_DC
+41,US State,DE,Northern America,Americas,Delaware,-75.50592,38.99559,STATE_DE
+42,US State,FL,Northern America,Americas,Florida,-82.50934,28.67402,STATE_FL
+43,US State,FM,Northern America,Americas,Fed States of Micronesia,154.7847154,7.089267592,STATE_FM
+44,US State,GA,Northern America,Americas,Georgia,-83.44848,32.65155,STATE_GA
+45,US State,GU,Northern America,Americas,Guam,145.15796,14.57384,STATE_GU
+46,US State,HI,Northern America,Americas,Hawaii,-156.34743,20.24923,STATE_HI
+47,US State,IA,Northern America,Americas,Iowa,-93.50003,42.07463,STATE_IA
+48,US State,ID,Northern America,Americas,Idaho,-114.65933,44.38907,STATE_ID
+49,US State,IL,Northern America,Americas,Illinois,-89.19838,40.06501,STATE_IL
+50,US State,IN,Northern America,Americas,Indiana,-86.27548,39.90801,STATE_IN
+51,US State,KS,Northern America,Americas,Kansas,-98.38019,38.48471,STATE_KS
+52,US State,KY,Northern America,Americas,Kentucky,-85.29046,37.52668,STATE_KY
+53,US State,LA,Northern America,Americas,Louisiana,-92.02905,31.0891,STATE_LA
+54,US State,MA,Northern America,Americas,Massachusetts,-71.81423,42.25788,STATE_MA
+55,US State,MD,Northern America,Americas,Maryland,-76.78588,39.04533,STATE_MD
+56,US State,ME,Northern America,Americas,Maine,-69.22999,45.38046,STATE_ME
+57,US State,MH,Northern America,Americas,Marshall Islands,169.6807519,7.460447483,STATE_MH
+58,US State,MI,Northern America,Americas,Michigan,-85.43675,44.34717,STATE_MI
+59,US State,MN,Northern America,Americas,Minnesota,-94.31357,46.31189,STATE_MN
+60,US State,MO,Northern America,Americas,Missouri,-92.38554,38.3208,STATE_MO
+61,US State,MP,Northern America,Americas,Northern Mariana Islands,145.611142,15.77669817,STATE_MP
+62,US State,MS,Northern America,Americas,Mississippi,-89.66553,32.75201,STATE_MS
+63,US State,MT,Northern America,Americas,Montana,-109.64507,47.0335,STATE_MT
+64,US State,NC,Northern America,Americas,North Carolina,-79.37865,35.54369,STATE_NC
+65,US State,ND,Northern America,Americas,North Dakota,-100.46935,47.44626,STATE_ND
+66,US State,NE,Northern America,Americas,Nebraska,-99.81058,41.52709,STATE_NE
+67,US State,NH,Northern America,Americas,New Hampshire,-71.57754,43.68556,STATE_NH
+68,US State,NJ,Northern America,Americas,New Jersey,-74.66876,40.20049,STATE_NJ
+69,US State,NM,Northern America,Americas,New Mexico,-106.10837,34.42137,STATE_NM
+70,US State,NV,Northern America,Americas,Nevada,-116.65539,39.35648,STATE_NV
+71,US State,NY,Northern America,Americas,New York,-75.51491,42.94796,STATE_NY
+72,US State,OH,Northern America,Americas,Ohio,-82.79002,40.2912,STATE_OH
+73,US State,OK,Northern America,Americas,Oklahoma,-97.50819,35.58345,STATE_OK
+74,US State,OR,Northern America,Americas,Oregon,-120.55232,43.93589,STATE_OR
+75,US State,PA,Northern America,Americas,Pennsylvania,-77.7993,40.87368,STATE_PA
+76,US State,PR,Northern America,Americas,Puerto Rico,-66.46912,18.2224,STATE_PR
+77,US State,PW,Northern America,Americas,Palau,134.5113328,7.42353139,STATE_PW
+78,US State,RI,Northern America,Americas,Rhode Island,-71.55579,41.67544,STATE_RI
+79,US State,SC,Northern America,Americas,South Carolina,-80.89899,33.93574,STATE_SC
+80,US State,SD,Northern America,Americas,South Dakota,-100.23048,44.43614,STATE_SD
+81,US State,TN,Northern America,Americas,Tennessee,-86.34332,35.84299,STATE_TN
+82,US State,TX,Northern America,Americas,Texas,-99.35939,31.49422,STATE_TX
+83,US State,UT,Northern America,Americas,Utah,-111.67822,39.32379,STATE_UT
+84,US State,VA,Northern America,Americas,Virginia,-78.82957,37.51637,STATE_VA
+85,US State,VI,Northern America,Americas,Virgin Islands,-64.80128,17.96397,STATE_VI
+86,US State,VT,Northern America,Americas,Vermont,-72.66273,44.07511,STATE_VT
+87,US State,WA,Northern America,Americas,Washington,-120.43997,47.38076,STATE_WA
+88,US State,WI,Northern America,Americas,Wisconsin,-90.01144,44.63725,STATE_WI
+89,US State,WV,Northern America,Americas,West Virginia,-80.61372,38.64259,STATE_WV
+90,US State,WY,Northern America,Americas,Wyoming,-107.55144,42.99963,STATE_WY

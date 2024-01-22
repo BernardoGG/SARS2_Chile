@@ -1,0 +1,1369 @@
+crossing,commune,region,by,type,year,month,value
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,enero,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,enero,136
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,enero,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,enero,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,enero,12
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,enero,12
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,enero,4
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,enero,465
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,enero,52
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,enero,"100,217"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,enero,21
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,enero,"7,902"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,enero,"3,203"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,enero,18
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,enero,542
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,enero,"1,138"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,enero,"2,158"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,enero,87
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,enero,505
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,enero,"11,223"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,enero,"12,036"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,enero,47
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,enero,"1,324"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,enero,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,enero,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,enero,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,enero,"10,894"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,enero,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,enero,703
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,enero,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,enero,0
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,enero,47
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,enero,30
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,enero,225
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,enero,68
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,enero,20
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,enero,84
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,enero,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,enero,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,enero,0
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,enero,17
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,enero,0
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,enero,22
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,enero,152
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,enero,66
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,enero,0
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,enero,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,enero,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,enero,811
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,enero,192
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,enero,363
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,enero,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,enero,22
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,enero,235
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,enero,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,enero,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,enero,281
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,enero,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,enero,363
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,enero,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,enero,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,enero,8
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,enero,4
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,enero,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,enero,444
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,enero,12
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,enero,"99,030"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,enero,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,enero,"6,255"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,enero,"3,292"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,enero,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,enero,472
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,enero,"1,780"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,enero,"2,817"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,enero,79
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,enero,320
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,enero,"9,042"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,enero,"11,256"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,enero,73
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,enero,"1,282"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,enero,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,enero,1
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,enero,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,enero,"10,518"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,enero,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,enero,661
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,enero,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,enero,20
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,enero,19
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,enero,0
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,enero,114
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,enero,51
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,enero,21
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,enero,141
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,enero,12
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,enero,40
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,enero,0
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,enero,0
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,enero,44
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,enero,0
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,enero,80
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,enero,0
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,enero,0
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,enero,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,enero,24
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,enero,691
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,enero,291
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,enero,112
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,enero,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,enero,4
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,enero,203
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,enero,3
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,enero,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,enero,135
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,febrero,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,febrero,327
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,febrero,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,febrero,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,febrero,4
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,febrero,26
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,febrero,2
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,febrero,228
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,febrero,44
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,febrero,"93,252"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,febrero,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,febrero,"6,581"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,febrero,"3,245"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,febrero,4
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,febrero,549
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,febrero,"1,230"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,febrero,"2,166"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,febrero,52
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,febrero,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,febrero,"11,113"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,febrero,"13,168"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,febrero,29
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,febrero,"1,926"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,febrero,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,febrero,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,febrero,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,febrero,"9,143"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,febrero,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,febrero,761
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,febrero,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,febrero,42
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,febrero,235
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,febrero,41
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,febrero,169
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,febrero,87
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,febrero,77
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,febrero,0
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,febrero,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,febrero,20
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,febrero,63
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,febrero,0
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,febrero,21
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,febrero,229
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,febrero,17
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,febrero,86
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,febrero,44
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,febrero,18
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,febrero,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,febrero,910
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,febrero,160
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,febrero,106
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,febrero,38
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,febrero,1
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,febrero,207
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,febrero,1
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,febrero,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,febrero,393
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,febrero,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,febrero,208
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,febrero,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,febrero,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,febrero,16
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,febrero,20
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,febrero,8
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,febrero,322
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,febrero,0
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,febrero,"81,538"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,febrero,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,febrero,"6,022"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,febrero,"3,226"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,febrero,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,febrero,474
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,febrero,"1,635"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,febrero,"2,173"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,febrero,48
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,febrero,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,febrero,"11,125"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,febrero,"10,474"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,febrero,118
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,febrero,"1,647"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,febrero,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,febrero,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,febrero,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,febrero,"11,740"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,febrero,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,febrero,749
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,febrero,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,febrero,157
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,febrero,96
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,febrero,33
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,febrero,28
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,febrero,42
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,febrero,22
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,febrero,0
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,febrero,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,febrero,43
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,febrero,100
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,febrero,0
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,febrero,21
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,febrero,0
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,febrero,117
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,febrero,129
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,febrero,11
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,febrero,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,febrero,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,febrero,684
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,febrero,306
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,febrero,129
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,febrero,102
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,febrero,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,febrero,219
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,febrero,1
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,febrero,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,febrero,114
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,marzo,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,marzo,415
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,marzo,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,marzo,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,marzo,0
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,marzo,8
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,marzo,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,marzo,375
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,marzo,3
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,marzo,"86,448"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,marzo,2
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,marzo,"7,369"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,marzo,"3,670"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,marzo,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,marzo,646
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,marzo,"1,426"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,marzo,"2,378"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,marzo,34
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,marzo,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,marzo,"5,879"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,marzo,"11,526"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,marzo,9
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,marzo,"1,990"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,marzo,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,marzo,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,marzo,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,marzo,"7,708"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,marzo,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,marzo,"1,098"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,marzo,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,marzo,79
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,marzo,100
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,marzo,39
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,marzo,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,marzo,0
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,marzo,42
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,marzo,106
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,marzo,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,marzo,62
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,marzo,128
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,marzo,175
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,marzo,87
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,marzo,397
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,marzo,155
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,marzo,103
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,marzo,22
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,marzo,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,marzo,22
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,marzo,973
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,marzo,179
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,marzo,152
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,marzo,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,marzo,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,marzo,452
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,marzo,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,marzo,22
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,marzo,324
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,marzo,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,marzo,205
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,marzo,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,marzo,2
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,marzo,15
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,marzo,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,marzo,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,marzo,423
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,marzo,8
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,marzo,"74,186"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,marzo,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,marzo,"6,008"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,marzo,"3,554"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,marzo,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,marzo,563
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,marzo,"1,875"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,marzo,1
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,marzo,37
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,marzo,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,marzo,"5,178"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,marzo,"9,394"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,marzo,77
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,marzo,"2,016"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,marzo,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,marzo,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,marzo,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,marzo,"9,550"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,marzo,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,marzo,"1,002"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,marzo,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,marzo,140
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,marzo,54
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,marzo,91
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,marzo,39
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,marzo,22
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,marzo,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,marzo,65
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,marzo,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,marzo,40
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,marzo,126
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,marzo,182
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,marzo,45
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,marzo,215
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,marzo,190
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,marzo,371
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,marzo,0
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,marzo,21
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,marzo,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,marzo,838
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,marzo,509
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,marzo,181
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,marzo,36
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,marzo,13
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,marzo,704
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,marzo,16
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,marzo,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,marzo,104
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,abril,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,abril,4
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,abril,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,abril,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,abril,2
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,abril,9
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,abril,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,abril,223
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,abril,54
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,abril,"21,919"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,abril,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,abril,"6,796"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,abril,"3,410"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,abril,2
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,abril,409
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,abril,858
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,abril,"1,775"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,abril,29
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,abril,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,abril,"7,209"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,abril,"6,768"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,abril,11
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,abril,"1,316"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,abril,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,abril,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,abril,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,abril,"4,807"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,abril,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,abril,748
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,abril,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,abril,141
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,abril,92
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,abril,61
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,abril,189
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,abril,41
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,abril,88
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,abril,65
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,abril,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,abril,21
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,abril,37
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,abril,222
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,abril,0
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,abril,303
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,abril,274
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,abril,370
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,abril,22
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,abril,18
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,abril,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,abril,844
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,abril,368
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,abril,114
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,abril,99
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,abril,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,abril,101
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,abril,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,abril,20
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,abril,50
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,abril,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,abril,1
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,abril,3
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,abril,7
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,abril,18
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,abril,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,abril,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,abril,253
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,abril,26
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,abril,"24,389"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,abril,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,abril,"6,783"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,abril,"3,507"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,abril,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,abril,380
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,abril,"1,197"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,abril,"2,173"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,abril,26
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,abril,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,abril,"6,911"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,abril,"5,858"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,abril,145
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,abril,"1,232"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,abril,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,abril,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,abril,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,abril,"5,113"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,abril,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,abril,676
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,abril,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,abril,208
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,abril,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,abril,11
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,abril,47
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,abril,21
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,abril,61
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,abril,62
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,abril,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,abril,40
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,abril,42
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,abril,248
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,abril,0
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,abril,184
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,abril,117
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,abril,180
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,abril,44
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,abril,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,abril,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,abril,927
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,abril,530
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,abril,40
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,abril,42
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,abril,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,abril,262
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,abril,2
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,abril,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,abril,18
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,mayo,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,mayo,19
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,mayo,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,mayo,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,mayo,7
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,mayo,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,mayo,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,mayo,94
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,mayo,0
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,mayo,"16,022"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,mayo,3
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,mayo,"6,888"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,mayo,"2,777"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,mayo,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,mayo,428
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,mayo,"1,207"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,mayo,"2,128"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,mayo,12
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,mayo,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,mayo,"19,710"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,mayo,"5,283"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,mayo,3
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,mayo,"1,496"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,mayo,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,mayo,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,mayo,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,mayo,"3,975"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,mayo,4
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,mayo,789
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,mayo,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,mayo,319
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,mayo,80
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,mayo,0
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,mayo,102
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,mayo,41
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,mayo,42
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,mayo,147
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,mayo,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,mayo,20
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,mayo,41
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,mayo,264
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,mayo,63
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,mayo,499
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,mayo,158
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,mayo,148
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,mayo,57
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,mayo,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,mayo,23
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,mayo,751
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,mayo,86
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,mayo,231
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,mayo,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,mayo,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,mayo,333
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,mayo,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,mayo,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,mayo,106
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,mayo,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,mayo,3
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,mayo,2
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,mayo,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,mayo,2
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,mayo,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,mayo,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,mayo,152
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,mayo,20
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,mayo,"21,518"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,mayo,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,mayo,"6,312"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,mayo,"2,589"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,mayo,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,mayo,354
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,mayo,"1,398"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,mayo,"2,658"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,mayo,13
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,mayo,0
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,mayo,"18,340"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,mayo,"5,506"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,mayo,78
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,mayo,"1,590"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,mayo,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,mayo,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,mayo,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,mayo,"4,047"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,mayo,4
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,mayo,640
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,mayo,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,mayo,130
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,mayo,41
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,mayo,0
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,mayo,147
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,mayo,21
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,mayo,21
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,mayo,122
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,mayo,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,mayo,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,mayo,19
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,mayo,255
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,mayo,42
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,mayo,233
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,mayo,90
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,mayo,76
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,mayo,0
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,mayo,21
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,mayo,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,mayo,741
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,mayo,385
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,mayo,172
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,mayo,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,mayo,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,mayo,126
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,mayo,2
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,mayo,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,mayo,0
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,junio,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,junio,14
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,junio,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,junio,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,junio,0
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,junio,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,junio,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,junio,233
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,junio,0
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,junio,"18,682"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,junio,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,junio,"7,194"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,junio,"4,206"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,junio,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,junio,463
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,junio,"1,169"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,junio,"2,067"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,junio,9
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,junio,913
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,junio,"18,762"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,junio,"4,966"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,junio,0
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,junio,449
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,junio,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,junio,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,junio,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,junio,"3,526"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,junio,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,junio,880
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,junio,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,junio,124
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,junio,86
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,junio,0
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,junio,70
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,junio,21
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,junio,21
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,junio,106
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,junio,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,junio,21
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,junio,22
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,junio,341
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,junio,45
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,junio,290
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,junio,155
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,junio,127
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,junio,70
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,junio,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,junio,21
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,junio,508
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,junio,196
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,junio,154
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,junio,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,junio,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,junio,187
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,junio,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,junio,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,junio,143
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,junio,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,junio,16
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,junio,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,junio,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,junio,0
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,junio,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,junio,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,junio,261
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,junio,8
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,junio,"32,784"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,junio,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,junio,"6,621"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,junio,"4,359"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,junio,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,junio,392
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,junio,"1,464"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,junio,"2,727"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,junio,11
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,junio,855
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,junio,"17,001"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,junio,"4,944"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,junio,36
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,junio,"1,329"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,junio,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,junio,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,junio,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,junio,"3,436"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,junio,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,junio,785
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,junio,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,junio,124
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,junio,47
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,junio,0
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,junio,25
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,junio,46
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,junio,20
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,junio,148
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,junio,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,junio,62
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,junio,41
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,junio,264
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,junio,43
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,junio,114
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,junio,118
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,junio,103
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,junio,70
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,junio,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,junio,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,junio,736
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,junio,243
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,junio,109
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,junio,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,junio,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,junio,73
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,junio,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,junio,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,junio,41
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021, julio,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021, julio,238
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021, julio,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021, julio,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021, julio,21
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021, julio,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021, julio,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021, julio,176
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021, julio,2
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021, julio,"29,462"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021, julio,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021, julio,"7,782"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021, julio,"4,117"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021, julio,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021, julio,435
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021, julio,"1,318"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021, julio,"2,430"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021, julio,9
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021, julio,"1,029"
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021, julio,"20,552"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021, julio,"5,867"
+Paso Pehuenche,Curicó,Maule,land,entry,2021, julio,0
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021, julio,"1,162"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021, julio,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021, julio,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021, julio,4
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021, julio,"5,201"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021, julio,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021, julio,955
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021, julio,1
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021, julio,116
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021, julio,191
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021, julio,78
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021, julio,47
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021, julio,43
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021, julio,101
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021, julio,106
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021, julio,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021, julio,38
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021, julio,97
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021, julio,224
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021, julio,22
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021, julio,365
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021, julio,194
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021, julio,456
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021, julio,42
+Puerto Penco,Penco,Bío Bío,sea,entry,2021, julio,20
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021, julio,51
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021, julio,610
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021, julio,333
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021, julio,129
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021, julio,101
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021, julio,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021, julio,289
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021, julio,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021, julio,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021, julio,0
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021, julio,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021, julio,106
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021, julio,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021, julio,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021, julio,19
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021, julio,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021, julio,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021, julio,187
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021, julio,8
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021, julio,"48,149"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021, julio,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021, julio,"6,655"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021, julio,"4,107"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021, julio,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021, julio,393
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021, julio,"1,566"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021, julio,"3,060"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021, julio,9
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021, julio,966
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021, julio,"21,366"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021, julio,"6,666"
+Paso Pehuenche,Curicó,Maule,land,exit,2021, julio,63
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021, julio,"1,255"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021, julio,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021, julio,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021, julio,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021, julio,"4,389"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021, julio,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021, julio,740
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021, julio,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021, julio,179
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021, julio,96
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021, julio,41
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021, julio,20
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021, julio,57
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021, julio,35
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021, julio,126
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021, julio,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021, julio,81
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021, julio,18
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021, julio,242
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021, julio,23
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021, julio,305
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021, julio,185
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021, julio,133
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021, julio,140
+Puerto Penco,Penco,Bío Bío,sea,exit,2021, julio,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021, julio,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021, julio,706
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021, julio,450
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021, julio,204
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021, julio,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021, julio,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021, julio,342
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021, julio,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021, julio,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021, julio,68
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,agosto,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,agosto,30
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,agosto,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,agosto,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,agosto,4
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,agosto,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,agosto,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,agosto,134
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,agosto,1
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,agosto,"55,359"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,agosto,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,agosto,"9,176"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,agosto,"4,366"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,agosto,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,agosto,521
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,agosto,"1,361"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,agosto,"2,466"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,agosto,26
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,agosto,775
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,agosto,"17,577"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,agosto,"6,771"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,agosto,1
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,agosto,"1,210"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,agosto,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,agosto,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,agosto,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,agosto,"4,696"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,agosto,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,agosto,"1,178"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,agosto,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,agosto,182
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,agosto,196
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,agosto,76
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,agosto,203
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,agosto,41
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,agosto,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,agosto,77
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,agosto,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,agosto,21
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,agosto,42
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,agosto,260
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,agosto,0
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,agosto,493
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,agosto,205
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,agosto,263
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,agosto,22
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,agosto,109
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,agosto,72
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,agosto,526
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,agosto,232
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,agosto,180
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,agosto,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,agosto,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,agosto,68
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,agosto,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,agosto,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,agosto,18
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,agosto,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,agosto,0
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,agosto,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,agosto,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,agosto,8
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,agosto,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,agosto,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,agosto,134
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,agosto,0
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,agosto,"81,961"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,agosto,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,agosto,"7,921"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,agosto,"4,573"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,agosto,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,agosto,437
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,agosto,"1,658"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,agosto,"3,925"
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,agosto,25
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,agosto,560
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,agosto,"15,430"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,agosto,"6,177"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,agosto,33
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,agosto,"1,370"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,agosto,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,agosto,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,agosto,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,agosto,"5,084"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,agosto,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,agosto,"1,121"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,agosto,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,agosto,240
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,agosto,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,agosto,55
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,agosto,188
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,agosto,60
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,agosto,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,agosto,60
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,agosto,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,agosto,41
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,agosto,20
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,agosto,241
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,agosto,22
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,agosto,224
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,agosto,116
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,agosto,208
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,agosto,18
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,agosto,38
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,agosto,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,agosto,618
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,agosto,423
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,agosto,244
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,agosto,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,agosto,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,agosto,111
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,agosto,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,agosto,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,agosto,18
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,septiembre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,septiembre,20
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,septiembre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,septiembre,1
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,septiembre,13
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,septiembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,septiembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,septiembre,94
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,septiembre,46
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,septiembre,"82,971"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,septiembre,1
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,septiembre,"8,971"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,septiembre,"4,444"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,septiembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,septiembre,547
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,septiembre,"1,419"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,septiembre,"2,278"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,septiembre,37
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,septiembre,"1,576"
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,septiembre,"22,638"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,septiembre,"6,940"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,septiembre,0
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,septiembre,738
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,septiembre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,septiembre,22
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,septiembre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,septiembre,"5,718"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,septiembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,septiembre,"1,521"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,septiembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,septiembre,265
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,septiembre,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,septiembre,0
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,septiembre,46
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,septiembre,0
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,septiembre,20
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,septiembre,171
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,septiembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,septiembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,septiembre,123
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,septiembre,254
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,septiembre,22
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,septiembre,451
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,septiembre,193
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,septiembre,0
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,septiembre,78
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,septiembre,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,septiembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,septiembre,398
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,septiembre,85
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,septiembre,282
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,septiembre,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,septiembre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,septiembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,septiembre,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,septiembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,septiembre,115
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,septiembre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,septiembre,19
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,septiembre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,septiembre,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,septiembre,0
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,septiembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,septiembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,septiembre,87
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,septiembre,14
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,septiembre,"92,955"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,septiembre,15
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,septiembre,"7,796"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,septiembre,"4,490"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,septiembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,septiembre,482
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,septiembre,"1,770"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,septiembre,159
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,septiembre,37
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,septiembre,"1,518"
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,septiembre,"21,437"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,septiembre,"7,232"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,septiembre,0
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,septiembre,"1,332"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,septiembre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,septiembre,27
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,septiembre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,septiembre,"5,214"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,septiembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,septiembre,"1,500"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,septiembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,septiembre,319
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,septiembre,38
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,septiembre,36
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,septiembre,46
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,septiembre,0
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,septiembre,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,septiembre,81
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,septiembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,septiembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,septiembre,65
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,septiembre,212
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,septiembre,21
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,septiembre,427
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,septiembre,132
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,septiembre,70
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,septiembre,39
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,septiembre,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,septiembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,septiembre,626
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,septiembre,406
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,septiembre,127
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,septiembre,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,septiembre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,septiembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,septiembre,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,septiembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,septiembre,99
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,octubre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,octubre,212
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,octubre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,octubre,4
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,octubre,63
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,octubre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,octubre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,octubre,260
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,octubre,88
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,octubre,"109,999"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,octubre,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,octubre,"9,406"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,octubre,"4,826"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,octubre,11
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,octubre,610
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,octubre,"1,481"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,octubre,"2,133"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,octubre,52
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,octubre,"1,932"
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,octubre,"25,173"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,octubre,"10,634"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,octubre,2
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,octubre,"1,660"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,octubre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,octubre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,octubre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,octubre,"9,139"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,octubre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,octubre,"1,406"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,octubre,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,octubre,40
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,octubre,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,octubre,16
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,octubre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,octubre,0
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,octubre,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,octubre,146
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,octubre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,octubre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,octubre,20
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,octubre,298
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,octubre,0
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,octubre,416
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,octubre,149
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,octubre,37
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,octubre,89
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,octubre,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,octubre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,octubre,607
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,octubre,136
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,octubre,90
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,octubre,82
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,octubre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,octubre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,octubre,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,octubre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,octubre,667
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,octubre,7
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,octubre,233
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,octubre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,octubre,8
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,octubre,3
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,octubre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,octubre,2
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,octubre,250
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,octubre,19
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,octubre,"115,534"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,octubre,0
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,octubre,"8,406"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,octubre,"4,835"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,octubre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,octubre,498
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,octubre,"1,895"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,octubre,20
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,octubre,48
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,octubre,"1,697"
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,octubre,"24,858"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,octubre,"10,864"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,octubre,101
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,octubre,"1,607"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,octubre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,octubre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,octubre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,octubre,"8,639"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,octubre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,octubre,"1,313"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,octubre,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,octubre,325
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,octubre,20
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,octubre,29
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,octubre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,octubre,42
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,octubre,43
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,octubre,84
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,octubre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,octubre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,octubre,26
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,octubre,205
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,octubre,43
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,octubre,133
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,octubre,226
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,octubre,83
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,octubre,20
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,octubre,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,octubre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,octubre,497
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,octubre,231
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,octubre,152
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,octubre,18
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,octubre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,octubre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,octubre,0
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,octubre,19
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,octubre,164
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,noviembre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,noviembre,570
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,noviembre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,noviembre,9
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,noviembre,6
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,noviembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,noviembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,noviembre,336
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,noviembre,126
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,noviembre,"163,921"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,noviembre,10
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,noviembre,"9,457"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,noviembre,"4,713"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,noviembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,noviembre,733
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,noviembre,"1,508"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,noviembre,"2,512"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,noviembre,56
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,noviembre,"1,828"
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,noviembre,"27,091"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,noviembre,"11,089"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,noviembre,13
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,noviembre,"1,705"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,noviembre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,noviembre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,noviembre,13
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,noviembre,"8,932"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,noviembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,noviembre,"1,123"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,noviembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,noviembre,214
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,noviembre,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,noviembre,0
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,noviembre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,noviembre,45
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,noviembre,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,noviembre,147
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,noviembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,noviembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,noviembre,53
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,noviembre,169
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,noviembre,41
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,noviembre,274
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,noviembre,230
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,noviembre,0
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,noviembre,29
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,noviembre,0
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,noviembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,noviembre,47
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,noviembre,138
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,noviembre,110
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,noviembre,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,noviembre,1
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,noviembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,noviembre,660
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,noviembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,noviembre,"1,153"
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,noviembre,3
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,noviembre,603
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,noviembre,0
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,noviembre,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,noviembre,12
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,noviembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,noviembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,noviembre,522
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,noviembre,125
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,noviembre,"154,771"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,noviembre,4
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,noviembre,"7,756"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,noviembre,"4,781"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,noviembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,noviembre,590
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,noviembre,"1,832"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,noviembre,155
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,noviembre,79
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,noviembre,"1,476"
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,noviembre,"24,615"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,noviembre,"11,198"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,noviembre,111
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,noviembre,"1,637"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,noviembre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,noviembre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,noviembre,12
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,noviembre,"8,362"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,noviembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,noviembre,"1,046"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,noviembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,noviembre,320
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,noviembre,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,noviembre,0
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,noviembre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,noviembre,47
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,noviembre,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,noviembre,150
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,noviembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,noviembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,noviembre,0
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,noviembre,191
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,noviembre,20
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,noviembre,152
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,noviembre,209
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,noviembre,0
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,noviembre,0
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,noviembre,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,noviembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,noviembre,21
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,noviembre,343
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,noviembre,106
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,noviembre,0
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,noviembre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,noviembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,noviembre,987
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,noviembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,noviembre,"1,830"
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,entry,2021,diciembre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,entry,2021,diciembre,"1,351"
+Aeropuerto Araucania,Temuco,La Araucanía,air,entry,2021,diciembre,1
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,entry,2021,diciembre,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,entry,2021,diciembre,6
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,entry,2021,diciembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,entry,2021,diciembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,entry,2021,diciembre,443
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,entry,2021,diciembre,353
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,entry,2021,diciembre,"201,863"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,entry,2021,diciembre,13
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,entry,2021,diciembre,"7,281"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,entry,2021,diciembre,"4,654"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,entry,2021,diciembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,entry,2021,diciembre,821
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,entry,2021,diciembre,"1,644"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,entry,2021,diciembre,"2,692"
+Paso De Chile Chico,Chile Chico,Aysén,land,entry,2021,diciembre,193
+Paso Jama,San Pedro de Atacama,Antofagasta,land,entry,2021,diciembre,"1,751"
+Paso Los Libertadores,Los Andes,Valparaíso,land,entry,2021,diciembre,"24,085"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,entry,2021,diciembre,"13,237"
+Paso Pehuenche,Curicó,Maule,land,entry,2021,diciembre,8
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,entry,2021,diciembre,"1,402"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,entry,2021,diciembre,2
+Paso Rio Manso,Puerto Montt,Los Lagos,land,entry,2021,diciembre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,entry,2021,diciembre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,entry,2021,diciembre,"27,646"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,entry,2021,diciembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,entry,2021,diciembre,"1,382"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,entry,2021,diciembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,entry,2021,diciembre,173
+Puerto Angamos,Mejillones,Antofagasta,sea,entry,2021,diciembre,0
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,entry,2021,diciembre,22
+Puerto Arica,Arica,Arica y Parinacota,sea,entry,2021,diciembre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,entry,2021,diciembre,0
+Puerto Calbuco,Calbuco,Los Lagos,sea,entry,2021,diciembre,21
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,entry,2021,diciembre,106
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,entry,2021,diciembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,entry,2021,diciembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,entry,2021,diciembre,48
+Puerto Coronel,Coronel,Bío Bío,sea,entry,2021,diciembre,259
+Puerto De Corral,Corral,Los Ríos,sea,entry,2021,diciembre,20
+Puerto Iquique,Iquique,Tarapacá,sea,entry,2021,diciembre,413
+Puerto Lirquen,Penco,Bío Bío,sea,entry,2021,diciembre,215
+Puerto Mejillones,Mejillones,Antofagasta,sea,entry,2021,diciembre,19
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,entry,2021,diciembre,54
+Puerto Penco,Penco,Bío Bío,sea,entry,2021,diciembre,19
+Puerto Quintero,Quintero,Valparaíso,sea,entry,2021,diciembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,entry,2021,diciembre,0
+Puerto San Vicente,Talcahuano,Biobío,sea,entry,2021,diciembre,217
+Puerto Talcahuano,Talcahuano,Biobío,sea,entry,2021,diciembre,250
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,entry,2021,diciembre,77
+Puerto Valdivia,Valdivia,Los Ríos,sea,entry,2021,diciembre,2
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,entry,2021,diciembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,entry,2021,diciembre,"1,324"
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,entry,2021,diciembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,entry,2021,diciembre,"1,118"
+Aeródromo Teniente Gallardo,Puerto Natales,Magallanes y la Antártica Chilena,air,exit,2021,diciembre,0
+Aeropuerto Andres Sabella,Antofagasta,Antofagasta,air,exit,2021,diciembre,"1,704"
+Aeropuerto Araucania,Temuco,La Araucanía,air,exit,2021,diciembre,2
+Aeropuerto Carriel Sur,Concepción,Bío Bío,air,exit,2021,diciembre,0
+Aeropuerto Chacalluta,Arica,Arica y Parinacota,air,exit,2021,diciembre,6
+Aeropuerto El Loa (Calama),Calama,Antofagasta,air,exit,2021,diciembre,0
+Aeropuerto El Tepual (Pm),Puerto Montt,Los Lagos,air,exit,2021,diciembre,0
+Aeropuerto Iquique,Iquique,Tarapacá,air,exit,2021,diciembre,535
+Aeropuerto Punta Arenas,Punta Arenas,Magallanes y la Antártica Chilena,air,exit,2021,diciembre,232
+Arturo Merino Benitez,Pudahuel,Santiago Metropolitan Region (RM),air,exit,2021,diciembre,"235,183"
+Avanzada El Limite,San José de Maipo,Santiago Metropolitan Region (RM),land,exit,2021,diciembre,3
+Chungara - Tambo Quemado,Putre,Arica y Parinacota,land,exit,2021,diciembre,"7,597"
+Concordia/Chacalluta Carretera,Arica,Arica y Parinacota,land,exit,2021,diciembre,"4,424"
+Ferrocarril Arica -Tacna,Arica,Arica y Parinacota,land,exit,2021,diciembre,0
+Huemules/Balmaceda/,Coyhaique,Aysén,land,exit,2021,diciembre,665
+Paso Cardenal Samore-Pajaritos,Osorno,Los Lagos,land,exit,2021,diciembre,"2,151"
+Paso Colchane - Pisiga,Colchane,Tarapacá,land,exit,2021,diciembre,0
+Paso De Chile Chico,Chile Chico,Aysén,land,exit,2021,diciembre,308
+Paso Jama,San Pedro de Atacama,Antofagasta,land,exit,2021,diciembre,"1,779"
+Paso Los Libertadores,Los Andes,Valparaíso,land,exit,2021,diciembre,"28,217"
+Paso Monte Aymond,Laguna Blanca,Magallanes y la Antártica Chilena,land,exit,2021,diciembre,"29,434"
+Paso Pehuenche,Curicó,Maule,land,exit,2021,diciembre,163
+Paso Pino Hachado - Liucura,Lonquimay,La Araucanía,land,exit,2021,diciembre,"1,916"
+Paso Portezuelo Del Cajon,La Estrella,Libertador General Bernardo O'Higgins,land,exit,2021,diciembre,0
+Paso Rio Manso,Puerto Montt,Los Lagos,land,exit,2021,diciembre,0
+Paso San Francisco - Copiapo,Copiapó,Atacama,land,exit,2021,diciembre,0
+Paso San Sebastian,Porvenir,Magallanes y la Antártica Chilena,land,exit,2021,diciembre,"10,591"
+Paso Visviri,General Lagos,Arica y Parinacota (XV),land,exit,2021,diciembre,0
+Salar De Ollague (Carr. Ffcc),Ollagüe,Antofagasta,land,exit,2021,diciembre,"1,146"
+Sico - San Pedro De Atacama,San Pedro de Atacama,Antofagasta (II),land,exit,2021,diciembre,0
+Caleta Patillos,Iquique,Tarapacá,sea,exit,2021,diciembre,391
+Puerto Angamos,Mejillones,Antofagasta,sea,exit,2021,diciembre,14
+Puerto Antofagasta,Antofagasta,Antofagasta,sea,exit,2021,diciembre,0
+Puerto Arica,Arica,Arica y Parinacota,sea,exit,2021,diciembre,0
+Puerto Cabo Negro,Punta Arenas,Magallanes y de la Antártica Chilena,sea,exit,2021,diciembre,43
+Puerto Calbuco,Calbuco,Los Lagos,sea,exit,2021,diciembre,0
+Puerto Caldera - Copiapo,Caldera,Atacama,sea,exit,2021,diciembre,208
+Puerto Chacabuco,Aysén,Aysén del General Carlos Ibáñez del Campo,sea,exit,2021,diciembre,0
+Puerto Coloso,Antofagasta,Antofagasta,sea,exit,2021,diciembre,0
+Puerto Coquimbo,Coquimbo,Coquimbo,sea,exit,2021,diciembre,109
+Puerto Coronel,Coronel,Bío Bío,sea,exit,2021,diciembre,199
+Puerto De Corral,Corral,Los Ríos,sea,exit,2021,diciembre,42
+Puerto Iquique,Iquique,Tarapacá,sea,exit,2021,diciembre,169
+Puerto Lirquen,Penco,Bío Bío,sea,exit,2021,diciembre,175
+Puerto Mejillones,Mejillones,Antofagasta,sea,exit,2021,diciembre,42
+Puerto Montt Muelle Fiscal,Puerto Montt,Los Lagos,sea,exit,2021,diciembre,32
+Puerto Penco,Penco,Bío Bío,sea,exit,2021,diciembre,0
+Puerto Quintero,Quintero,Valparaíso,sea,exit,2021,diciembre,0
+Puerto San Antonio,San Antonio,Valparaíso,sea,exit,2021,diciembre,0
+Puerto San Vicente,Talcahuano,Biobío,sea,exit,2021,diciembre,453
+Puerto Talcahuano,Talcahuano,Biobío,sea,exit,2021,diciembre,198
+Puerto Tocopilla,Tocopilla,Antofagasta,sea,exit,2021,diciembre,94
+Puerto Valdivia,Valdivia,Los Ríos,sea,exit,2021,diciembre,0
+Puerto Valparaiso,Valparaíso,Valparaíso,sea,exit,2021,diciembre,0
+Puerto Williams,Cabo de Hornos,Magallanes y de la Antártica Chilena,sea,exit,2021,diciembre,"1,042"
+Caleta Carolina Michilla,Mejillones,Antofagasta,sea,exit,2021,diciembre,0
+"Punta Arenas,/Baiha Gregorio,",Punta Arenas,Magallanes y la Antártica Chilena,sea,exit,2021,diciembre,807

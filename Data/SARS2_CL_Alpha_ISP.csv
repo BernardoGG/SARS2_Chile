@@ -1,0 +1,613 @@
+Virus name,Accession ID,Pango lineage,Country,State,Date,surveillance,Variant,epiweek
+hCoV-19/Argentina/INEI100964/2021|EPI_ISL_2133399|2021-02-03,EPI_ISL_2133399,B.1.1.7,Argentina,NA,2021-02-03,background_sequences,Alpha,58
+hCoV-19/Argentina/INEI101332/2021|EPI_ISL_2133401|2021-02-05,EPI_ISL_2133401,B.1.1.7,Argentina,NA,2021-02-05,background_sequences,Alpha,58
+hCoV-19/Argentina/PAIS-C0076/2021|EPI_ISL_4291305|2021-02-04,EPI_ISL_4291305,B.1.1.7,Argentina,Buenos Aires,2021-02-04,background_sequences,Alpha,58
+hCoV-19/Argentina/PAIS-A0516/2021|EPI_ISL_2007521|2021-03-03,EPI_ISL_2007521,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-03-03,background_sequences,Alpha,62
+hCoV-19/Argentina/PAIS-A0470/2021|EPI_ISL_1395792|2021-03-05,EPI_ISL_1395792,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-03-05,background_sequences,Alpha,62
+hCoV-19/Argentina/PAIS-A0501/2021|EPI_ISL_2007524|2021-03-02,EPI_ISL_2007524,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-03-02,background_sequences,Alpha,62
+hCoV-19/Argentina/INEI102294/2021|EPI_ISL_2135150|2021-03-08,EPI_ISL_2135150,B.1.1.7,Argentina,Buenos Aires,2021-03-08,background_sequences,Alpha,63
+hCoV-19/Argentina/PAIS-A0517/2021|EPI_ISL_2007474|2021-03-08,EPI_ISL_2007474,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-03-08,background_sequences,Alpha,63
+hCoV-19/Argentina/PAIS-A0502/2021|EPI_ISL_2007506|2021-03-07,EPI_ISL_2007506,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-03-07,background_sequences,Alpha,63
+hCoV-19/Argentina/PAIS-E0201/2021|EPI_ISL_2363530|2021-03-18,EPI_ISL_2363530,B.1.1.7,Argentina,Santa Fe,2021-03-18,background_sequences,Alpha,64
+hCoV-19/Argentina/INEI102434/2021|EPI_ISL_2135255|2021-03-17,EPI_ISL_2135255,B.1.1.7,Argentina,Entre Rios,2021-03-17,background_sequences,Alpha,64
+hCoV-19/Argentina/INEI103043/2021|EPI_ISL_2135326|2021-03-18,EPI_ISL_2135326,B.1.1.7,Argentina,Santa Fe,2021-03-18,background_sequences,Alpha,64
+hCoV-19/Argentina/INEI103267/2021|EPI_ISL_2136080|2021-03-22,EPI_ISL_2136080,B.1.1.7,Argentina,Entre Rios,2021-03-22,background_sequences,Alpha,65
+hCoV-19/Argentina/INEI103265/2021|EPI_ISL_2136078|2021-03-26,EPI_ISL_2136078,B.1.1.7,Argentina,Entre Rios,2021-03-26,background_sequences,Alpha,65
+hCoV-19/Argentina/INEI103046/2021|EPI_ISL_2135327|2021-03-21,EPI_ISL_2135327,B.1.1.7,Argentina,Santa Fe,2021-03-21,background_sequences,Alpha,65
+hCoV-19/Argentina/INEI103362/2021|EPI_ISL_2135342|2021-03-31,EPI_ISL_2135342,B.1.1.7,Argentina,NA,2021-03-31,background_sequences,Alpha,66
+hCoV-19/Argentina/INEI103354/2021|EPI_ISL_2135337|2021-04-03,EPI_ISL_2135337,B.1.1.7,Argentina,NA,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Argentina/INEI103352/2021|EPI_ISL_2135336|2021-04-03,EPI_ISL_2135336,B.1.1.7,Argentina,NA,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Argentina/INEI104339/2021|EPI_ISL_2136178|2021-04-07,EPI_ISL_2136178,B.1.1.7,Argentina,La Rioja,2021-04-07,background_sequences,Alpha,67
+hCoV-19/Argentina/INEI103356/2021|EPI_ISL_2135338|2021-04-04,EPI_ISL_2135338,B.1.1.7,Argentina,NA,2021-04-04,background_sequences,Alpha,67
+hCoV-19/Argentina/INEI104340/2021|EPI_ISL_2136179|2021-04-07,EPI_ISL_2136179,B.1.1.7,Argentina,La Rioja,2021-04-07,background_sequences,Alpha,67
+hCoV-19/Argentina/INEI103995/2021|EPI_ISL_2136023|2021-04-12,EPI_ISL_2136023,B.1.1.7,Argentina,Entre Rios,2021-04-12,background_sequences,Alpha,68
+hCoV-19/Argentina/INEI104297/2021|EPI_ISL_2136149|2021-04-13,EPI_ISL_2136149,B.1.1.7,Argentina,Entre Rios,2021-04-13,background_sequences,Alpha,68
+hCoV-19/Argentina/INEI104003/2021|EPI_ISL_2136028|2021-04-15,EPI_ISL_2136028,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-04-15,background_sequences,Alpha,68
+hCoV-19/Argentina/INEI104086/2021|EPI_ISL_2136046|2021-04-21,EPI_ISL_2136046,B.1.1.7,Argentina,NA,2021-04-21,background_sequences,Alpha,69
+hCoV-19/Argentina/INEI104129/2021|EPI_ISL_2136098|2021-04-22,EPI_ISL_2136098,B.1.1.7,Argentina,NA,2021-04-22,background_sequences,Alpha,69
+hCoV-19/Argentina/INEI104062/2021|EPI_ISL_2136044|2021-04-19,EPI_ISL_2136044,B.1.1.7,Argentina,NA,2021-04-19,background_sequences,Alpha,69
+hCoV-19/Argentina/INEI104287/2021|EPI_ISL_2136140|2021-04-27,EPI_ISL_2136140,B.1.1.7,Argentina,Entre Rios,2021-04-27,background_sequences,Alpha,70
+hCoV-19/Argentina/INEI104387/2021|EPI_ISL_2140104|2021-04-27,EPI_ISL_2140104,B.1.1.7,Argentina,NA,2021-04-27,background_sequences,Alpha,70
+hCoV-19/Argentina/INEI104323/2021|EPI_ISL_2136164|2021-04-27,EPI_ISL_2136164,B.1.1.7,Argentina,San Luis,2021-04-27,background_sequences,Alpha,70
+hCoV-19/Argentina/INEI104580/2021|EPI_ISL_2158743|2021-05-04,EPI_ISL_2158743,B.1.1.7,Argentina,NA,2021-05-04,background_sequences,Alpha,71
+hCoV-19/Argentina/INEI104698/2021|EPI_ISL_2158791|2021-05-05,EPI_ISL_2158791,B.1.1.7,Argentina,Chaco,2021-05-05,background_sequences,Alpha,71
+hCoV-19/Argentina/INEI104776/2021|EPI_ISL_2158830|2021-05-07,EPI_ISL_2158830,B.1.1.7,Argentina,Buenos Aires,2021-05-07,background_sequences,Alpha,71
+hCoV-19/Argentina/INEI105330/2021|EPI_ISL_4082290|2021-05-15,EPI_ISL_4082290,B.1.1.7,Argentina,Buenos Aires,2021-05-15,background_sequences,Alpha,72
+hCoV-19/Argentina/INEI105229/2021|EPI_ISL_4082249|2021-05-10,EPI_ISL_4082249,B.1.1.7,Argentina,San Juan,2021-05-10,background_sequences,Alpha,72
+hCoV-19/Argentina/INEI104939/2021|EPI_ISL_4082218|2021-05-10,EPI_ISL_4082218,B.1.1.7,Argentina,Santa Fe,2021-05-10,background_sequences,Alpha,72
+hCoV-19/Argentina/INEI105321/2021|EPI_ISL_6694363|2021-05-16,EPI_ISL_6694363,B.1.1.7,Argentina,Buenos Aires,2021-05-16,background_sequences,Alpha,73
+hCoV-19/Argentina/PAIS-A0828/2021|EPI_ISL_4405122|2021-05-16,EPI_ISL_4405122,B.1.1.7,Argentina,Ciudad Autónoma de Buenos Aires,2021-05-16,background_sequences,Alpha,73
+hCoV-19/Argentina/PAIS-A0976/2021|EPI_ISL_4405557|2021-05-17,EPI_ISL_4405557,B.1.1.7,Argentina,Buenos Aires,2021-05-17,background_sequences,Alpha,73
+hCoV-19/Argentina/INEI119675/2021|EPI_ISL_11571481|2021-05-27,EPI_ISL_11571481,B.1.1.7,Argentina,Buenos Aires,2021-05-27,background_sequences,Alpha,74
+hCoV-19/Argentina/INEI105640/2021|EPI_ISL_4082395|2021-05-27,EPI_ISL_4082395,B.1.1.7,Argentina,Buenos Aires,2021-05-27,background_sequences,Alpha,74
+hCoV-19/Argentina/PAIS-D0358/2021|EPI_ISL_8152135|2021-05-24,EPI_ISL_8152135,B.1.1.7,Argentina,Tierra del Fuego,2021-05-24,background_sequences,Alpha,74
+hCoV-19/Argentina/PAIS-D0275/2021|EPI_ISL_7620384|2021-06-04,EPI_ISL_7620384,B.1.1.7,Argentina,Tierra del Fuego,2021-06-04,background_sequences,Alpha,75
+hCoV-19/Argentina/INEI105824/2021|EPI_ISL_4082480|2021-06-01,EPI_ISL_4082480,B.1.1.7,Argentina,Entre Rios,2021-06-01,background_sequences,Alpha,75
+hCoV-19/Argentina/INEI105852/2021|EPI_ISL_4082505|2021-06-05,EPI_ISL_4082505,B.1.1.7,Argentina,Buenos Aires,2021-06-05,background_sequences,Alpha,75
+hCoV-19/Argentina/PAIS-A0867/2021|EPI_ISL_4405234|2021-06-06,EPI_ISL_4405234,B.1.1.7,Argentina,Buenos Aires,2021-06-06,background_sequences,Alpha,76
+hCoV-19/Argentina/INEI106402/2021|EPI_ISL_6694369|2021-06-09,EPI_ISL_6694369,B.1.1.7,Argentina,Neuquen,2021-06-09,background_sequences,Alpha,76
+hCoV-19/Argentina/INEI106369/2021|EPI_ISL_6694368|2021-06-12,EPI_ISL_6694368,B.1.1.7,Argentina,Buenos Aires,2021-06-12,background_sequences,Alpha,76
+hCoV-19/Argentina/INEI110507/2021|EPI_ISL_6694716|2021-06-18,EPI_ISL_6694716,B.1.1.7,Argentina,Santa Cruz,2021-06-18,background_sequences,Alpha,77
+hCoV-19/Argentina/INEI106600/2021|EPI_ISL_4082869|2021-06-16,EPI_ISL_4082869,B.1.1.7,Argentina,Tierra del Fuego,2021-06-16,background_sequences,Alpha,77
+hCoV-19/Argentina/INEI106586/2021|EPI_ISL_4082861|2021-06-16,EPI_ISL_4082861,B.1.1.7,Argentina,Jujuy,2021-06-16,background_sequences,Alpha,77
+hCoV-19/Argentina/INEI107054/2021|EPI_ISL_4083006|2021-06-23,EPI_ISL_4083006,B.1.1.7,Argentina,Mendoza,2021-06-23,background_sequences,Alpha,78
+hCoV-19/Argentina/INEI106519/2021|EPI_ISL_4082816|2021-06-20,EPI_ISL_4082816,B.1.1.7,Argentina,Buenos Aires,2021-06-20,background_sequences,Alpha,78
+hCoV-19/Argentina/INEI107065/2021|EPI_ISL_4083016|2021-06-23,EPI_ISL_4083016,B.1.1.7,Argentina,Mendoza,2021-06-23,background_sequences,Alpha,78
+hCoV-19/Argentina/INEI107168/2021|EPI_ISL_4083087|2021-07-02,EPI_ISL_4083087,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-07-02,background_sequences,Alpha,79
+hCoV-19/Argentina/PAIS-D0238/2021|EPI_ISL_7620355|2021-07-01,EPI_ISL_7620355,B.1.1.7,Argentina,Tierra del Fuego,2021-07-01,background_sequences,Alpha,79
+hCoV-19/Argentina/PAIS-D0373/2021|EPI_ISL_8152150|2021-06-30,EPI_ISL_8152150,B.1.1.7,Argentina,Tierra del Fuego,2021-06-30,background_sequences,Alpha,79
+hCoV-19/Argentina/INEI107495/2021|EPI_ISL_4083179|2021-07-10,EPI_ISL_4083179,B.1.1.7,Argentina,Ciudad Autonoma de Buenos Aires,2021-07-10,background_sequences,Alpha,80
+hCoV-19/Argentina/INEI107764/2021|EPI_ISL_4083356|2021-07-04,EPI_ISL_4083356,B.1.1.7,Argentina,Santa Fe,2021-07-04,background_sequences,Alpha,80
+hCoV-19/Argentina/PAIS-D0376/2021|EPI_ISL_8152153|2021-07-04,EPI_ISL_8152153,B.1.1.7,Argentina,Tierra del Fuego,2021-07-04,background_sequences,Alpha,80
+hCoV-19/Argentina/INEI108316/2021|EPI_ISL_5158498|2021-07-15,EPI_ISL_5158498,B.1.1.7,Argentina,Tucuman,2021-07-15,background_sequences,Alpha,81
+hCoV-19/Argentina/INEI108800/2021|EPI_ISL_5158600|2021-07-16,EPI_ISL_5158600,B.1.1.7,Argentina,Mendoza,2021-07-16,background_sequences,Alpha,81
+hCoV-19/Argentina/INEI107901/2021|EPI_ISL_4083428|2021-07-11,EPI_ISL_4083428,B.1.1.7,Argentina,Cordoba,2021-07-11,background_sequences,Alpha,81
+hCoV-19/Argentina/INEI108812/2021|EPI_ISL_5158611|2021-07-22,EPI_ISL_5158611,B.1.1.7,Argentina,Tucuman,2021-07-22,background_sequences,Alpha,82
+hCoV-19/Argentina/INEI109223/2021|EPI_ISL_5158721|2021-07-22,EPI_ISL_5158721,B.1.1.7,Argentina,Salta,2021-07-22,background_sequences,Alpha,82
+hCoV-19/Argentina/INEI108238/2021|EPI_ISL_5158471|2021-07-20,EPI_ISL_5158471,B.1.1.7,Argentina,Buenos Aires,2021-07-20,background_sequences,Alpha,82
+hCoV-19/Argentina/INEI108758/2021|EPI_ISL_5158575|2021-07-26,EPI_ISL_5158575,B.1.1.7,Argentina,Mendoza,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Argentina/INEI108757/2021|EPI_ISL_5158574|2021-07-26,EPI_ISL_5158574,B.1.1.7,Argentina,Mendoza,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Argentina/INEI108820/2021|EPI_ISL_5158619|2021-07-26,EPI_ISL_5158619,B.1.1.7,Argentina,Catamarca,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Argentina/INEI109631/2021|EPI_ISL_5158981|2021-08-03,EPI_ISL_5158981,B.1.1.7,Argentina,Entre Ríos,2021-08-03,background_sequences,Alpha,84
+hCoV-19/Argentina/INEI108847/2021|EPI_ISL_5158631|2021-08-02,EPI_ISL_5158631,B.1.1.7,Argentina,Buenos Aires,2021-08-02,background_sequences,Alpha,84
+hCoV-19/Argentina/PAIS-A0995/2021|EPI_ISL_4405609|2021-08-06,EPI_ISL_4405609,B.1.1.7,Argentina,Ciudad Autónoma de Buenos Aires,2021-08-06,background_sequences,Alpha,84
+hCoV-19/Argentina/INEI109635/2021|EPI_ISL_6694406|2021-08-11,EPI_ISL_6694406,B.1.1.7,Argentina,Entre Rios,2021-08-11,background_sequences,Alpha,85
+hCoV-19/Argentina/INEI109729/2021|EPI_ISL_6694410|2021-08-12,EPI_ISL_6694410,B.1.1.7,Argentina,NA,2021-08-12,background_sequences,Alpha,85
+hCoV-19/Argentina/PAIS-D0149/2021|EPI_ISL_5771896|2021-08-10,EPI_ISL_5771896,B.1.1.7,Argentina,Tierra del Fuego,2021-08-10,background_sequences,Alpha,85
+hCoV-19/Argentina/INEI110134/2021|EPI_ISL_6694564|2021-08-20,EPI_ISL_6694564,B.1.1.7,Argentina,Buenos Aires,2021-08-20,background_sequences,Alpha,86
+hCoV-19/Argentina/INEI110109/2021|EPI_ISL_6694547|2021-08-18,EPI_ISL_6694547,B.1.1.7,Argentina,Tierra del Fuego,2021-08-18,background_sequences,Alpha,86
+hCoV-19/Argentina/INEI110140/2021|EPI_ISL_6694566|2021-08-21,EPI_ISL_6694566,B.1.1.7,Argentina,Mendoza,2021-08-21,background_sequences,Alpha,86
+hCoV-19/Argentina/PAIS-A1177/2021|EPI_ISL_7406465|2021-08-27,EPI_ISL_7406465,B.1.1.7,Argentina,Buenos Aires,2021-08-27,background_sequences,Alpha,87
+hCoV-19/Argentina/PAIS-D0163/2021|EPI_ISL_5771903|2021-08-27,EPI_ISL_5771903,B.1.1.7,Argentina,Tierra del Fuego,2021-08-27,background_sequences,Alpha,87
+hCoV-19/Argentina/INEI110780/2021|EPI_ISL_5656151|2021-09-01,EPI_ISL_5656151,B.1.1.7,Argentina,Tucumán,2021-09-01,background_sequences,Alpha,88
+hCoV-19/Argentina/INEI110692/2021|EPI_ISL_5656160|2021-09-05,EPI_ISL_5656160,B.1.1.7,Argentina,Córdoba,2021-09-05,background_sequences,Alpha,89
+hCoV-19/Argentina/PAIS-G0461/2021|EPI_ISL_7547024|2021-09-17,EPI_ISL_7547024,B.1.1.7,Argentina,Cordoba,2021-09-17,background_sequences,Alpha,90
+hCoV-19/Argentina/INEI111252/2021|EPI_ISL_6694898|2021-09-14,EPI_ISL_6694898,B.1.1.7,Argentina,NA,2021-09-14,background_sequences,Alpha,90
+hCoV-19/Argentina/INEI111248/2021|EPI_ISL_6694895|2021-09-13,EPI_ISL_6694895,B.1.1.7,Argentina,NA,2021-09-13,background_sequences,Alpha,90
+hCoV-19/Argentina/INEI111678/2021|EPI_ISL_7751299|2021-09-22,EPI_ISL_7751299,B.1.1.7,Argentina,Mendoza,2021-09-22,background_sequences,Alpha,91
+hCoV-19/Argentina/INEI111414/2021|EPI_ISL_6695017|2021-09-23,EPI_ISL_6695017,B.1.1.7,Argentina,NA,2021-09-23,background_sequences,Alpha,91
+hCoV-19/Argentina/PAIS-D0204/2021|EPI_ISL_8181667|2021-10-12,EPI_ISL_8181667,B.1.1.7,Argentina,Tierra del Fuego,2021-10-12,background_sequences,Alpha,94
+hCoV-19/Argentina/INEI111629/2021|EPI_ISL_6695127|2021-10-10,EPI_ISL_6695127,B.1.1.7,Argentina,NA,2021-10-10,background_sequences,Alpha,94
+hCoV-19/Brazil/SP-L67-CD1713/2020|EPI_ISL_754236|2020-12-22,EPI_ISL_754236,B.1.1.7,Brazil,Sao Paulo,2020-12-22,background_sequences,Alpha,52
+hCoV-19/Brazil/DF-1025/2020|EPI_ISL_882664|2020-12-31,EPI_ISL_882664,B.1.1.7,Brazil,Federal District,2020-12-31,background_sequences,Alpha,53
+hCoV-19/Brazil/SP-976/2021|EPI_ISL_833166|2021-01-06,EPI_ISL_833166,B.1.1.7,Brazil,Sao Paulo,2021-01-06,background_sequences,Alpha,54
+hCoV-19/Brazil/SP-1012/2021|EPI_ISL_882670|2021-01-12,EPI_ISL_882670,B.1.1.7,Brazil,Sao Paulo,2021-01-12,background_sequences,Alpha,55
+hCoV-19/Brazil/SP-1046/2021|EPI_ISL_906073|2021-01-19,EPI_ISL_906073,B.1.1.7,Brazil,Sao Paulo,2021-01-19,background_sequences,Alpha,56
+hCoV-19/Brazil/GO-HLAGYN-1441875/2021|EPI_ISL_2187752|2021-01-29,EPI_ISL_2187752,B.1.1.7,Brazil,Goias,2021-01-29,background_sequences,Alpha,57
+hCoV-19/Brazil/ES-FUNED-320316749/2021|EPI_ISL_1239121|2021-02-03,EPI_ISL_1239121,B.1.1.7,Brazil,Espirito Santo,2021-02-03,background_sequences,Alpha,58
+hCoV-19/Brazil/GO-HLAGYN-1461591/2021|EPI_ISL_2187774|2021-02-08,EPI_ISL_2187774,B.1.1.7,Brazil,Goias,2021-02-08,background_sequences,Alpha,59
+hCoV-19/Brazil/PR-IPEC-196/2021|EPI_ISL_2758717|2021-02-17,EPI_ISL_2758717,B.1.1.7,Brazil,Parana,2021-02-17,background_sequences,Alpha,60
+hCoV-19/Brazil/DF-18030424_108/2021|EPI_ISL_4945105|2021-02-22,EPI_ISL_4945105,B.1.1.7,Brazil,Federal District,2021-02-22,background_sequences,Alpha,61
+hCoV-19/Brazil/ES-FIOCRUZ-16512/2021|EPI_ISL_2157375|2021-03-01,EPI_ISL_2157375,B.1.1.7,Brazil,Espirito Santo,2021-03-01,background_sequences,Alpha,62
+hCoV-19/Brazil/MG-FIOCRUZ-1028/2021|EPI_ISL_11133161|2021-03-10,EPI_ISL_11133161,B.1.1.7,Brazil,Minas Gerais,2021-03-10,background_sequences,Alpha,63
+hCoV-19/Brazil/MG-FUNED-LBI-BC49/2021|EPI_ISL_6513927|2021-03-17,EPI_ISL_6513927,B.1.1.7,Brazil,Minas Gerais,2021-03-17,background_sequences,Alpha,64
+hCoV-19/Brazil/MG-LBI389/2021|EPI_ISL_6508535|2021-03-25,EPI_ISL_6508535,B.1.1.7,Brazil,Minas Gerais,2021-03-25,background_sequences,Alpha,65
+hCoV-19/Brazil/SP-IB_100427/2021|EPI_ISL_2170935|2021-03-29,EPI_ISL_2170935,B.1.1.7,Brazil,Sao Paulo,2021-03-29,background_sequences,Alpha,66
+hCoV-19/Brazil/MG-FIOCRUZ-1032/2021|EPI_ISL_11133164|2021-04-04,EPI_ISL_11133164,B.1.1.7,Brazil,Minas Gerais,2021-04-04,background_sequences,Alpha,67
+hCoV-19/Brazil/SP-IB_101406/2021|EPI_ISL_2133093|2021-04-15,EPI_ISL_2133093,B.1.1.7,Brazil,Sao Paulo,2021-04-15,background_sequences,Alpha,68
+hCoV-19/Brazil/RJ-LNN00768/2021|EPI_ISL_2101395|2021-04-21,EPI_ISL_2101395,B.1.1.7,Brazil,Rio de Janeiro,2021-04-21,background_sequences,Alpha,69
+hCoV-19/Brazil/PE-FIOCRUZ-IAM1883/2021|EPI_ISL_3703366|2021-04-25,EPI_ISL_3703366,B.1.1.7,Brazil,Pernambuco,2021-04-25,background_sequences,Alpha,70
+hCoV-19/Brazil/MS-NXBS88GENOV700906246884/2021|EPI_ISL_3663847|2021-05-07,EPI_ISL_3663847,B.1.1.7,Brazil,Mato Grosso do Sul,2021-05-07,background_sequences,Alpha,71
+hCoV-19/Brazil/PR-NXBS490GENOV827569915718/2021|EPI_ISL_3664105|2021-05-14,EPI_ISL_3664105,B.1.1.7,Brazil,Parana,2021-05-14,background_sequences,Alpha,72
+hCoV-19/Brazil/SP-IB_110605/2021|EPI_ISL_2445132|2021-05-17,EPI_ISL_2445132,B.1.1.7,Brazil,Sao Paulo,2021-05-17,background_sequences,Alpha,73
+hCoV-19/Brazil/MG-LBI622/2021|EPI_ISL_9383792|2021-05-23,EPI_ISL_9383792,B.1.1.7,Brazil,Minas Gerais,2021-05-23,background_sequences,Alpha,74
+hCoV-19/Brazil/MG-FIOCRUZ-513/2021|EPI_ISL_8630391|2021-06-05,EPI_ISL_8630391,B.1.1.7,Brazil,Minas Gerais,2021-06-05,background_sequences,Alpha,75
+hCoV-19/Brazil/SP-4035/2021|EPI_ISL_3717891|2021-06-12,EPI_ISL_3717891,B.1.1.7,Brazil,Sao Paulo,2021-06-12,background_sequences,Alpha,76
+hCoV-19/Brazil/RJ-FIOCRUZ-202211644/2021|EPI_ISL_13228913|2021-06-15,EPI_ISL_13228913,B.1.1.7,Brazil,Rio de Janeiro,2021-06-15,background_sequences,Alpha,77
+hCoV-19/Brazil/MG-FIOCRUZ-126/2021|EPI_ISL_5195472|2021-06-22,EPI_ISL_5195472,B.1.1.7,Brazil,Minas Gerais,2021-06-22,background_sequences,Alpha,78
+hCoV-19/Brazil/RS-FIOCRUZ-42128/2021|EPI_ISL_3539857|2021-06-28,EPI_ISL_3539857,B.1.1.7,Brazil,Rio Grande do Sul,2021-06-28,background_sequences,Alpha,79
+hCoV-19/Brazil/MG-LBI1143/2021|EPI_ISL_9983310|2021-07-08,EPI_ISL_9983310,B.1.1.7,Brazil,Minas Gerais,2021-07-08,background_sequences,Alpha,80
+hCoV-19/Brazil/ES-FIOCRUZ-40116/2021|EPI_ISL_3434950|2021-07-16,EPI_ISL_3434950,B.1.1.7,Brazil,Espirito Santo,2021-07-16,background_sequences,Alpha,81
+hCoV-19/Brazil/SP-IAL-4458/2021|EPI_ISL_5030045|2021-07-20,EPI_ISL_5030045,B.1.1.7,Brazil,Sao Paulo,2021-07-20,background_sequences,Alpha,82
+hCoV-19/Brazil/PE-IEC-180290/2021|EPI_ISL_6722288|2021-07-27,EPI_ISL_6722288,B.1.1.7,Brazil,Pernambuco,2021-07-27,background_sequences,Alpha,83
+hCoV-19/Brazil/SP-NXBS4696GENOV701244823454/2021|EPI_ISL_9802982|2021-08-05,EPI_ISL_9802982,B.1.1.7,Brazil,Sao Paulo,2021-08-05,background_sequences,Alpha,84
+hCoV-19/Brazil/SP-BT50555/2021|EPI_ISL_3824309|2021-08-11,EPI_ISL_3824309,B.1.1.7,Brazil,Sao Paulo,2021-08-11,background_sequences,Alpha,85
+hCoV-19/Brazil/SP-reBUT_126900/2021|EPI_ISL_5885348|2021-08-17,EPI_ISL_5885348,B.1.1.7,Brazil,Sao Paulo,2021-08-17,background_sequences,Alpha,86
+hCoV-19/Brazil/RJ-LNN05216/2021|EPI_ISL_5496226|2021-08-23,EPI_ISL_5496226,B.1.1.7,Brazil,Rio de Janeiro,2021-08-23,background_sequences,Alpha,87
+hCoV-19/Brazil/MG-FIOCRUZ-AR-51/2021|EPI_ISL_6701419|2021-08-30,EPI_ISL_6701419,B.1.1.7,Brazil,Minas Gerais,2021-08-30,background_sequences,Alpha,88
+hCoV-19/Colombia/CAL-INS-VG-1494/2021|EPI_ISL_1626608|2021-02-15,EPI_ISL_1626608,B.1.1.7,Colombia,Caldas,2021-02-15,background_sequences,Alpha,60
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC00098T/2021|EPI_ISL_1675309|2021-02-26,EPI_ISL_1675309,B.1.1.7,Colombia,Antioquia,2021-02-26,background_sequences,Alpha,61
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC00132B/2021|EPI_ISL_1675319|2021-03-05,EPI_ISL_1675319,B.1.1.7,Colombia,Antioquia,2021-03-05,background_sequences,Alpha,62
+hCoV-19/Colombia/DC-UANDES-G014454/2021|EPI_ISL_1626610|2021-03-10,EPI_ISL_1626610,B.1.1.7,Colombia,Bogota,2021-03-10,background_sequences,Alpha,63
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC00151U/2021|EPI_ISL_1675321|2021-03-15,EPI_ISL_1675321,B.1.1.7,Colombia,Antioquia,2021-03-15,background_sequences,Alpha,64
+hCoV-19/Colombia/CAL-INS-VG-2160/2021|EPI_ISL_1805645|2021-03-26,EPI_ISL_1805645,B.1.1.7,Colombia,Caldas,2021-03-26,background_sequences,Alpha,65
+hCoV-19/Colombia/COV-VG-3646/2021|EPI_ISL_3355502|2021-04-01,EPI_ISL_3355502,B.1.1.7,Colombia,Valle del Cauca,2021-04-01,background_sequences,Alpha,66
+hCoV-19/Colombia/COV-VG-3848/2021|EPI_ISL_3355468|2021-04-08,EPI_ISL_3355468,B.1.1.7,Colombia,Risaralda,2021-04-08,background_sequences,Alpha,67
+hCoV-19/Colombia/COV-VG-3851/2021|EPI_ISL_3355471|2021-04-17,EPI_ISL_3355471,B.1.1.7,Colombia,Risaralda,2021-04-17,background_sequences,Alpha,68
+hCoV-19/Colombia/COV-VG-3661/2021|EPI_ISL_3355498|2021-04-19,EPI_ISL_3355498,B.1.1.7,Colombia,Valle Del Cauca,2021-04-19,background_sequences,Alpha,69
+hCoV-19/Colombia/RIS-VG-3853/2021|EPI_ISL_3369925|2021-05-01,EPI_ISL_3369925,B.1.1.7,Colombia,Risaralda,2021-05-01,background_sequences,Alpha,70
+hCoV-19/Colombia/COV-VG-3527/2021|EPI_ISL_3355472|2021-05-06,EPI_ISL_3355472,B.1.1.7,Colombia,Valle Del Cauca,2021-05-06,background_sequences,Alpha,71
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC00591S/2021|EPI_ISL_2438055|2021-05-10,EPI_ISL_2438055,B.1.1.7,Colombia,Antioquia,2021-05-10,background_sequences,Alpha,72
+hCoV-19/Colombia/SAN-43020/2021|EPI_ISL_12722802|2021-05-20,EPI_ISL_12722802,B.1.1.7,Colombia,Santander,2021-05-20,background_sequences,Alpha,73
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC00863E/2021|EPI_ISL_2621213|2021-05-25,EPI_ISL_2621213,B.1.1.7,Colombia,Antioquia,2021-05-25,background_sequences,Alpha,74
+hCoV-19/Colombia/HUI-INS-VG-6232/2021|EPI_ISL_4300691|2021-07-07,EPI_ISL_4300691,B.1.1.7,Colombia,Huila,2021-07-07,background_sequences,Alpha,80
+hCoV-19/Colombia/ANT-LDSP924/2021|EPI_ISL_5143500|2021-07-26,EPI_ISL_5143500,B.1.1.7,Colombia,Antioquia,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Colombia/ANT-LDSP459/2021|EPI_ISL_6512536|2021-08-07,EPI_ISL_6512536,B.1.1.7,Colombia,Antioquia,2021-08-07,background_sequences,Alpha,84
+hCoV-19/Colombia/TOL-INS-COV-VG-7835/2021|EPI_ISL_5054489|2021-08-10,EPI_ISL_5054489,B.1.1.7,Colombia,Tolima,2021-08-10,background_sequences,Alpha,85
+hCoV-19/Colombia/ANT-CWOHC-VG-SEC01844X/2021|EPI_ISL_4878498|2021-08-20,EPI_ISL_4878498,B.1.1.7,Colombia,Antioquia,2021-08-20,background_sequences,Alpha,86
+hCoV-19/Colombia/VAC-ICE-SCOV-317/2021|EPI_ISL_7139288|2021-08-22,EPI_ISL_7139288,B.1.1.7,Colombia,Valle del Cauca,2021-08-22,background_sequences,Alpha,87
+hCoV-19/Colombia/QUI-UTP-VG-364/2021|EPI_ISL_7363630|2021-10-03,EPI_ISL_7363630,B.1.1.7,Colombia,Quindio,2021-10-03,background_sequences,Alpha,93
+hCoV-19/Peru/LIM-INS-173/2020|EPI_ISL_833038|2020-12-31,EPI_ISL_833038,B.1.1.7,Peru,Lima,2020-12-31,background_sequences,Alpha,53
+hCoV-19/Peru/TUM-INS-2289/2021|EPI_ISL_3401477|2021-05-12,EPI_ISL_3401477,B.1.1.7,Peru,Tumbes,2021-05-12,background_sequences,Alpha,72
+hCoV-19/Peru/TUM-INS-2292/2021|EPI_ISL_3401480|2021-05-12,EPI_ISL_3401480,B.1.1.7,Peru,Tumbes,2021-05-12,background_sequences,Alpha,72
+hCoV-19/Peru/TUM-FPT02035/2021|EPI_ISL_3696153|2021-03-09,EPI_ISL_3696153,B.1.1.7,Peru,Tumbes,2021-03-09,background_sequences,Alpha,63
+hCoV-19/Peru/TUM-FPT02053/2021|EPI_ISL_3696162|2021-03-26,EPI_ISL_3696162,B.1.1.7,Peru,Tumbes,2021-03-26,background_sequences,Alpha,65
+hCoV-19/Peru/TUM-FPT02058/2021|EPI_ISL_3696165|2021-03-30,EPI_ISL_3696165,B.1.1.7,Peru,Tumbes,2021-03-30,background_sequences,Alpha,66
+hCoV-19/Peru/TUM-FPT02057/2021|EPI_ISL_3696164|2021-03-30,EPI_ISL_3696164,B.1.1.7,Peru,Tumbes,2021-03-30,background_sequences,Alpha,66
+hCoV-19/Peru/LIM-INS-739/2021|EPI_ISL_1138420|2021-01-12,EPI_ISL_1138420,B.1.1.7,Peru,Lima,2021-01-12,background_sequences,Alpha,55
+hCoV-19/Peru/LIM-INS-738/2021|EPI_ISL_1138419|2021-01-12,EPI_ISL_1138419,B.1.1.7,Peru,Lima,2021-01-12,background_sequences,Alpha,55
+hCoV-19/Peru/AYA-INS-931/2021|EPI_ISL_2536705|2021-03-31,EPI_ISL_2536705,B.1.1.7,Peru,Ayacucho,2021-03-31,background_sequences,Alpha,66
+hCoV-19/Peru/TUM-INS-928/2021|EPI_ISL_2536702|2021-03-31,EPI_ISL_2536702,B.1.1.7,Peru,Tumbes,2021-03-31,background_sequences,Alpha,66
+hCoV-19/Peru/TUM-INS-930/2021|EPI_ISL_2536704|2021-04-07,EPI_ISL_2536704,B.1.1.7,Peru,Tumbes,2021-04-07,background_sequences,Alpha,67
+hCoV-19/Peru/TUM-INS-1481/2021|EPI_ISL_2921419|2021-04-05,EPI_ISL_2921419,B.1.1.7,Peru,Tumbes,2021-04-05,background_sequences,Alpha,67
+hCoV-19/Peru/TUM-INS-1482/2021|EPI_ISL_2921420|2021-04-09,EPI_ISL_2921420,B.1.1.7,Peru,Tumbes,2021-04-09,background_sequences,Alpha,67
+hCoV-19/Peru/LIM-INS-1483/2021|EPI_ISL_2921421|2021-04-13,EPI_ISL_2921421,B.1.1.7,Peru,Lima,2021-04-13,background_sequences,Alpha,68
+hCoV-19/Peru/TUM-INS-1484/2021|EPI_ISL_2921422|2021-04-05,EPI_ISL_2921422,B.1.1.7,Peru,Tumbes,2021-04-05,background_sequences,Alpha,67
+hCoV-19/Peru/TUM-INS-1485/2021|EPI_ISL_2921423|2021-04-05,EPI_ISL_2921423,B.1.1.7,Peru,Tumbes,2021-04-05,background_sequences,Alpha,67
+hCoV-19/Peru/TUM-INS-1487/2021|EPI_ISL_2921425|2021-04-08,EPI_ISL_2921425,B.1.1.7,Peru,Tumbes,2021-04-08,background_sequences,Alpha,67
+hCoV-19/Peru/PIU-INS-1641/2021|EPI_ISL_3023409|2021-03-03,EPI_ISL_3023409,B.1.1.7,Peru,Piura,2021-03-03,background_sequences,Alpha,62
+hCoV-19/Peru/MDD-INS-1811/2021|EPI_ISL_3023536|2021-03-09,EPI_ISL_3023536,B.1.1.7,Peru,Madre de Dios,2021-03-09,background_sequences,Alpha,63
+hCoV-19/Peru/TUM-INS-1486/2021|EPI_ISL_2921424|2021-04-06,EPI_ISL_2921424,B.1.1.7,Peru,Tumbes,2021-04-06,background_sequences,Alpha,67
+hCoV-19/Peru/JUN-INS-927/2021|EPI_ISL_2536701|2021-04-05,EPI_ISL_2536701,B.1.1.7,Peru,Junin,2021-04-05,background_sequences,Alpha,67
+hCoV-19/Peru/TUM-INS-929/2021|EPI_ISL_2536703|2021-04-03,EPI_ISL_2536703,B.1.1.7,Peru,Tumbes,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Peru/PIU-FPP04129/2021|EPI_ISL_4772336|2021-03-23,EPI_ISL_4772336,B.1.1.7,Peru,Piura,2021-03-23,background_sequences,Alpha,65
+hCoV-19/Mexico/TAM-InDRE-94/2020|EPI_ISL_794592|2020-12-31,EPI_ISL_794592,B.1.1.7,Mexico,Tamaulipas,2020-12-31,background_sequences,Alpha,53
+hCoV-19/Mexico/TAM-InDRE_236/2021|EPI_ISL_961466|2021-01-13,EPI_ISL_961466,B.1.1.7,Mexico,Tamaulipas,2021-01-13,background_sequences,Alpha,55
+hCoV-19/Mexico/NLE-InDRE_238/2021|EPI_ISL_961468|2021-01-18,EPI_ISL_961468,B.1.1.7,Mexico,Nuevo Leon,2021-01-18,background_sequences,Alpha,56
+hCoV-19/Mexico/TAM-InDRE_244/2021|EPI_ISL_1008713|2021-01-26,EPI_ISL_1008713,B.1.1.7,Mexico,Tamaulipas,2021-01-26,background_sequences,Alpha,57
+hCoV-19/Mexico/YUC-NYGC-8474-21/2021|EPI_ISL_3024018|2021-02-02,EPI_ISL_3024018,B.1.1.7,Mexico,Yucatan,2021-02-02,background_sequences,Alpha,58
+hCoV-19/Mexico/CHH-INER-IMSS-00220/2021|EPI_ISL_1279266|2021-02-10,EPI_ISL_1279266,B.1.1.7,Mexico,Chihuahua,2021-02-10,background_sequences,Alpha,59
+hCoV-19/Mexico/ZAC-INER-IMSS-00050/2021|EPI_ISL_1287762|2021-02-14,EPI_ISL_1287762,B.1.1.7,Mexico,Zacatecas,2021-02-14,background_sequences,Alpha,60
+hCoV-19/Mexico/TAM-InDRE_F108L_S569/2021|EPI_ISL_1334382|2021-02-24,EPI_ISL_1334382,B.1.1.7,Mexico,Tamaulipas,2021-02-24,background_sequences,Alpha,61
+hCoV-19/Mexico/CMX-InDRE_FD64253_S2063/2021|EPI_ISL_2295589|2021-03-05,EPI_ISL_2295589,B.1.1.7,Mexico,Mexico City,2021-03-05,background_sequences,Alpha,62
+hCoV-19/Mexico/CHH-InDRE_F12155_S1187/2021|EPI_ISL_1626794|2021-03-12,EPI_ISL_1626794,B.1.1.7,Mexico,Chihuahua,2021-03-12,background_sequences,Alpha,63
+hCoV-19/Mexico/MEX_INER_IMSS_00690/2021|EPI_ISL_2091146|2021-03-19,EPI_ISL_2091146,B.1.1.7,Mexico,State of Mexico,2021-03-19,background_sequences,Alpha,64
+hCoV-19/Mexico/ROO_INER_IMSS_00771/2021|EPI_ISL_2091225|2021-03-27,EPI_ISL_2091225,B.1.1.7,Mexico,Quintana Roo,2021-03-27,background_sequences,Alpha,65
+hCoV-19/Mexico/ROO_INER_IMSS_00790/2021|EPI_ISL_2091243|2021-04-03,EPI_ISL_2091243,B.1.1.7,Mexico,Quintana Roo,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Mexico/CMX_INER_IMSS_00878/2021|EPI_ISL_2091329|2021-04-08,EPI_ISL_2091329,B.1.1.7,Mexico,Mexico City,2021-04-08,background_sequences,Alpha,67
+hCoV-19/Mexico/CMX_INER_IMSS_00979/2021|EPI_ISL_2091419|2021-04-16,EPI_ISL_2091419,B.1.1.7,Mexico,Mexico City,2021-04-16,background_sequences,Alpha,68
+hCoV-19/Mexico/CMX-INMEGEN-04-07-195/2021|EPI_ISL_2080627|2021-04-23,EPI_ISL_2080627,B.1.1.7,Mexico,Mexico City,2021-04-23,background_sequences,Alpha,69
+hCoV-19/Mexico/CMX-INMEGEN-04-07-292/2021|EPI_ISL_2080689|2021-04-28,EPI_ISL_2080689,B.1.1.7,Mexico,Mexico City,2021-04-28,background_sequences,Alpha,70
+hCoV-19/Mexico/NLE-LESPNL-20210512-455/2021|EPI_ISL_2102647|2021-05-03,EPI_ISL_2102647,B.1.1.7,Mexico,Nuevo Leon,2021-05-03,background_sequences,Alpha,71
+hCoV-19/Mexico/CMX-INMEGEN-05-04-201/2021|EPI_ISL_6437723|2021-05-15,EPI_ISL_6437723,B.1.1.7,Mexico,Mexico City,2021-05-15,background_sequences,Alpha,72
+hCoV-19/Mexico/ZAC_IBT_IMSS_1449/2021|EPI_ISL_3355593|2021-05-21,EPI_ISL_3355593,B.1.1.7,Mexico,Zacatecas,2021-05-21,background_sequences,Alpha,73
+hCoV-19/Mexico/ZAC_IBT_IMSS_1455/2021|EPI_ISL_3355584|2021-05-23,EPI_ISL_3355584,B.1.1.7,Mexico,Zacatecas,2021-05-23,background_sequences,Alpha,74
+hCoV-19/Mexico/PUE_IBT_IMSS_1692/2021|EPI_ISL_3355572|2021-06-02,EPI_ISL_3355572,B.1.1.7,Mexico,Puebla,2021-06-02,background_sequences,Alpha,75
+hCoV-19/Mexico/TAB-InDRE_FB17298_S3469/2021|EPI_ISL_2778984|2021-06-09,EPI_ISL_2778984,B.1.1.7,Mexico,Tabasco,2021-06-09,background_sequences,Alpha,76
+hCoV-19/Mexico/TAB-InDRE_FB17687_S3514/2021|EPI_ISL_2779029|2021-06-14,EPI_ISL_2779029,B.1.1.7,Mexico,Tabasco,2021-06-14,background_sequences,Alpha,77
+hCoV-19/Mexico/TAM-InDRE_FB18909_S4472/2021|EPI_ISL_3033326|2021-06-21,EPI_ISL_3033326,B.1.1.7,Mexico,Tamaulipas,2021-06-21,background_sequences,Alpha,78
+hCoV-19/Mexico/BCN-ALSR-105344/2021|EPI_ISL_3374005|2021-06-28,EPI_ISL_3374005,B.1.1.7,Mexico,Baja California,2021-06-28,background_sequences,Alpha,79
+hCoV-19/Mexico/SO-ALSR-105341/2021|EPI_ISL_3374003|2021-07-04,EPI_ISL_3374003,B.1.1.7,Mexico,Sonora,2021-07-04,background_sequences,Alpha,80
+hCoV-19/Mexico/TAB-InDRE_FB21329_S5188/2021|EPI_ISL_3459921|2021-07-12,EPI_ISL_3459921,B.1.1.7,Mexico,Tabasco,2021-07-12,background_sequences,Alpha,81
+hCoV-19/Mexico/TAB-InDRE_FB23478_S5566/2021|EPI_ISL_3769173|2021-07-22,EPI_ISL_3769173,B.1.1.7,Mexico,Tabasco,2021-07-22,background_sequences,Alpha,82
+hCoV-19/Mexico/TAB-InDRE_FB26439_S5733/2021|EPI_ISL_3769176|2021-07-28,EPI_ISL_3769176,B.1.1.7,Mexico,Tabasco,2021-07-28,background_sequences,Alpha,83
+hCoV-19/Mexico/YUC-INMEGEN-21-251/2021|EPI_ISL_3548252|2021-08-04,EPI_ISL_3548252,B.1.1.7,Mexico,Yucatan,2021-08-04,background_sequences,Alpha,84
+hCoV-19/Mexico/TAM-InDRE-FB34064-S6782/2021|EPI_ISL_4298880|2021-08-11,EPI_ISL_4298880,B.1.1.7,Mexico,Tamaulipas,2021-08-11,background_sequences,Alpha,85
+hCoV-19/Mexico/CHH-InDRE-FB34366-S6836/2021|EPI_ISL_4298934|2021-08-16,EPI_ISL_4298934,B.1.1.7,Mexico,Chihuahua,2021-08-16,background_sequences,Alpha,86
+hCoV-19/Mexico/CAM_INER_IMSS_2128/2021|EPI_ISL_4299551|2021-08-22,EPI_ISL_4299551,B.1.1.7,Mexico,Campeche,2021-08-22,background_sequences,Alpha,87
+hCoV-19/Mexico/CAM_LANGEBIO_IMSS_2310/2021|EPI_ISL_4549852|2021-08-31,EPI_ISL_4549852,B.1.1.7,Mexico,Campeche,2021-08-31,background_sequences,Alpha,88
+hCoV-19/Canada/BC-BCCDC-9444/2020|EPI_ISL_976766|2020-12-26,EPI_ISL_976766,B.1.1.7,Canada,British Columbia,2020-12-26,background_sequences,Alpha,52
+hCoV-19/Canada/ABPHL-04273/2020|EPI_ISL_2164198|2020-12-30,EPI_ISL_2164198,B.1.1.7,Canada,Alberta,2020-12-30,background_sequences,Alpha,53
+hCoV-19/Canada/ABPHL-02626/2021|EPI_ISL_2163150|2021-01-07,EPI_ISL_2163150,B.1.1.7,Canada,Alberta,2021-01-07,background_sequences,Alpha,54
+hCoV-19/Canada/ABPHL-02658/2021|EPI_ISL_2163167|2021-01-14,EPI_ISL_2163167,B.1.1.7,Canada,Alberta,2021-01-14,background_sequences,Alpha,55
+hCoV-19/Canada/AB-ABPHL-05877/2021|EPI_ISL_2165225|2021-01-23,EPI_ISL_2165225,B.1.1.7,Canada,Alberta,2021-01-23,background_sequences,Alpha,56
+hCoV-19/Canada/ABPHL-03257/2021|EPI_ISL_2163604|2021-01-24,EPI_ISL_2163604,B.1.1.7,Canada,Alberta,2021-01-24,background_sequences,Alpha,57
+hCoV-19/Canada/ABPHL-03618/2021|EPI_ISL_2163775|2021-02-06,EPI_ISL_2163775,B.1.1.7,Canada,Alberta,2021-02-06,background_sequences,Alpha,58
+hCoV-19/Canada/ABPHL-03913/2021|EPI_ISL_2163931|2021-02-08,EPI_ISL_2163931,B.1.1.7,Canada,Alberta,2021-02-08,background_sequences,Alpha,59
+hCoV-19/Canada/ABPHL-06438/2021|EPI_ISL_2165474|2021-02-18,EPI_ISL_2165474,B.1.1.7,Canada,Alberta,2021-02-18,background_sequences,Alpha,60
+hCoV-19/Canada/ABPHL-06384/2021|EPI_ISL_2165456|2021-02-24,EPI_ISL_2165456,B.1.1.7,Canada,Alberta,2021-02-24,background_sequences,Alpha,61
+hCoV-19/Canada/ON-SC5666/2021|EPI_ISL_1740451|2021-02-28,EPI_ISL_1740451,B.1.1.7,Canada,Ontario,2021-02-28,background_sequences,Alpha,62
+hCoV-19/Canada/SK-NML-20769/2021|EPI_ISL_2562996|2021-03-08,EPI_ISL_2562996,B.1.1.7,Canada,Saskatchewan,2021-03-08,background_sequences,Alpha,63
+hCoV-19/Canada/MB-NML-21610/2021|EPI_ISL_3356730|2021-03-17,EPI_ISL_3356730,B.1.1.7,Canada,Manitoba,2021-03-17,background_sequences,Alpha,64
+hCoV-19/Canada/MB-NML-24084/2021|EPI_ISL_3356732|2021-03-23,EPI_ISL_3356732,B.1.1.7,Canada,Manitoba,2021-03-23,background_sequences,Alpha,65
+hCoV-19/Canada/MB-NML-42317/2021|EPI_ISL_3356740|2021-03-31,EPI_ISL_3356740,B.1.1.7,Canada,Manitoba,2021-03-31,background_sequences,Alpha,66
+hCoV-19/Canada/MB-NML-34968/2021|EPI_ISL_3356737|2021-04-06,EPI_ISL_3356737,B.1.1.7,Canada,Manitoba,2021-04-06,background_sequences,Alpha,67
+hCoV-19/Canada/MB-NML-82811/2021|EPI_ISL_3356789|2021-04-13,EPI_ISL_3356789,B.1.1.7,Canada,Manitoba,2021-04-13,background_sequences,Alpha,68
+hCoV-19/Canada/QC-1nDWVQ-MX21163094/2021|EPI_ISL_4999138|2021-04-23,EPI_ISL_4999138,B.1.1.7,Canada,Quebec,2021-04-23,background_sequences,Alpha,69
+hCoV-19/Canada/BC-BCCDC-122074/2021|EPI_ISL_3599264|2021-04-27,EPI_ISL_3599264,B.1.1.7,Canada,British Columbia,2021-04-27,background_sequences,Alpha,70
+hCoV-19/Canada/NS-NML-147358/2021|EPI_ISL_5439045|2021-05-05,EPI_ISL_5439045,B.1.1.7,Canada,Nova Scotia,2021-05-05,background_sequences,Alpha,71
+hCoV-19/Canada/MB-NML-82839/2021|EPI_ISL_3356814|2021-05-15,EPI_ISL_3356814,B.1.1.7,Canada,Manitoba,2021-05-15,background_sequences,Alpha,72
+hCoV-19/Canada/MB-NML-95147/2021|EPI_ISL_3356905|2021-05-22,EPI_ISL_3356905,B.1.1.7,Canada,Manitoba,2021-05-22,background_sequences,Alpha,73
+hCoV-19/Canada/MB-NML-95144/2021|EPI_ISL_3356902|2021-05-23,EPI_ISL_3356902,B.1.1.7,Canada,Manitoba,2021-05-23,background_sequences,Alpha,74
+hCoV-19/Canada/MB-NML-94781/2021|EPI_ISL_3356820|2021-05-31,EPI_ISL_3356820,B.1.1.7,Canada,Manitoba,2021-05-31,background_sequences,Alpha,75
+hCoV-19/Canada/QC-1nSKP-0633211353/2021|EPI_ISL_4998983|2021-06-12,EPI_ISL_4998983,B.1.1.7,Canada,Quebec,2021-06-12,background_sequences,Alpha,76
+hCoV-19/Canada/MB-CPL-211642/2021|EPI_ISL_5434267|2021-06-15,EPI_ISL_5434267,B.1.1.7,Canada,Manitoba,2021-06-15,background_sequences,Alpha,77
+hCoV-19/Canada/MB-CPL-211608/2021|EPI_ISL_5434310|2021-06-26,EPI_ISL_5434310,B.1.1.7,Canada,Manitoba,2021-06-26,background_sequences,Alpha,78
+hCoV-19/Canada/QC-1nDJXQ-R1011523/2021|EPI_ISL_4999265|2021-07-01,EPI_ISL_4999265,B.1.1.7,Canada,Quebec,2021-07-01,background_sequences,Alpha,79
+hCoV-19/Canada/QC-1nDWVQ-MX21240096/2021|EPI_ISL_4999148|2021-07-05,EPI_ISL_4999148,B.1.1.7,Canada,Quebec,2021-07-05,background_sequences,Alpha,80
+hCoV-19/Canada/QC-1nDWVQ-MX21246743/2021|EPI_ISL_4999165|2021-07-14,EPI_ISL_4999165,B.1.1.7,Canada,Quebec,2021-07-14,background_sequences,Alpha,81
+hCoV-19/Canada/QC-1nIUH-5524478677/2021|EPI_ISL_4999274|2021-07-23,EPI_ISL_4999274,B.1.1.7,Canada,Quebec,2021-07-23,background_sequences,Alpha,82
+hCoV-19/Canada/QC-1nDJXQ-2120905172A/2021|EPI_ISL_4998965|2021-07-28,EPI_ISL_4998965,B.1.1.7,Canada,Quebec,2021-07-28,background_sequences,Alpha,83
+hCoV-19/Canada/QC-1nDJXP-8144183825/2021|EPI_ISL_4999502|2021-08-03,EPI_ISL_4999502,B.1.1.7,Canada,Quebec,2021-08-03,background_sequences,Alpha,84
+hCoV-19/Canada/QC-1nDJXP-8144196945/2021|EPI_ISL_4999508|2021-08-08,EPI_ISL_4999508,B.1.1.7,Canada,Quebec,2021-08-08,background_sequences,Alpha,85
+hCoV-19/Canada/QC-L00378636001/2021|EPI_ISL_6424008|2021-08-18,EPI_ISL_6424008,B.1.1.7,Canada,Quebec,2021-08-18,background_sequences,Alpha,86
+hCoV-19/Canada/QC-1nQUP-9967162291/2021|EPI_ISL_5897862|2021-08-28,EPI_ISL_5897862,B.1.1.7,Canada,Quebec,2021-08-28,background_sequences,Alpha,87
+hCoV-19/Canada/QC-1nIOU-B3081609/2021|EPI_ISL_6423841|2021-09-04,EPI_ISL_6423841,B.1.1.7,Canada,Quebec,2021-09-04,background_sequences,Alpha,88
+hCoV-19/Canada/NB-CHUDGLD-193771/2021|EPI_ISL_4947389|2021-09-06,EPI_ISL_4947389,B.1.1.7,Canada,New Brunswick,2021-09-06,background_sequences,Alpha,89
+hCoV-19/Canada/NB-CHUDGLD-201945/2021|EPI_ISL_4948160|2021-09-15,EPI_ISL_4948160,B.1.1.7,Canada,New Brunswick,2021-09-15,background_sequences,Alpha,90
+hCoV-19/Canada/QC-1nDJXP-8144422282/2021|EPI_ISL_5429450|2021-09-20,EPI_ISL_5429450,B.1.1.7,Canada,Quebec,2021-09-20,background_sequences,Alpha,91
+hCoV-19/Canada/NB-CHUDGLD-216383/2021|EPI_ISL_5854659|2021-09-29,EPI_ISL_5854659,B.1.1.7,Canada,New Brunswick,2021-09-29,background_sequences,Alpha,92
+hCoV-19/Canada/NB-CHUDGLD-215778/2021|EPI_ISL_5854545|2021-10-08,EPI_ISL_5854545,B.1.1.7,Canada,New Brunswick,2021-10-08,background_sequences,Alpha,93
+hCoV-19/Canada/AB-ABPHL-37167/2021|EPI_ISL_6660812|2021-10-12,EPI_ISL_6660812,B.1.1.7,Canada,Alberta,2021-10-12,background_sequences,Alpha,94
+hCoV-19/France/COR-HCL021014358901/2020|EPI_ISL_1371813|2020-12-23,EPI_ISL_1371813,B.1.1.7,France,Corse,2020-12-23,background_sequences,Alpha,52
+hCoV-19/France/PAC-SC765/2020|EPI_ISL_768829|2020-12-28,EPI_ISL_768829,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2020-12-28,background_sequences,Alpha,53
+hCoV-19/France/NO-CERBAHC-20211020-43/2021|EPI_ISL_871792|2021-01-08,EPI_ISL_871792,B.1.1.7,France,Normandie,2021-01-08,background_sequences,Alpha,54
+hCoV-19/France/BRE-IPP01840/2021|EPI_ISL_953941|2021-01-12,EPI_ISL_953941,B.1.1.7,France,Bretagne,2021-01-12,background_sequences,Alpha,55
+hCoV-19/France/OCC-CHU-TLS-210231237102/2021|EPI_ISL_3393957|2021-01-23,EPI_ISL_3393957,B.1.1.7,France,Occitanie,2021-01-23,background_sequences,Alpha,56
+hCoV-19/France/IDF-HCL021020612401/2021|EPI_ISL_1359789|2021-01-25,EPI_ISL_1359789,B.1.1.7,France,Ile-de-France,2021-01-25,background_sequences,Alpha,57
+hCoV-19/France/ARA-HCL021052519901/2021|EPI_ISL_1461133|2021-02-01,EPI_ISL_1461133,B.1.1.7,France,Auvergne-Rhone-Alpes,2021-02-01,background_sequences,Alpha,58
+hCoV-19/France/PAC-IHU-5135-N1/2021|EPI_ISL_2036605|2021-02-09,EPI_ISL_2036605,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-02-09,background_sequences,Alpha,59
+hCoV-19/France/PAC-CHUNICE-2102170436/2021|EPI_ISL_2036237|2021-02-16,EPI_ISL_2036237,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-02-16,background_sequences,Alpha,60
+hCoV-19/France/PAC-IHU-3437-N2/2021|EPI_ISL_2036457|2021-02-22,EPI_ISL_2036457,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-02-22,background_sequences,Alpha,61
+hCoV-19/France/PDL-IPP11420/2021|EPI_ISL_2030096|2021-03-05,EPI_ISL_2030096,B.1.1.7,France,Pays de la Loire,2021-03-05,background_sequences,Alpha,62
+hCoV-19/France/PAC-CHUNICE-2103080580/2021|EPI_ISL_2036210|2021-03-07,EPI_ISL_2036210,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-03-07,background_sequences,Alpha,63
+hCoV-19/France/PDL-IPP11424/2021|EPI_ISL_2029997|2021-03-17,EPI_ISL_2029997,B.1.1.7,France,Pays de la Loire,2021-03-17,background_sequences,Alpha,64
+hCoV-19/France/PAC-CHUNICE-2103031707/2021|EPI_ISL_2036213|2021-03-21,EPI_ISL_2036213,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-03-21,background_sequences,Alpha,65
+hCoV-19/France/PAC-CHUNICE-2103290401/2021|EPI_ISL_2036242|2021-03-28,EPI_ISL_2036242,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-03-28,background_sequences,Alpha,66
+hCoV-19/France/PDL-IPP11375/2021|EPI_ISL_2030122|2021-04-04,EPI_ISL_2030122,B.1.1.7,France,Pays de la Loire,2021-04-04,background_sequences,Alpha,67
+hCoV-19/France/PAC-IHU-4981-N1/2021|EPI_ISL_2036531|2021-04-15,EPI_ISL_2036531,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-04-15,background_sequences,Alpha,68
+hCoV-19/France/BRE-IPP10706/2021|EPI_ISL_2029616|2021-04-22,EPI_ISL_2029616,B.1.1.7,France,Bretagne,2021-04-22,background_sequences,Alpha,69
+hCoV-19/France/IDF-IPP10844/2021|EPI_ISL_2029642|2021-04-27,EPI_ISL_2029642,B.1.1.7,France,Ile-de-France,2021-04-27,background_sequences,Alpha,70
+hCoV-19/France/PAC-IHU-5185-N1/2021|EPI_ISL_2036676|2021-05-03,EPI_ISL_2036676,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-05-03,background_sequences,Alpha,71
+hCoV-19/France/ARA-CFD210028711601/2021|EPI_ISL_2134777|2021-05-09,EPI_ISL_2134777,B.1.1.7,France,Auvergne-Rhone-Alpes,2021-05-09,background_sequences,Alpha,72
+hCoV-19/France/NOR-76325526/2021|EPI_ISL_5062068|2021-05-22,EPI_ISL_5062068,B.1.1.7,France,Normandie,2021-05-22,background_sequences,Alpha,73
+hCoV-19/France/IDF-IPP22811/2021|EPI_ISL_3999687|2021-05-23,EPI_ISL_3999687,B.1.1.7,France,Ile-de-France,2021-05-23,background_sequences,Alpha,74
+hCoV-19/France/NOR-76338836/2021|EPI_ISL_5062039|2021-05-31,EPI_ISL_5062039,B.1.1.7,France,Normandie,2021-05-31,background_sequences,Alpha,75
+hCoV-19/France/PAC-IHU-12051_Nova1/2021|EPI_ISL_2659711|2021-06-11,EPI_ISL_2659711,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-06-11,background_sequences,Alpha,76
+hCoV-19/France/PAC-IHU-12095_Nova1/2021|EPI_ISL_2659748|2021-06-14,EPI_ISL_2659748,B.1.1.7,France,Provence-Alpes-Cote d'Azur,2021-06-14,background_sequences,Alpha,77
+hCoV-19/France/HDF-P198-21254C2922/2021|EPI_ISL_3046525|2021-06-24,EPI_ISL_3046525,B.1.1.7,France,Hauts-de-France,2021-06-24,background_sequences,Alpha,78
+hCoV-19/France/OCC-NI-2107021823/2021|EPI_ISL_3919789|2021-07-02,EPI_ISL_3919789,B.1.1.7,France,Occitanie,2021-07-02,background_sequences,Alpha,79
+hCoV-19/France/HDF-P355-21292M0597/2021|EPI_ISL_3370686|2021-07-10,EPI_ISL_3370686,B.1.1.7,France,Hauts-de-France,2021-07-10,background_sequences,Alpha,80
+hCoV-19/France/HDF-P329-21291M0316/2021|EPI_ISL_3370684|2021-07-16,EPI_ISL_3370684,B.1.1.7,France,Hauts-de-France,2021-07-16,background_sequences,Alpha,81
+hCoV-19/France/CVL-IPP18431/2021|EPI_ISL_3355638|2021-07-19,EPI_ISL_3355638,B.1.1.7,France,Centre Val de Loire,2021-07-19,background_sequences,Alpha,82
+hCoV-19/France/PAC-IHU-22822-N1/2021|EPI_ISL_3802300|2021-07-26,EPI_ISL_3802300,B.1.1.7,France,Marseille,2021-07-26,background_sequences,Alpha,83
+hCoV-19/France/PAC-IHU-21327_Nova1/2021|EPI_ISL_3432790|2021-08-01,EPI_ISL_3432790,B.1.1.7,France,Provence-Alpes-Cote-d'Azur,2021-08-01,background_sequences,Alpha,84
+hCoV-19/France/NOR-76499989/2021|EPI_ISL_5062171|2021-08-11,EPI_ISL_5062171,B.1.1.7,France,Normandie,2021-08-11,background_sequences,Alpha,85
+hCoV-19/France/NOR-76429161/2021|EPI_ISL_5062513|2021-08-17,EPI_ISL_5062513,B.1.1.7,France,Normandie,2021-08-17,background_sequences,Alpha,86
+hCoV-19/France/ARA-CFD700000260267/2021|EPI_ISL_3915370|2021-08-27,EPI_ISL_3915370,B.1.1.7,France,Auvergne-Rhone-Alpes,2021-08-27,background_sequences,Alpha,87
+hCoV-19/France/un-01-0332-d3/2021|EPI_ISL_13478539|2021-09-02,EPI_ISL_13478539,B.1.1.7,France,NA,2021-09-02,background_sequences,Alpha,88
+hCoV-19/France/IDF-HMN-21092160330/2021|EPI_ISL_5637763|2021-09-09,EPI_ISL_5637763,B.1.1.7,France,Ile-de-France,2021-09-09,background_sequences,Alpha,89
+hCoV-19/France/HDF-P225-21374M1466/2021|EPI_ISL_5624543|2021-09-15,EPI_ISL_5624543,B.1.1.7,France,Hauts-de-France,2021-09-15,background_sequences,Alpha,90
+hCoV-19/France/IDF-112110084235/2021|EPI_ISL_9455778|2021-09-19,EPI_ISL_9455778,B.1.1.7,France,Ile-de-France,2021-09-19,background_sequences,Alpha,91
+hCoV-19/France/OCC-CHU-TLS-600240802311/2021|EPI_ISL_8001538|2021-09-28,EPI_ISL_8001538,B.1.1.7,France,Occitanie,2021-09-28,background_sequences,Alpha,92
+hCoV-19/Panama/GMI-PAM1067/2021|EPI_ISL_4744618|2021-03-25,EPI_ISL_4744618,B.1.1.7,Panama,Metropolitan,2021-03-25,background_sequences,Alpha,65
+hCoV-19/Panama/GMI-PA729187/2021|EPI_ISL_5196206|2021-04-03,EPI_ISL_5196206,B.1.1.7,Panama,San Miguelito,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Panama/GMI-PACOVIDVIRO628/2021|EPI_ISL_5196210|2021-04-06,EPI_ISL_5196210,B.1.1.7,Panama,Metropolitan,2021-04-06,background_sequences,Alpha,67
+hCoV-19/Panama/PA732683-GMI/2021|EPI_ISL_11686175|2021-04-13,EPI_ISL_11686175,B.1.1.7,Panama,Panama City,2021-04-13,background_sequences,Alpha,68
+hCoV-19/Panama/GMI-PA734150/2021|EPI_ISL_5196193|2021-04-19,EPI_ISL_5196193,B.1.1.7,Panama,Metropolitan,2021-04-19,background_sequences,Alpha,69
+hCoV-19/Panama/GMI-PA736051/2021|EPI_ISL_5196195|2021-04-27,EPI_ISL_5196195,B.1.1.7,Panama,San Miguelito,2021-04-27,background_sequences,Alpha,70
+hCoV-19/Panama/GMI-PA738158/2021|EPI_ISL_11681706|2021-05-06,EPI_ISL_11681706,B.1.1.7,Panama,Panama Center,2021-05-06,background_sequences,Alpha,71
+hCoV-19/Panama/GMI-PA740023/2021|EPI_ISL_11681724|2021-05-12,EPI_ISL_11681724,B.1.1.7,Panama,San Miguelito,2021-05-12,background_sequences,Alpha,72
+hCoV-19/Panama/GMI-PA742645/2021|EPI_ISL_11681735|2021-05-20,EPI_ISL_11681735,B.1.1.7,Panama,San Miguelito,2021-05-20,background_sequences,Alpha,73
+hCoV-19/Panama/GMI-PA746322/2021|EPI_ISL_11681752|2021-05-29,EPI_ISL_11681752,B.1.1.7,Panama,Panama Center,2021-05-29,background_sequences,Alpha,74
+hCoV-19/Panama/GMI-PA2026A/2021|EPI_ISL_11681679|2021-05-30,EPI_ISL_11681679,B.1.1.7,Panama,Panama Center,2021-05-30,background_sequences,Alpha,75
+hCoV-19/Panama/PACZ4546-GMI/2021|EPI_ISL_11686441|2021-06-10,EPI_ISL_11686441,B.1.1.7,Panama,Cocle,2021-06-10,background_sequences,Alpha,76
+hCoV-19/Panama/PAM25427-GMI/2021|EPI_ISL_11686467|2021-06-17,EPI_ISL_11686467,B.1.1.7,Panama,Panama West,2021-06-17,background_sequences,Alpha,77
+hCoV-19/Panama/PA756264-GMI/2021|EPI_ISL_11686398|2021-06-20,EPI_ISL_11686398,B.1.1.7,Panama,Panama Center,2021-06-20,background_sequences,Alpha,78
+hCoV-19/Panama/PA761910-GMI/2021|EPI_ISL_11686248|2021-07-03,EPI_ISL_11686248,B.1.1.7,Panama,Cocle,2021-07-03,background_sequences,Alpha,79
+hCoV-19/Panama/GMI-PACZ6617/2021|EPI_ISL_11695939|2021-07-08,EPI_ISL_11695939,B.1.1.7,Panama,Cocle,2021-07-08,background_sequences,Alpha,80
+hCoV-19/Panama/PA2812-GMI/2021|EPI_ISL_11686140|2021-07-12,EPI_ISL_11686140,B.1.1.7,Panama,Herrera,2021-07-12,background_sequences,Alpha,81
+hCoV-19/Panama/PA769036-GMI/2021|EPI_ISL_11686273|2021-07-24,EPI_ISL_11686273,B.1.1.7,Panama,Panama City,2021-07-24,background_sequences,Alpha,82
+hCoV-19/Panama/GMI-PASEQ274/2021|EPI_ISL_11695508|2021-07-30,EPI_ISL_11695508,B.1.1.7,Panama,Cocle,2021-07-30,background_sequences,Alpha,83
+hCoV-19/Panama/GMI-PASEQ293/2021|EPI_ISL_11695523|2021-08-05,EPI_ISL_11695523,B.1.1.7,Panama,Herrera,2021-08-05,background_sequences,Alpha,84
+hCoV-19/Panama/PA772963-GMI/2021|EPI_ISL_11686287|2021-08-08,EPI_ISL_11686287,B.1.1.7,Panama,Panama West,2021-08-08,background_sequences,Alpha,85
+hCoV-19/Panama/PA774778-GMI/2021|EPI_ISL_11686293|2021-08-16,EPI_ISL_11686293,B.1.1.7,Panama,Colon,2021-08-16,background_sequences,Alpha,86
+hCoV-19/Panama/PA776729-GMI/2021|EPI_ISL_11686308|2021-08-25,EPI_ISL_11686308,B.1.1.7,Panama,Colon,2021-08-25,background_sequences,Alpha,87
+hCoV-19/Panama/GMI-PAM74007/2021|EPI_ISL_11696261|2021-08-30,EPI_ISL_11696261,B.1.1.7,Panama,Panama West,2021-08-30,background_sequences,Alpha,88
+hCoV-19/Panama/GMI-PASEQ510/2021|EPI_ISL_11695667|2021-09-17,EPI_ISL_11695667,B.1.1.7,Panama,Herrera,2021-09-17,background_sequences,Alpha,90
+hCoV-19/Spain/MD-H12-02-5372/2020|EPI_ISL_737930|2020-12-23,EPI_ISL_737930,B.1.1.7,Spain,Madrid,2020-12-23,background_sequences,Alpha,52
+hCoV-19/Spain/MD-HGUGM-950638/2020|EPI_ISL_756274|2020-12-27,EPI_ISL_756274,B.1.1.7,Spain,Madrid,2020-12-27,background_sequences,Alpha,53
+hCoV-19/Spain/CM-IBV-98020385/2021|EPI_ISL_2147379|2021-01-08,EPI_ISL_2147379,B.1.1.7,Spain,Castilla-La Mancha,2021-01-08,background_sequences,Alpha,54
+hCoV-19/Spain/CL-IBV-98026121/2021|EPI_ISL_2149043|2021-01-12,EPI_ISL_2149043,B.1.1.7,Spain,Castilla y Leon,2021-01-12,background_sequences,Alpha,55
+hCoV-19/Spain/VC-IBV-98019265/2021|EPI_ISL_2135404|2021-01-18,EPI_ISL_2135404,B.1.1.7,Spain,Comunitat Valenciana,2021-01-18,background_sequences,Alpha,56
+hCoV-19/Spain/AR-IBV-97017707/2021|EPI_ISL_2099805|2021-01-25,EPI_ISL_2099805,B.1.1.7,Spain,Aragon,2021-01-25,background_sequences,Alpha,57
+hCoV-19/Spain/VC-IBV-98025945/2021|EPI_ISL_2081628|2021-02-03,EPI_ISL_2081628,B.1.1.7,Spain,Comunitat Valenciana,2021-02-03,background_sequences,Alpha,58
+hCoV-19/Spain/CT-HUB00014/2021|EPI_ISL_1360157|2021-02-11,EPI_ISL_1360157,B.1.1.7,Spain,Catalunya,2021-02-11,background_sequences,Alpha,59
+hCoV-19/Spain/NC-CHN-01000645/2021|EPI_ISL_1393187|2021-02-18,EPI_ISL_1393187,B.1.1.7,Spain,Navarra,2021-02-18,background_sequences,Alpha,60
+hCoV-19/Spain/NC-CHN-01000688/2021|EPI_ISL_1393228|2021-02-21,EPI_ISL_1393228,B.1.1.7,Spain,Navarra,2021-02-21,background_sequences,Alpha,61
+hCoV-19/Spain/CT-HUGTiPM014TA3D2/2021|EPI_ISL_2035859|2021-02-28,EPI_ISL_2035859,B.1.1.7,Spain,Catalunya,2021-02-28,background_sequences,Alpha,62
+hCoV-19/Spain/VC-IBV-98025950/2021|EPI_ISL_2081631|2021-03-08,EPI_ISL_2081631,B.1.1.7,Spain,Comunitat Valenciana,2021-03-08,background_sequences,Alpha,63
+hCoV-19/Spain/CT-HUGTiPM014TA3C1/2021|EPI_ISL_2035855|2021-03-14,EPI_ISL_2035855,B.1.1.7,Spain,Catalunya,2021-03-14,background_sequences,Alpha,64
+hCoV-19/Spain/VC-IBV-98025929/2021|EPI_ISL_2081627|2021-03-21,EPI_ISL_2081627,B.1.1.7,Spain,Comunitat Valenciana,2021-03-21,background_sequences,Alpha,65
+hCoV-19/Spain/VC-IBV-98026586/2021|EPI_ISL_2035926|2021-04-02,EPI_ISL_2035926,B.1.1.7,Spain,Comunitat Valenciana,2021-04-02,background_sequences,Alpha,66
+hCoV-19/Spain/VC-IBV-98026483/2021|EPI_ISL_2035873|2021-04-06,EPI_ISL_2035873,B.1.1.7,Spain,Comunitat Valenciana,2021-04-06,background_sequences,Alpha,67
+hCoV-19/Spain/VC-IBV-98026516/2021|EPI_ISL_2035897|2021-04-13,EPI_ISL_2035897,B.1.1.7,Spain,Comunitat Valenciana,2021-04-13,background_sequences,Alpha,68
+hCoV-19/Spain/CT-HUGTiPM014SM6C1/2021|EPI_ISL_2035778|2021-04-24,EPI_ISL_2035778,B.1.1.7,Spain,Catalunya,2021-04-24,background_sequences,Alpha,69
+hCoV-19/Spain/CT-HUGTiPM014SM6G3/2021|EPI_ISL_2035830|2021-04-30,EPI_ISL_2035830,B.1.1.7,Spain,Catalunya,2021-04-30,background_sequences,Alpha,70
+hCoV-19/Spain/CT-HUGTiPM014SM6B2/2021|EPI_ISL_2035770|2021-05-03,EPI_ISL_2035770,B.1.1.7,Spain,Catalunya,2021-05-03,background_sequences,Alpha,71
+hCoV-19/Spain/IB-HUSE-00502/2021|EPI_ISL_2134953|2021-05-09,EPI_ISL_2134953,B.1.1.7,Spain,Balearic Islands,2021-05-09,background_sequences,Alpha,72
+hCoV-19/Spain/CT-LabRefCat-778914/2021|EPI_ISL_5049927|2021-05-18,EPI_ISL_5049927,B.1.1.7,Spain,Catalunya,2021-05-18,background_sequences,Alpha,73
+hCoV-19/Spain/AS-252120078/2021|EPI_ISL_2812441|2021-05-23,EPI_ISL_2812441,B.1.1.7,Spain,Asturias,2021-05-23,background_sequences,Alpha,74
+hCoV-19/Spain/CT-LabRefCat-9957936/2021|EPI_ISL_5049879|2021-06-01,EPI_ISL_5049879,B.1.1.7,Spain,Catalunya,2021-06-01,background_sequences,Alpha,75
+hCoV-19/Spain/GA-CHUVI-34043567/2021|EPI_ISL_4951716|2021-06-10,EPI_ISL_4951716,B.1.1.7,Spain,Galicia,2021-06-10,background_sequences,Alpha,76
+hCoV-19/Spain/GA-CHUVI-19362509/2021|EPI_ISL_4951715|2021-06-16,EPI_ISL_4951715,B.1.1.7,Spain,Galicia,2021-06-16,background_sequences,Alpha,77
+hCoV-19/Spain/PV-HUD-66646476/2021|EPI_ISL_3100028|2021-06-24,EPI_ISL_3100028,B.1.1.7,Spain,Basque Country,2021-06-24,background_sequences,Alpha,78
+hCoV-19/Spain/CT-LabRefCat-1626164/2021|EPI_ISL_5049893|2021-07-03,EPI_ISL_5049893,B.1.1.7,Spain,Catalunya,2021-07-03,background_sequences,Alpha,79
+hCoV-19/Spain/CM-ISCIII-217119/2021|EPI_ISL_5107000|2021-07-07,EPI_ISL_5107000,B.1.1.7,Spain,Castilla-La Mancha,2021-07-07,background_sequences,Alpha,80
+hCoV-19/Spain/CT-HCB-1077/2021|EPI_ISL_4945283|2021-07-12,EPI_ISL_4945283,B.1.1.7,Spain,Catalunya,2021-07-12,background_sequences,Alpha,81
+hCoV-19/Spain/CL-COV08602/2021|EPI_ISL_3587323|2021-07-19,EPI_ISL_3587323,B.1.1.7,Spain,Castilla y Leon,2021-07-19,background_sequences,Alpha,82
+hCoV-19/Spain/CM-HGUCR-699542/2021|EPI_ISL_3356928|2021-07-26,EPI_ISL_3356928,B.1.1.7,Spain,Castilla-La Mancha,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Spain/CT-HUVH-EX12771/2021|EPI_ISL_3374771|2021-08-03,EPI_ISL_3374771,B.1.1.7,Spain,Catalunya,2021-08-03,background_sequences,Alpha,84
+hCoV-19/Spain/MC-HCUVA-11097590/2021|EPI_ISL_5022662|2021-08-10,EPI_ISL_5022662,B.1.1.7,Spain,Murcia,2021-08-10,background_sequences,Alpha,85
+hCoV-19/Spain/GA-CHUVI-19417828/2021|EPI_ISL_5427633|2021-08-16,EPI_ISL_5427633,B.1.1.7,Spain,Galicia,2021-08-16,background_sequences,Alpha,86
+hCoV-19/Spain/CL-COV13325/2021|EPI_ISL_4273109|2021-08-24,EPI_ISL_4273109,B.1.1.7,Spain,Castilla y Leon,2021-08-24,background_sequences,Alpha,87
+hCoV-19/Spain/VC-IBV-99036474/2021|EPI_ISL_5009959|2021-08-31,EPI_ISL_5009959,B.1.1.7,Spain,Comunitat Valenciana,2021-08-31,background_sequences,Alpha,88
+hCoV-19/Spain/CL-COV14028/2021|EPI_ISL_4506528|2021-09-07,EPI_ISL_4506528,B.1.1.7,Spain,Castilla y Leon,2021-09-07,background_sequences,Alpha,89
+hCoV-19/Spain/VC-FISABIO-36130/2021|EPI_ISL_11141119|2021-09-15,EPI_ISL_11141119,B.1.1.7,Spain,Valencian Community,2021-09-15,background_sequences,Alpha,90
+hCoV-19/Spain/CL-COV15377/2021|EPI_ISL_8540491|2021-09-29,EPI_ISL_8540491,B.1.1.7,Spain,Castilla y Leon,2021-09-29,background_sequences,Alpha,92
+hCoV-19/Spain/CL-COV15596/2021|EPI_ISL_8625981|2021-10-06,EPI_ISL_8625981,B.1.1.7,Spain,Castilla y Leon,2021-10-06,background_sequences,Alpha,93
+hCoV-19/USA/CO-CDPHE-2100156850/2020|EPI_ISL_751800|2020-12-24,EPI_ISL_751800,B.1.1.7,USA,Colorado,2020-12-24,background_sequences,Alpha,52
+hCoV-19/USA/CA-CZB-31046/2020|EPI_ISL_2103044|2020-12-28,EPI_ISL_2103044,B.1.1.7,USA,California,2020-12-28,background_sequences,Alpha,53
+hCoV-19/USA/FL-CDC-STM-000008039/2021|EPI_ISL_4962039|2021-01-08,EPI_ISL_4962039,B.1.1.7,USA,Florida,2021-01-08,background_sequences,Alpha,54
+hCoV-19/USA/FL-CDC-STM-000001374/2021|EPI_ISL_4961972|2021-01-11,EPI_ISL_4961972,B.1.1.7,USA,Florida,2021-01-11,background_sequences,Alpha,55
+hCoV-19/USA/OH-CDC-2-3980156/2021|EPI_ISL_3354154|2021-01-20,EPI_ISL_3354154,B.1.1.7,USA,Ohio,2021-01-20,background_sequences,Alpha,56
+hCoV-19/USA/NY-CDC-2-3906087/2021|EPI_ISL_3353953|2021-01-28,EPI_ISL_3353953,B.1.1.7,USA,New York,2021-01-28,background_sequences,Alpha,57
+hCoV-19/USA/IN-CDC-2-3903553/2021|EPI_ISL_3353798|2021-02-04,EPI_ISL_3353798,B.1.1.7,USA,Indiana,2021-02-04,background_sequences,Alpha,58
+hCoV-19/USA/GA-CDC-2-3922776/2021|EPI_ISL_3354009|2021-02-12,EPI_ISL_3354009,B.1.1.7,USA,Georgia,2021-02-12,background_sequences,Alpha,59
+hCoV-19/USA/GA-CDC-2-3979479/2021|EPI_ISL_3354140|2021-02-16,EPI_ISL_3354140,B.1.1.7,USA,Georgia,2021-02-16,background_sequences,Alpha,60
+hCoV-19/USA/MN-MDH-3831/2021|EPI_ISL_1358991|2021-02-25,EPI_ISL_1358991,B.1.1.7,USA,Minnesota,2021-02-25,background_sequences,Alpha,61
+hCoV-19/USA/MD-CDC-4115044-001/2021|EPI_ISL_2031645|2021-03-02,EPI_ISL_2031645,B.1.1.7,USA,Maryland,2021-03-02,background_sequences,Alpha,62
+hCoV-19/USA/MD-CDC-4115050-001/2021|EPI_ISL_2031646|2021-03-09,EPI_ISL_2031646,B.1.1.7,USA,Maryland,2021-03-09,background_sequences,Alpha,63
+hCoV-19/USA/NH-CDC-2-4122019/2021|EPI_ISL_3354512|2021-03-16,EPI_ISL_3354512,B.1.1.7,USA,New Hampshire,2021-03-16,background_sequences,Alpha,64
+hCoV-19/USA/NY-MSK-851/2021|EPI_ISL_12176369|2021-03-25,EPI_ISL_12176369,B.1.1.7,USA,New York,2021-03-25,background_sequences,Alpha,65
+hCoV-19/USA/NE-20978/2021|EPI_ISL_2030449|2021-03-30,EPI_ISL_2030449,B.1.1.7,USA,Nebraska,2021-03-30,background_sequences,Alpha,66
+hCoV-19/USA/GA-CDC-4109384-001/2021|EPI_ISL_2031665|2021-04-10,EPI_ISL_2031665,B.1.1.7,USA,Georgia,2021-04-10,background_sequences,Alpha,67
+hCoV-19/USA/NC-CDC-4106462-001/2021|EPI_ISL_2031654|2021-04-13,EPI_ISL_2031654,B.1.1.7,USA,North Carolina,2021-04-13,background_sequences,Alpha,68
+hCoV-19/USA/ID-IBL-724388/2021|EPI_ISL_2031596|2021-04-19,EPI_ISL_2031596,B.1.1.7,USA,Idaho,2021-04-19,background_sequences,Alpha,69
+hCoV-19/USA/NE-S416938/2021|EPI_ISL_2030457|2021-04-27,EPI_ISL_2030457,B.1.1.7,USA,Nebraska,2021-04-27,background_sequences,Alpha,70
+hCoV-19/USA/NE-20554/2021|EPI_ISL_2030448|2021-05-05,EPI_ISL_2030448,B.1.1.7,USA,Nebraska,2021-05-05,background_sequences,Alpha,71
+hCoV-19/USA/CA-Curative-004598/2021|EPI_ISL_2755389|2021-05-14,EPI_ISL_2755389,B.1.1.7,USA,California,2021-05-14,background_sequences,Alpha,72
+hCoV-19/USA/SD-CDC-2-4449391/2021|EPI_ISL_3355016|2021-05-18,EPI_ISL_3355016,B.1.1.7,USA,South Dakota,2021-05-18,background_sequences,Alpha,73
+hCoV-19/USA/WI-WSLH-215560/2021|EPI_ISL_2727739|2021-05-26,EPI_ISL_2727739,B.1.1.7,USA,Wisconsin,2021-05-26,background_sequences,Alpha,74
+hCoV-19/USA/LA-CDC-2-4500999/2021|EPI_ISL_3355055|2021-06-02,EPI_ISL_3355055,B.1.1.7,USA,Louisiana,2021-06-02,background_sequences,Alpha,75
+hCoV-19/USA/OH-2936/2021|EPI_ISL_2758930|2021-06-11,EPI_ISL_2758930,B.1.1.7,USA,Ohio,2021-06-11,background_sequences,Alpha,76
+hCoV-19/USA/MI-CDC-2-4611291/2021|EPI_ISL_3355220|2021-06-15,EPI_ISL_3355220,B.1.1.7,USA,Michigan,2021-06-15,background_sequences,Alpha,77
+hCoV-19/USA/SD-CDC-2-4611175/2021|EPI_ISL_3355176|2021-06-22,EPI_ISL_3355176,B.1.1.7,USA,South Dakota,2021-06-22,background_sequences,Alpha,78
+hCoV-19/USA/FL-CDC-2-4611680/2021|EPI_ISL_3355344|2021-07-02,EPI_ISL_3355344,B.1.1.7,USA,Florida,2021-07-02,background_sequences,Alpha,79
+hCoV-19/USA/AZ-TG997568/2021|EPI_ISL_8364372|2021-07-10,EPI_ISL_8364372,B.1.1.7,USA,Arizona,2021-07-10,background_sequences,Alpha,80
+hCoV-19/USA/AZ-TG989712/2021|EPI_ISL_8364403|2021-07-12,EPI_ISL_8364403,B.1.1.7,USA,Arizona,2021-07-12,background_sequences,Alpha,81
+hCoV-19/USA/TN-CDC-QDX27052887/2021|EPI_ISL_3352680|2021-07-19,EPI_ISL_3352680,B.1.1.7,USA,Tennessee,2021-07-19,background_sequences,Alpha,82
+hCoV-19/USA/MN-CDC-IBX684025182990/2021|EPI_ISL_3353517|2021-07-31,EPI_ISL_3353517,B.1.1.7,USA,Minnesota,2021-07-31,background_sequences,Alpha,83
+hCoV-19/USA/CA-CDPH-3000138834/2021|EPI_ISL_4945947|2021-08-03,EPI_ISL_4945947,B.1.1.7,USA,California,2021-08-03,background_sequences,Alpha,84
+hCoV-19/USA/HI-BL442/2021|EPI_ISL_10654961|2021-08-12,EPI_ISL_10654961,B.1.1.7,USA,Hawaii,2021-08-12,background_sequences,Alpha,85
+hCoV-19/USA/MN-MDH-12889/2021|EPI_ISL_4419474|2021-08-17,EPI_ISL_4419474,B.1.1.7,USA,Minnesota,2021-08-17,background_sequences,Alpha,86
+hCoV-19/USA/AR-UMGC-15531/2021|EPI_ISL_6405962|2021-08-26,EPI_ISL_6405962,B.1.1.7,USA,Arkansas,2021-08-26,background_sequences,Alpha,87
+hCoV-19/USA/CA-CDC-FG-114228/2021|EPI_ISL_4244693|2021-09-04,EPI_ISL_4244693,B.1.1.7,USA,California,2021-09-04,background_sequences,Alpha,88
+hCoV-19/USA/PA-0452/2021|EPI_ISL_10658185|2021-09-06,EPI_ISL_10658185,B.1.1.7,USA,Pennsylvania,2021-09-06,background_sequences,Alpha,89
+hCoV-19/USA/LA-BIE-LSUH900245/2021|EPI_ISL_4967528|2021-09-15,EPI_ISL_4967528,B.1.1.7,USA,Louisiana,2021-09-15,background_sequences,Alpha,90
+hCoV-19/USA/NC-CDC-ASC210331965/2021|EPI_ISL_5517843|2021-09-21,EPI_ISL_5517843,B.1.1.7,USA,North Carolina,2021-09-21,background_sequences,Alpha,91
+hCoV-19/USA/CA-CDPH-3000234729/2021|EPI_ISL_5436824|2021-09-27,EPI_ISL_5436824,B.1.1.7,USA,California,2021-09-27,background_sequences,Alpha,92
+hCoV-19/USA/FL-TGH-1927/2021|EPI_ISL_5347199|2021-10-06,EPI_ISL_5347199,B.1.1.7,USA,Florida,2021-10-06,background_sequences,Alpha,93
+hCoV-19/USA/NY-MSK-3121/2021|EPI_ISL_12157165|2021-10-10,EPI_ISL_12157165,B.1.1.7,USA,New York,2021-10-10,background_sequences,Alpha,94
+hCoV-19/England/LOND-128DFAF/2020|EPI_ISL_2126015|2020-12-23,EPI_ISL_2126015,B.1.1.7,United Kingdom,England,2020-12-23,background_sequences,Alpha,52
+hCoV-19/England/LOND-128E278/2020|EPI_ISL_2126061|2020-12-30,EPI_ISL_2126061,B.1.1.7,United Kingdom,England,2020-12-30,background_sequences,Alpha,53
+hCoV-19/England/TFCI-270254E/2021|EPI_ISL_924879|2021-01-09,EPI_ISL_924879,B.1.1.7,United Kingdom,England,2021-01-09,background_sequences,Alpha,54
+hCoV-19/England/NORT-1BA2CFF/2021|EPI_ISL_1387095|2021-01-10,EPI_ISL_1387095,B.1.1.7,United Kingdom,England,2021-01-10,background_sequences,Alpha,55
+hCoV-19/Wales/PHWC-4BD4B7/2021|EPI_ISL_922971|2021-01-18,EPI_ISL_922971,B.1.1.7,United Kingdom,Wales,2021-01-18,background_sequences,Alpha,56
+hCoV-19/England/RAND-11F96E6/2021|EPI_ISL_1108968|2021-01-28,EPI_ISL_1108968,B.1.1.7,United Kingdom,England,2021-01-28,background_sequences,Alpha,57
+hCoV-19/England/PHWC-4C76E1/2021|EPI_ISL_1052590|2021-02-05,EPI_ISL_1052590,B.1.1.7,United Kingdom,England,2021-02-05,background_sequences,Alpha,58
+hCoV-19/England/PHWC-4C99C8/2021|EPI_ISL_1387300|2021-02-09,EPI_ISL_1387300,B.1.1.7,United Kingdom,England,2021-02-09,background_sequences,Alpha,59
+hCoV-19/Scotland/EDB15495/2021|EPI_ISL_1386647|2021-02-16,EPI_ISL_1386647,B.1.1.7,United Kingdom,Scotland,2021-02-16,background_sequences,Alpha,60
+hCoV-19/Scotland/QEUH-1353E1D/2021|EPI_ISL_1378568|2021-02-26,EPI_ISL_1378568,B.1.1.7,United Kingdom,Scotland,2021-02-26,background_sequences,Alpha,61
+hCoV-19/England/QEUH-13F62D4/2021|EPI_ISL_1365347|2021-03-04,EPI_ISL_1365347,B.1.1.7,United Kingdom,England,2021-03-04,background_sequences,Alpha,62
+hCoV-19/England/RAND-13F100C/2021|EPI_ISL_1365148|2021-03-08,EPI_ISL_1365148,B.1.1.7,United Kingdom,England,2021-03-08,background_sequences,Alpha,63
+hCoV-19/England/ALDP-13FABD5/2021|EPI_ISL_1365167|2021-03-15,EPI_ISL_1365167,B.1.1.7,United Kingdom,England,2021-03-15,background_sequences,Alpha,64
+hCoV-19/England/NOTT-2539E3/2021|EPI_ISL_1833008|2021-03-26,EPI_ISL_1833008,B.1.1.7,United Kingdom,England,2021-03-26,background_sequences,Alpha,65
+hCoV-19/England/PHESW-YYBYQUK/2021|EPI_ISL_2749872|2021-04-03,EPI_ISL_2749872,B.1.1.7,United Kingdom,England,2021-04-03,background_sequences,Alpha,66
+hCoV-19/Wales/PHWC-PYDTOQ/2021|EPI_ISL_1546607|2021-04-06,EPI_ISL_1546607,B.1.1.7,United Kingdom,Wales,2021-04-06,background_sequences,Alpha,67
+hCoV-19/England/LCST-24DDC95/2021|EPI_ISL_1832336|2021-04-14,EPI_ISL_1832336,B.1.1.7,United Kingdom,England,2021-04-14,background_sequences,Alpha,68
+hCoV-19/England/MILK-1547ADA/2021|EPI_ISL_2091472|2021-04-22,EPI_ISL_2091472,B.1.1.7,United Kingdom,England,2021-04-22,background_sequences,Alpha,69
+hCoV-19/England/HSLL-155A6D0/2021|EPI_ISL_2080454|2021-04-30,EPI_ISL_2080454,B.1.1.7,United Kingdom,England,2021-04-30,background_sequences,Alpha,70
+hCoV-19/England/HSLL-155AB0E/2021|EPI_ISL_2080450|2021-05-04,EPI_ISL_2080450,B.1.1.7,United Kingdom,England,2021-05-04,background_sequences,Alpha,71
+hCoV-19/Northern Ireland/NIRE-003546/2021|EPI_ISL_10128353|2021-05-15,EPI_ISL_10128353,B.1.1.7,United Kingdom,Northern Ireland,2021-05-15,background_sequences,Alpha,72
+hCoV-19/Northern Ireland/NIRE-00354d/2021|EPI_ISL_10128359|2021-05-16,EPI_ISL_10128359,B.1.1.7,United Kingdom,Northern Ireland,2021-05-16,background_sequences,Alpha,73
+hCoV-19/Northern Ireland/NIRE-004d51/2021|EPI_ISL_10136549|2021-05-29,EPI_ISL_10136549,B.1.1.7,United Kingdom,Northern Ireland,2021-05-29,background_sequences,Alpha,74
+hCoV-19/Northern Ireland/NIRE-00385b/2021|EPI_ISL_10129692|2021-06-03,EPI_ISL_10129692,B.1.1.7,United Kingdom,Northern Ireland,2021-06-03,background_sequences,Alpha,75
+hCoV-19/England/NORT-1BD32C6/2021|EPI_ISL_2706083|2021-06-11,EPI_ISL_2706083,B.1.1.7,United Kingdom,England,2021-06-11,background_sequences,Alpha,76
+hCoV-19/Northern Ireland/NIRE-003b84/2021|EPI_ISL_10130658|2021-06-16,EPI_ISL_10130658,B.1.1.7,United Kingdom,Northern Ireland,2021-06-16,background_sequences,Alpha,77
+hCoV-19/Northern Ireland/NIRE-003dc0/2021|EPI_ISL_10131155|2021-06-20,EPI_ISL_10131155,B.1.1.7,United Kingdom,Northern Ireland,2021-06-20,background_sequences,Alpha,78
+hCoV-19/Northern Ireland/NIRE-004670/2021|EPI_ISL_10134296|2021-06-28,EPI_ISL_10134296,B.1.1.7,United Kingdom,Northern Ireland,2021-06-28,background_sequences,Alpha,79
+hCoV-19/Northern Ireland/NIRE-004a3d/2021|EPI_ISL_10135577|2021-07-05,EPI_ISL_10135577,B.1.1.7,United Kingdom,Northern Ireland,2021-07-05,background_sequences,Alpha,80
+hCoV-19/Northern Ireland/NIRE-00573d/2021|EPI_ISL_10140788|2021-07-13,EPI_ISL_10140788,B.1.1.7,United Kingdom,Northern Ireland,2021-07-13,background_sequences,Alpha,81
+hCoV-19/Northern Ireland/NIRE-007649/2021|EPI_ISL_10143233|2021-07-21,EPI_ISL_10143233,B.1.1.7,United Kingdom,Northern Ireland,2021-07-21,background_sequences,Alpha,82
+hCoV-19/Scotland/QEUH-1A3E36D/2021|EPI_ISL_3367767|2021-07-26,EPI_ISL_3367767,B.1.1.7,United Kingdom,Scotland,2021-07-26,background_sequences,Alpha,83
+hCoV-19/Wales/PHWC-PY696P/2021|EPI_ISL_3423378|2021-08-03,EPI_ISL_3423378,B.1.1.7,United Kingdom,Wales,2021-08-03,background_sequences,Alpha,84
+hCoV-19/England/BRBR-1B42611/2021|EPI_ISL_3443077|2021-08-08,EPI_ISL_3443077,B.1.1.7,United Kingdom,England,2021-08-08,background_sequences,Alpha,85
+hCoV-19/Northern Ireland/NIRE-00f118/2021|EPI_ISL_10151712|2021-08-16,EPI_ISL_10151712,B.1.1.7,United Kingdom,Northern Ireland,2021-08-16,background_sequences,Alpha,86
+hCoV-19/England/PHEC-T304TBCC/2021|EPI_ISL_3775766|2021-08-24,EPI_ISL_3775766,B.1.1.7,United Kingdom,England,2021-08-24,background_sequences,Alpha,87
+hCoV-19/England/MILK-1CF13FB/2021|EPI_ISL_3955590|2021-08-29,EPI_ISL_3955590,B.1.1.7,United Kingdom,England,2021-08-29,background_sequences,Alpha,88
+hCoV-19/England/PHEC-W308W1D5/2021|EPI_ISL_4119504|2021-09-05,EPI_ISL_4119504,B.1.1.7,United Kingdom,England,2021-09-05,background_sequences,Alpha,89
+hCoV-19/England/PHEP-036239/2021|EPI_ISL_4784278|2021-09-13,EPI_ISL_4784278,B.1.1.7,United Kingdom,England,2021-09-13,background_sequences,Alpha,90
+hCoV-19/England/LOND-129099C/2021|EPI_ISL_5039388|2021-09-24,EPI_ISL_5039388,B.1.1.7,United Kingdom,England,2021-09-24,background_sequences,Alpha,91
+hCoV-19/England/PHEC-3J045J19/2021|EPI_ISL_4773115|2021-09-26,EPI_ISL_4773115,B.1.1.7,United Kingdom,England,2021-09-26,background_sequences,Alpha,92
+hCoV-19/England/LOND-1290B3C/2021|EPI_ISL_5265214|2021-10-04,EPI_ISL_5265214,B.1.1.7,United Kingdom,England,2021-10-04,background_sequences,Alpha,93
+hCoV-19/England/PHEC-3M0B5M30/2021|EPI_ISL_5809677|2021-10-11,EPI_ISL_5809677,B.1.1.7,United Kingdom,England,2021-10-11,background_sequences,Alpha,94
+hCoV-19/Chile/BI-131093/2021|EPI_ISL_3363528|2021-07-28,EPI_ISL_3363528,B.1.1.7,Chile,Biobio,2021-07-28,Airport,Alpha,83
+hCoV-19/Chile/AT-127766/2021|EPI_ISL_3368774|2021-07-18,EPI_ISL_3368774,B.1.1.7,Chile,Atacama,2021-07-18,Community,Alpha,82
+hCoV-19/Chile/AT-127770/2021|EPI_ISL_3368775|2021-07-18,EPI_ISL_3368775,B.1.1.7,Chile,Atacama,2021-07-18,Community,Alpha,82
+hCoV-19/Chile/AT-127771/2021|EPI_ISL_3368776|2021-07-18,EPI_ISL_3368776,B.1.1.7,Chile,Atacama,2021-07-18,Community,Alpha,82
+hCoV-19/Chile/LL-125988/2021|EPI_ISL_3368847|2021-07-11,EPI_ISL_3368847,B.1.1.7,Chile,Los Lagos,2021-07-11,Community,Alpha,81
+hCoV-19/Chile/VS-126724/2021|EPI_ISL_3368848|2021-07-17,EPI_ISL_3368848,B.1.1.7,Chile,Valparaiso,2021-07-17,Community,Alpha,81
+hCoV-19/Chile/RM-52028/2021|EPI_ISL_1540999|2021-03-14,EPI_ISL_1540999,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-14,Community,Alpha,64
+hCoV-19/Chile/BI-133175/2021|EPI_ISL_3536100|2021-07-31,EPI_ISL_3536100,B.1.1.7,Chile,Biobio,2021-07-31,Community,Alpha,83
+hCoV-19/Chile/LR-132095/2021|EPI_ISL_3535991|2021-07-26,EPI_ISL_3535991,B.1.1.7,Chile,Los Rios,2021-07-26,Community,Alpha,83
+hCoV-19/Chile/AT-133913/2021|EPI_ISL_3537177|2021-07-31,EPI_ISL_3537177,B.1.1.7,Chile,Atacama,2021-07-31,Community,Alpha,83
+hCoV-19/Chile/AT-133916/2021|EPI_ISL_3537179|2021-08-01,EPI_ISL_3537179,B.1.1.7,Chile,Atacama,2021-08-01,Community,Alpha,84
+hCoV-19/Chile/VS-133997/2021|EPI_ISL_3537184|2021-08-03,EPI_ISL_3537184,B.1.1.7,Chile,Valparaiso,2021-08-03,Airport,Alpha,84
+hCoV-19/Chile/BI-134649/2021|EPI_ISL_3537307|2021-08-02,EPI_ISL_3537307,B.1.1.7,Chile,Biobio,2021-08-02,Community,Alpha,84
+hCoV-19/Chile/VS-129836/2021|EPI_ISL_3546387|2021-07-23,EPI_ISL_3546387,B.1.1.7,Chile,Valparaiso,2021-07-23,Community,Alpha,82
+hCoV-19/Chile/VS-13378/2021|EPI_ISL_1167933|2021-01-13,EPI_ISL_1167933,B.1.1.7,Chile,Valparaiso,2021-01-13,Airport,Alpha,55
+hCoV-19/Chile/VS-122565/2021|EPI_ISL_12145290|2021-07-05,EPI_ISL_12145290,B.1.1.7,Chile,Valparaiso,2021-07-05,Airport,Alpha,80
+hCoV-19/Chile/RM-85075/2021|EPI_ISL_12145279|2021-04-25,EPI_ISL_12145279,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-25,Airport,Alpha,70
+hCoV-19/Chile/RM-266424/2020|EPI_ISL_1167932|2020-12-30,EPI_ISL_1167932,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/RM-58075/2021|EPI_ISL_12145273|2021-03-20,EPI_ISL_12145273,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-20,Airport,Alpha,64
+hCoV-19/Chile/RM-266419/2020|EPI_ISL_1167928|2020-12-30,EPI_ISL_1167928,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/ML-266537/2020|EPI_ISL_1167930|2020-12-27,EPI_ISL_1167930,B.1.1.7,Chile,El Maule,2020-12-27,Airport,Alpha,53
+hCoV-19/Chile/RM-3596/2021|EPI_ISL_1167931|2021-01-04,EPI_ISL_1167931,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-01-04,Airport,Alpha,54
+hCoV-19/Chile/RM-266423/2020|EPI_ISL_1167925|2020-12-30,EPI_ISL_1167925,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/RM-1406/2021|EPI_ISL_1167927|2021-01-03,EPI_ISL_1167927,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-01-03,Airport,Alpha,54
+hCoV-19/Chile/ML-12/2020|EPI_ISL_1167926|2020-12-30,EPI_ISL_1167926,B.1.1.7,Chile,El Maule,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/RM-266418/2020|EPI_ISL_1167921|2020-12-30,EPI_ISL_1167921,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/RM-267253/2020|EPI_ISL_1167924|2020-12-29,EPI_ISL_1167924,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-29,Airport,Alpha,53
+hCoV-19/Chile/LR-262486/2020|EPI_ISL_1167923|2020-12-22,EPI_ISL_1167923,B.1.1.7,Chile,Los Rios,2020-12-22,Airport,Alpha,52
+hCoV-19/Chile/RM-3595/2021|EPI_ISL_1167922|2021-01-04,EPI_ISL_1167922,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-01-04,Airport,Alpha,54
+hCoV-19/Chile/LI-92462/2021|EPI_ISL_2391334|2021-05-10,EPI_ISL_2391334,B.1.1.7,Chile,O Higgins,2021-05-10,Community,Alpha,72
+hCoV-19/Chile/LR-86424/2021|EPI_ISL_2391065|2021-04-27,EPI_ISL_2391065,B.1.1.7,Chile,Los Rios,2021-04-27,Community,Alpha,70
+hCoV-19/Chile/RM-84485/2021|EPI_ISL_2391084|2021-04-26,EPI_ISL_2391084,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-26,Community,Alpha,70
+hCoV-19/Chile/AN-88362/2021|EPI_ISL_2391155|2021-04-26,EPI_ISL_2391155,B.1.1.7,Chile,Antofagasta,2021-04-26,Community,Alpha,70
+hCoV-19/Chile/AN-88361/2021|EPI_ISL_2391154|2021-04-26,EPI_ISL_2391154,B.1.1.7,Chile,Antofagasta,2021-04-26,Community,Alpha,70
+hCoV-19/Chile/RM-88280/2021|EPI_ISL_2391197|2021-05-03,EPI_ISL_2391197,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-03,Airport,Alpha,71
+hCoV-19/Chile/LR-89687/2021|EPI_ISL_2391235|2021-05-03,EPI_ISL_2391235,B.1.1.7,Chile,Los Rios,2021-05-03,Community,Alpha,71
+hCoV-19/Chile/LR-89689/2021|EPI_ISL_2391237|2021-05-03,EPI_ISL_2391237,B.1.1.7,Chile,Los Rios,2021-05-03,Community,Alpha,71
+hCoV-19/Chile/LR-89692/2021|EPI_ISL_2391240|2021-05-03,EPI_ISL_2391240,B.1.1.7,Chile,Los Rios,2021-05-03,Community,Alpha,71
+hCoV-19/Chile/TA-89795/2021|EPI_ISL_2391251|2021-05-03,EPI_ISL_2391251,B.1.1.7,Chile,Tarapaca,2021-05-03,Community,Alpha,71
+hCoV-19/Chile/CO-89068/2021|EPI_ISL_2391269|2021-05-04,EPI_ISL_2391269,B.1.1.7,Chile,Coquimbo,2021-05-04,Community,Alpha,71
+hCoV-19/Chile/RM-91876/2021|EPI_ISL_2391318|2021-05-08,EPI_ISL_2391318,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-08,Community,Alpha,71
+hCoV-19/Chile/RM-87654/2021|EPI_ISL_2391396|2021-05-03,EPI_ISL_2391396,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-03,Community,Alpha,71
+hCoV-19/Chile/RM-90891/2021|EPI_ISL_2391421|2021-05-08,EPI_ISL_2391421,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-08,Community,Alpha,71
+hCoV-19/Chile/ML-89982/2021|EPI_ISL_2391435|2021-05-05,EPI_ISL_2391435,B.1.1.7,Chile,El Maule,2021-05-05,Community,Alpha,71
+hCoV-19/Chile/LL-90405/2021|EPI_ISL_2391451|2021-04-30,EPI_ISL_2391451,B.1.1.7,Chile,Los Lagos,2021-04-30,Community,Alpha,70
+hCoV-19/Chile/RM-90060/2021|EPI_ISL_2391473|2021-05-05,EPI_ISL_2391473,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-05,Airport,Alpha,71
+hCoV-19/Chile/VS-93505/2021|EPI_ISL_2508615|2021-05-11,EPI_ISL_2508615,B.1.1.7,Chile,Valparaiso,2021-05-11,Airport,Alpha,72
+hCoV-19/Chile/BI-93140/2021|EPI_ISL_2509119|2021-05-09,EPI_ISL_2509119,B.1.1.7,Chile,Biobio,2021-05-09,Community,Alpha,72
+hCoV-19/Chile/VS-92459/2021|EPI_ISL_2509142|2021-05-10,EPI_ISL_2509142,B.1.1.7,Chile,Valparaiso,2021-05-10,Airport,Alpha,72
+hCoV-19/Chile/RM-94406/2021|EPI_ISL_2509162|2021-05-15,EPI_ISL_2509162,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-15,Community,Alpha,72
+hCoV-19/Chile/BI-99170/2021|EPI_ISL_2543594|2021-05-23,EPI_ISL_2543594,B.1.1.7,Chile,Biobio,2021-05-23,Community,Alpha,74
+hCoV-19/Chile/BI-96176/2021|EPI_ISL_2543435|2021-05-15,EPI_ISL_2543435,B.1.1.7,Chile,Biobio,2021-05-15,Community,Alpha,72
+hCoV-19/Chile/VS-98135/2021|EPI_ISL_2543481|2021-05-17,EPI_ISL_2543481,B.1.1.7,Chile,Valparaiso,2021-05-17,Airport,Alpha,73
+hCoV-19/Chile/VS-98134/2021|EPI_ISL_2543480|2021-05-17,EPI_ISL_2543480,B.1.1.7,Chile,Valparaiso,2021-05-17,Airport,Alpha,73
+hCoV-19/Chile/RM-98752/2021|EPI_ISL_2543528|2021-05-24,EPI_ISL_2543528,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-24,Community,Alpha,74
+hCoV-19/Chile/RM-97619/2021|EPI_ISL_2543517|2021-05-22,EPI_ISL_2543517,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-22,Community,Alpha,73
+hCoV-19/Chile/ML-98769/2021|EPI_ISL_2543536|2021-05-23,EPI_ISL_2543536,B.1.1.7,Chile,El Maule,2021-05-23,Community,Alpha,74
+hCoV-19/Chile/RM-97421/2021|EPI_ISL_2543507|2021-05-20,EPI_ISL_2543507,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-20,Community,Alpha,73
+hCoV-19/Chile/VS-100959/2021|EPI_ISL_2557302|2021-05-23,EPI_ISL_2557302,B.1.1.7,Chile,Valparaiso,2021-05-23,Airport,Alpha,74
+hCoV-19/Chile/VS-100960/2021|EPI_ISL_2557303|2021-05-17,EPI_ISL_2557303,B.1.1.7,Chile,Valparaiso,2021-05-17,Airport,Alpha,73
+hCoV-19/Chile/RM-100328/2021|EPI_ISL_2557304|2021-05-26,EPI_ISL_2557304,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-26,Community,Alpha,74
+hCoV-19/Chile/LR-101024/2021|EPI_ISL_2557277|2021-05-25,EPI_ISL_2557277,B.1.1.7,Chile,Los Rios,2021-05-25,Community,Alpha,74
+hCoV-19/Chile/LR-101022/2021|EPI_ISL_2557275|2021-05-25,EPI_ISL_2557275,B.1.1.7,Chile,Los Rios,2021-05-25,Community,Alpha,74
+hCoV-19/Chile/LR-83150/2021|EPI_ISL_2597291|2021-04-20,EPI_ISL_2597291,B.1.1.7,Chile,Los Rios,2021-04-20,Community,Alpha,69
+hCoV-19/Chile/TA-82581/2021|EPI_ISL_2597269|2021-04-20,EPI_ISL_2597269,B.1.1.7,Chile,Tarapaca,2021-04-20,Community,Alpha,69
+hCoV-19/Chile/AT-81383/2021|EPI_ISL_2009598|2021-04-18,EPI_ISL_2009598,B.1.1.7,Chile,Atacama,2021-04-18,Community,Alpha,69
+hCoV-19/Chile/BI-105372/2021|EPI_ISL_2659165|2021-05-30,EPI_ISL_2659165,B.1.1.7,Chile,Biobio,2021-05-30,Community,Alpha,75
+hCoV-19/Chile/BI-137636/2021|EPI_ISL_3987879|2021-08-09,EPI_ISL_3987879,B.1.1.7,Chile,Biobio,2021-08-09,Community,Alpha,85
+hCoV-19/Chile/BI-139732/2021|EPI_ISL_3988276|2021-08-13,EPI_ISL_3988276,B.1.1.7,Chile,Biobio,2021-08-13,Community,Alpha,85
+hCoV-19/Chile/BI-139733/2021|EPI_ISL_3988277|2021-08-13,EPI_ISL_3988277,B.1.1.7,Chile,Biobio,2021-08-13,Community,Alpha,85
+hCoV-19/Chile/TA-139692/2021|EPI_ISL_3988262|2021-08-12,EPI_ISL_3988262,B.1.1.7,Chile,Tarapaca,2021-08-12,Community,Alpha,85
+hCoV-19/Chile/TA-139696/2021|EPI_ISL_3988265|2021-08-12,EPI_ISL_3988265,B.1.1.7,Chile,Tarapaca,2021-08-12,Community,Alpha,85
+hCoV-19/Chile/LL-102340/2021|EPI_ISL_2663414|2021-05-30,EPI_ISL_2663414,B.1.1.7,Chile,Los Lagos,2021-05-30,Community,Alpha,75
+hCoV-19/Chile/LI-104024/2021|EPI_ISL_2663446|2021-05-31,EPI_ISL_2663446,B.1.1.7,Chile,O Higgins,2021-05-31,Community,Alpha,75
+hCoV-19/Chile/RM-100514/2021|EPI_ISL_2663566|2021-05-27,EPI_ISL_2663566,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-27,Community,Alpha,74
+hCoV-19/Chile/RM-11/2020|EPI_ISL_1300449|2020-12-30,EPI_ISL_1300449,B.1.1.7,Chile,Region Metropolitana de Santiago,2020-12-30,Airport,Alpha,53
+hCoV-19/Chile/NB-32569/2021|EPI_ISL_1300519|2021-02-10,EPI_ISL_1300519,B.1.1.7,Chile,Nuble,2021-02-10,Community,Alpha,59
+hCoV-19/Chile/RM-38314/2021|EPI_ISL_1321458|2021-02-23,EPI_ISL_1321458,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-23,Community,Alpha,61
+hCoV-19/Chile/RM-28214/2021|EPI_ISL_1321464|2021-02-04,EPI_ISL_1321464,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-04,Community,Alpha,58
+hCoV-19/Chile/RM-40973/2021|EPI_ISL_1321461|2021-02-27,EPI_ISL_1321461,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-27,Community,Alpha,61
+hCoV-19/Chile/RM-42107/2021|EPI_ISL_1321462|2021-03-01,EPI_ISL_1321462,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-01,Community,Alpha,62
+hCoV-19/Chile/RM-50203/2021|EPI_ISL_1321456|2021-03-11,EPI_ISL_1321456,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-11,Community,Alpha,63
+hCoV-19/Chile/RM-42957/2021|EPI_ISL_1321459|2021-02-26,EPI_ISL_1321459,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-26,Airport,Alpha,61
+hCoV-19/Chile/RM-37243/2021|EPI_ISL_1321460|2021-02-21,EPI_ISL_1321460,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-21,Community,Alpha,61
+hCoV-19/Chile/RM-45357/2021|EPI_ISL_1321467|2021-03-05,EPI_ISL_1321467,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-05,Community,Alpha,62
+hCoV-19/Chile/RM-43628/2021|EPI_ISL_1321463|2021-03-03,EPI_ISL_1321463,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-03,Community,Alpha,62
+hCoV-19/Chile/RM-43288/2021|EPI_ISL_1321447|2021-03-03,EPI_ISL_1321447,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-03,Community,Alpha,62
+hCoV-19/Chile/RM-64967/2021|EPI_ISL_1534577|2021-03-27,EPI_ISL_1534577,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-27,Community,Alpha,65
+hCoV-19/Chile/RM-66243/2021|EPI_ISL_1534587|2021-03-29,EPI_ISL_1534587,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-29,Community,Alpha,66
+hCoV-19/Chile/RM-66087/2021|EPI_ISL_1534585|2021-03-29,EPI_ISL_1534585,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-29,Community,Alpha,66
+hCoV-19/Chile/AP-53843/2021|EPI_ISL_1470425|2021-03-15,EPI_ISL_1470425,B.1.1.7,Chile,Arica y Parinacota,2021-03-15,Community,Alpha,64
+hCoV-19/Chile/RM-49333/2021|EPI_ISL_1470418|2021-03-09,EPI_ISL_1470418,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-09,Community,Alpha,63
+hCoV-19/Chile/RM-49331/2021|EPI_ISL_1470416|2021-03-09,EPI_ISL_1470416,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-09,Community,Alpha,63
+hCoV-19/Chile/LR-66876/2021|EPI_ISL_1470544|2021-03-27,EPI_ISL_1470544,B.1.1.7,Chile,Los Rios,2021-03-27,Community,Alpha,65
+hCoV-19/Chile/RM-51552/2021|EPI_ISL_1534553|2021-03-13,EPI_ISL_1534553,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-13,Community,Alpha,63
+hCoV-19/Chile/NB-71974/2021|EPI_ISL_1541014|2021-04-03,EPI_ISL_1541014,B.1.1.7,Chile,Nuble,2021-04-03,Community,Alpha,66
+hCoV-19/Chile/BI-72833/2021|EPI_ISL_1541051|2021-04-04,EPI_ISL_1541051,B.1.1.7,Chile,Biobio,2021-04-04,Community,Alpha,67
+hCoV-19/Chile/LL-72506/2021|EPI_ISL_1541044|2021-04-03,EPI_ISL_1541044,B.1.1.7,Chile,Los Lagos,2021-04-03,Community,Alpha,66
+hCoV-19/Chile/RM-52039/2021|EPI_ISL_1541000|2021-03-14,EPI_ISL_1541000,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-14,Community,Alpha,64
+hCoV-19/Chile/NB-71973/2021|EPI_ISL_1541013|2021-04-03,EPI_ISL_1541013,B.1.1.7,Chile,Nuble,2021-04-03,Community,Alpha,66
+hCoV-19/Chile/BI-72492/2021|EPI_ISL_1541071|2021-04-04,EPI_ISL_1541071,B.1.1.7,Chile,Biobio,2021-04-04,Community,Alpha,67
+hCoV-19/Chile/LI-111010/2021|EPI_ISL_2756132|2021-06-12,EPI_ISL_2756132,B.1.1.7,Chile,O Higgins,2021-06-12,Community,Alpha,76
+hCoV-19/Chile/RM-109839/2021|EPI_ISL_2756120|2021-06-08,EPI_ISL_2756120,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-06-08,Community,Alpha,76
+hCoV-19/Chile/AT-109152/2021|EPI_ISL_2756265|2021-06-06,EPI_ISL_2756265,B.1.1.7,Chile,Atacama,2021-06-06,Community,Alpha,76
+hCoV-19/Chile/AT-109156/2021|EPI_ISL_2756268|2021-06-06,EPI_ISL_2756268,B.1.1.7,Chile,Atacama,2021-06-06,Community,Alpha,76
+hCoV-19/Chile/VS-107520/2021|EPI_ISL_2756334|2021-06-09,EPI_ISL_2756334,B.1.1.7,Chile,Valparaiso,2021-06-09,Airport,Alpha,76
+hCoV-19/Chile/AT-109149/2021|EPI_ISL_2756263|2021-06-06,EPI_ISL_2756263,B.1.1.7,Chile,Atacama,2021-06-06,Community,Alpha,76
+hCoV-19/Chile/AT-116106/2021|EPI_ISL_2892688|2021-06-21,EPI_ISL_2892688,B.1.1.7,Chile,Atacama,2021-06-21,Community,Alpha,78
+hCoV-19/Chile/AT-116107/2021|EPI_ISL_2892689|2021-06-21,EPI_ISL_2892689,B.1.1.7,Chile,Atacama,2021-06-21,Community,Alpha,78
+hCoV-19/Chile/AT-112251/2021|EPI_ISL_2892703|2021-06-13,EPI_ISL_2892703,B.1.1.7,Chile,Atacama,2021-06-13,Community,Alpha,77
+hCoV-19/Chile/AT-112264/2021|EPI_ISL_2892705|2021-06-02,EPI_ISL_2892705,B.1.1.7,Chile,Atacama,2021-06-02,Community,Alpha,75
+hCoV-19/Chile/CO-114805/2021|EPI_ISL_2892764|2021-06-21,EPI_ISL_2892764,B.1.1.7,Chile,Coquimbo,2021-06-21,Community,Alpha,78
+hCoV-19/Chile/LL-115466/2021|EPI_ISL_2892807|2021-06-19,EPI_ISL_2892807,B.1.1.7,Chile,Los Lagos,2021-06-19,Community,Alpha,77
+hCoV-19/Chile/RM-114446/2021|EPI_ISL_2892899|2021-06-20,EPI_ISL_2892899,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-06-20,Airport,Alpha,78
+hCoV-19/Chile/RM-111638/2021|EPI_ISL_2892914|2021-06-13,EPI_ISL_2892914,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-06-13,Community,Alpha,77
+hCoV-19/Chile/VS-115499/2021|EPI_ISL_2892984|2021-06-22,EPI_ISL_2892984,B.1.1.7,Chile,Valparaiso,2021-06-22,Community,Alpha,78
+hCoV-19/Chile/BI-117487/2021|EPI_ISL_2894889|2021-06-28,EPI_ISL_2894889,B.1.1.7,Chile,Biobio,2021-06-28,Airport,Alpha,79
+hCoV-19/Chile/VS-116727/2021|EPI_ISL_2894913|2021-06-24,EPI_ISL_2894913,B.1.1.7,Chile,Valparaiso,2021-06-24,Community,Alpha,78
+hCoV-19/Chile/RM-68293/2021|EPI_ISL_1633498|2021-03-31,EPI_ISL_1633498,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-31,Community,Alpha,66
+hCoV-19/Chile/RM-68272/2021|EPI_ISL_1633497|2021-03-31,EPI_ISL_1633497,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-31,Community,Alpha,66
+hCoV-19/Chile/MA-55150/2021|EPI_ISL_1633488|2021-03-01,EPI_ISL_1633488,B.1.1.7,Chile,Magallanes,2021-03-01,Airport,Alpha,62
+hCoV-19/Chile/RM-55193/2021|EPI_ISL_1633487|2021-03-16,EPI_ISL_1633487,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-16,Airport,Alpha,64
+hCoV-19/Chile/TA-73411/2021|EPI_ISL_1633531|2021-04-05,EPI_ISL_1633531,B.1.1.7,Chile,Tarapaca,2021-04-05,Community,Alpha,67
+hCoV-19/Chile/LR-74384/2021|EPI_ISL_1633377|2021-03-31,EPI_ISL_1633377,B.1.1.7,Chile,Los Rios,2021-03-31,Community,Alpha,66
+hCoV-19/Chile/RM-70226/2021|EPI_ISL_1633508|2021-04-01,EPI_ISL_1633508,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-01,Community,Alpha,66
+hCoV-19/Chile/LR-74378/2021|EPI_ISL_1633375|2021-04-01,EPI_ISL_1633375,B.1.1.7,Chile,Los Rios,2021-04-01,Community,Alpha,66
+hCoV-19/Chile/RM-73941/2021|EPI_ISL_1633538|2021-04-05,EPI_ISL_1633538,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-05,Community,Alpha,67
+hCoV-19/Chile/TA-73410/2021|EPI_ISL_1633530|2021-04-05,EPI_ISL_1633530,B.1.1.7,Chile,Tarapaca,2021-04-05,Community,Alpha,67
+hCoV-19/Chile/LR-74382/2021|EPI_ISL_1633376|2021-03-31,EPI_ISL_1633376,B.1.1.7,Chile,Los Rios,2021-03-31,Community,Alpha,66
+hCoV-19/Chile/LR-74377/2021|EPI_ISL_1633374|2021-04-01,EPI_ISL_1633374,B.1.1.7,Chile,Los Rios,2021-04-01,Community,Alpha,66
+hCoV-19/Chile/RM-70275/2021|EPI_ISL_1633509|2021-04-02,EPI_ISL_1633509,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-02,Community,Alpha,66
+hCoV-19/Chile/RM-70292/2021|EPI_ISL_1633414|2021-04-02,EPI_ISL_1633414,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-02,Airport,Alpha,66
+hCoV-19/Chile/RM-71294/2021|EPI_ISL_1633522|2021-04-04,EPI_ISL_1633522,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-04,Community,Alpha,67
+hCoV-19/Chile/LR-75415/2021|EPI_ISL_1633409|2021-04-06,EPI_ISL_1633409,B.1.1.7,Chile,Los Rios,2021-04-06,Community,Alpha,67
+hCoV-19/Chile/BI-124511/2021|EPI_ISL_3369375|2021-07-10,EPI_ISL_3369375,B.1.1.7,Chile,Biobio,2021-07-10,Community,Alpha,80
+hCoV-19/Chile/AT-96310/2021|EPI_ISL_12144372|2021-05-16,EPI_ISL_12144372,B.1.1.7,Chile,Atacama,2021-05-16,Community,Alpha,73
+hCoV-19/Chile/LR-93792/2021|EPI_ISL_2508578|2021-05-10,EPI_ISL_2508578,B.1.1.7,Chile,Los Rios,2021-05-10,Community,Alpha,72
+hCoV-19/Chile/VS-106215/2021|EPI_ISL_2756332|2021-06-02,EPI_ISL_2756332,B.1.1.7,Chile,Valparaiso,2021-06-02,Airport,Alpha,75
+hCoV-19/Chile/AN-108169/2021|EPI_ISL_2756339|2021-06-07,EPI_ISL_2756339,B.1.1.7,Chile,Antofagasta,2021-06-07,Airport,Alpha,76
+hCoV-19/Chile/AT-119998/2021|EPI_ISL_3132257|2021-07-03,EPI_ISL_3132257,B.1.1.7,Chile,Atacama,2021-07-03,Airport,Alpha,79
+hCoV-19/Chile/VS-121047/2021|EPI_ISL_3132269|2021-07-01,EPI_ISL_3132269,B.1.1.7,Chile,Valparaiso,2021-07-01,Airport,Alpha,79
+hCoV-19/Chile/LR-78686/2021|EPI_ISL_1712377|2021-04-12,EPI_ISL_1712377,B.1.1.7,Chile,Los Rios,2021-04-12,Community,Alpha,68
+hCoV-19/Chile/LR-78683/2021|EPI_ISL_1712375|2021-04-12,EPI_ISL_1712375,B.1.1.7,Chile,Los Rios,2021-04-12,Community,Alpha,68
+hCoV-19/Chile/TA-77980/2021|EPI_ISL_1712349|2021-04-11,EPI_ISL_1712349,B.1.1.7,Chile,Tarapaca,2021-04-11,Community,Alpha,68
+hCoV-19/Chile/RM-76778/2021|EPI_ISL_1712325|2021-04-10,EPI_ISL_1712325,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-10,Community,Alpha,67
+hCoV-19/Chile/TA-77979/2021|EPI_ISL_1712348|2021-04-11,EPI_ISL_1712348,B.1.1.7,Chile,Tarapaca,2021-04-11,Community,Alpha,68
+hCoV-19/Chile/LR-78685/2021|EPI_ISL_1712376|2021-04-12,EPI_ISL_1712376,B.1.1.7,Chile,Los Rios,2021-04-12,Community,Alpha,68
+hCoV-19/Chile/AI-93779/2021|EPI_ISL_2508570|2021-05-11,EPI_ISL_2508570,B.1.1.7,Chile,Aisen,2021-05-11,Community,Alpha,72
+hCoV-19/Chile/RM-96097/2021|EPI_ISL_2509325|2021-05-16,EPI_ISL_2509325,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-05-16,Airport,Alpha,73
+hCoV-19/Chile/RM-120284/2021|EPI_ISL_3185392|2021-07-04,EPI_ISL_3185392,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-07-04,Airport,Alpha,80
+hCoV-19/Chile/LL-125797/2021|EPI_ISL_3185793|2021-07-13,EPI_ISL_3185793,B.1.1.7,Chile,Los Lagos,2021-07-13,Community,Alpha,81
+hCoV-19/Chile/VS-124104/2021|EPI_ISL_3185626|2021-07-10,EPI_ISL_3185626,B.1.1.7,Chile,Valparaiso,2021-07-10,Community,Alpha,80
+hCoV-19/Chile/LR-83151/2021|EPI_ISL_2597292|2021-04-20,EPI_ISL_2597292,B.1.1.7,Chile,Los Rios,2021-04-20,Community,Alpha,69
+hCoV-19/Chile/LR-83152/2021|EPI_ISL_2597293|2021-04-20,EPI_ISL_2597293,B.1.1.7,Chile,Los Rios,2021-04-20,Community,Alpha,69
+hCoV-19/Chile/LR-83154/2021|EPI_ISL_2597295|2021-04-20,EPI_ISL_2597295,B.1.1.7,Chile,Los Rios,2021-04-20,Community,Alpha,69
+hCoV-19/Chile/BI-142081/2021|EPI_ISL_4631967|2021-08-20,EPI_ISL_4631967,B.1.1.7,Chile,Biobio,2021-08-20,Community,Alpha,86
+hCoV-19/Chile/BI-144107/2021|EPI_ISL_4635520|2021-08-26,EPI_ISL_4635520,B.1.1.7,Chile,Biobio,2021-08-26,Community,Alpha,87
+hCoV-19/Chile/BI-144106/2021|EPI_ISL_4635519|2021-08-26,EPI_ISL_4635519,B.1.1.7,Chile,Biobio,2021-08-26,Community,Alpha,87
+hCoV-19/Chile/VS-124131/2021|EPI_ISL_3185638|2021-07-09,EPI_ISL_3185638,B.1.1.7,Chile,Valparaiso,2021-07-09,Community,Alpha,80
+hCoV-19/Chile/RM-39996/2021|EPI_ISL_1321457|2021-02-25,EPI_ISL_1321457,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-02-25,Community,Alpha,61
+hCoV-19/Chile/RM-46301/2021|EPI_ISL_1321455|2021-03-08,EPI_ISL_1321455,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-03-08,Community,Alpha,63
+hCoV-19/Chile/LL-79374/2021|EPI_ISL_2009278|2021-04-14,EPI_ISL_2009278,B.1.1.7,Chile,Los Lagos,2021-04-14,Community,Alpha,68
+hCoV-19/Chile/ML-84831/2021|EPI_ISL_2009536|2021-04-26,EPI_ISL_2009536,B.1.1.7,Chile,El Maule,2021-04-26,Community,Alpha,70
+hCoV-19/Chile/RM-75679/2021|EPI_ISL_2009213|2021-04-10,EPI_ISL_2009213,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-10,Community,Alpha,67
+hCoV-19/Chile/RM-76271/2021|EPI_ISL_2009300|2021-04-11,EPI_ISL_2009300,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-11,Airport,Alpha,68
+hCoV-19/Chile/LR-78689/2021|EPI_ISL_2009208|2021-04-12,EPI_ISL_2009208,B.1.1.7,Chile,Los Rios,2021-04-12,Community,Alpha,68
+hCoV-19/Chile/RM-73438/2021|EPI_ISL_2009203|2021-04-06,EPI_ISL_2009203,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-06,Community,Alpha,67
+hCoV-19/Chile/RM-75266/2021|EPI_ISL_2009206|2021-04-09,EPI_ISL_2009206,B.1.1.7,Chile,Region Metropolitana de Santiago,2021-04-09,Community,Alpha,67
+hCoV-19/Chile/LR-81392/2021|EPI_ISL_2009599|2021-04-18,EPI_ISL_2009599,B.1.1.7,Chile,Los Rios,2021-04-18,Community,Alpha,69
