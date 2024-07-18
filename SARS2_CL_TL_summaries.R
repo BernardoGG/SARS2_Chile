@@ -14,6 +14,88 @@ phylogeo_CL <- read.csv(
   "/Phylogenetics/SC2_CL_TLs/BEAST_TL_continuous_phylogeo/CL_transmission_lineages_phylogeo.csv",
   sep = ",")
 
+##################### Summaries for onward transmission ########################
+CL_lineages <- bind_rows(CL_TLs |> 
+                           mutate(singleton = rep("No", nrow(CL_TLs))) |>
+                           select(variant, ntaxa, airport, singleton),
+                         CL_singletons |>
+                           mutate(ntaxa = rep(1, nrow(CL_singletons)),
+                                  singleton = rep("Yes", nrow(CL_singletons))) |>
+                           select(variant, ntaxa, airport, singleton))
+
+ggplot(CL_lineages |> filter(singleton == "No")) +
+  geom_density(aes(x = ntaxa, group = variant)) +
+  facet_wrap(vars(variant)) +
+  theme_minimal()
+
+CL_lineages_summary <- full_join(
+  full_join(CL_lineages |> group_by(variant) |>
+    summarize(n.intro = n(), n.taxa = sum(ntaxa)),
+    CL_lineages |> filter(ntaxa != 1) |> group_by(variant) |>
+      summarize(n.intro.onwards.transmission = n(), n.desc.circ.lin = sum(ntaxa),
+                median.desc.circ.lin = median(ntaxa), mean.desc.circ.lin = mean(ntaxa),
+                max.desc.circ.lin = max(ntaxa)) |>
+      mutate(prop.desc.circ = n.intro.onwards.transmission / n.desc.circ.lin)) |>
+    mutate(n.intro.hpd.high = c(43,344,83,124,92),
+           n.intro.hpd.low = c(35,327,64,95,79),
+           prop.intro.onwards = n.intro.onwards.transmission / n.intro,
+           prop.intro.onwards.hpd.high = n.intro.onwards.transmission / n.intro.hpd.high,
+           prop.intro.onwards.hpd.low = n.intro.onwards.transmission / n.intro.hpd.low),
+  voc_cases_cl |> filter(Variant != "Other") |> rename("variant" = "Variant") |>
+    group_by(variant) |> summarise(total.cases.voc = sum(cases_voc))) |>
+  mutate(variant = factor(
+    variant, levels = c("Alpha", "Gamma", "Lambda", "Mu", "Delta")))
+
+upper <- ggplot(CL_lineages_summary) +
+  geom_hline(aes(yintercept = 0.5), linetype = "dashed", size = 0.8, color = "grey") +
+  geom_linerange(aes(x = variant, ymin = prop.intro.onwards.hpd.low,
+                     ymax = prop.intro.onwards.hpd.high, colour = variant), linewidth = 0.5) +
+  geom_point(aes(x = variant, y = prop.intro.onwards,
+                 size = n.intro, color = variant), alpha = 0.3) +
+  geom_point(aes(x = variant, y = prop.intro.onwards,
+                 color = variant)) +
+  scale_size(range = c(10, 25)) +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_colour_manual(values = vocs_colors) +
+  labs(x = element_blank(),
+       y = "Proportion of viral introductions\nthat show onward transmission",
+       size = "Number of viral introductions") +
+  guides(size = guide_legend(override.aes = list(shape = 21,
+                                                 fill = "transparent",
+                                                 color = "darkgrey")),
+         color = "none") + theme_minimal()
+
+CL_lineages_timeline <- left_join(
+  voc_cases_cl |> filter(Variant != "Other") |>
+    rename("variant" = "Variant") |>
+    select(-percentage, -new_cases_smoothed),
+  CL_TLs |> group_by(variant, epiweek_tmrca_start) |>
+    rename("epiweek_start" = "epiweek_tmrca_start") |>
+    summarise(n.intro = n(), mean.n.desc = mean(ntaxa),
+              median.n.desc = median(ntaxa)))
+
+lower <- ggplot(CL_lineages_timeline) +
+  geom_smooth(aes(x = median.n.desc, y = cases_voc, color = variant), method = "lm",
+              formula = y ~ x, alpha = 0.05, size = 0.1, se = FALSE) +
+  #  geom_smooth(aes(x = mean.n.desc, y = cases_voc), method = "lm",
+  #              formula = y ~ x, se = FALSE, size = 1, color = "lightgrey") +
+  geom_point(aes(x = median.n.desc, y = cases_voc,
+                 size = n.intro, color = variant), alpha = 0.3) +
+  scale_size(range = c(3, 7)) +
+  scale_colour_manual(values = vocs_colors) +
+  labs(y = "Total weekly cases\nestimated per variant",
+       x = "Median number of descendants for viral introductions\nthat shows onward transmission",
+       color = "Variant",
+       size = "Number of viral introductions\nthat show onward transmission") +
+  guides(size = guide_legend(
+    override.aes = list(shape = 21, fill = "transparent", color = "darkgrey"))) +
+  theme_minimal()
+
+upper + lower + plot_layout(heights = c(6, 10))
+
+ggsave("Figures/Chile_VOC_introductions_onward_transmission.png",
+       dpi = 300, height = 10, width = 10, bg = "white")
+
 ###################### First detection of TLs in Chile #########################
 ## Create vector with EPI_ISL code fr earliest sequence(s) per TL
 ## Note that some TLs have multiple sequences detected on the earliest date for

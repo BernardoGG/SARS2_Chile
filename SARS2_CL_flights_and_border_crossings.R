@@ -292,49 +292,6 @@ ggplot(props) +
        x = "", y = "Monthly proportions")
 
 
-
-
-################################# Sandbox ######################################
-# Total flights (coloured by country)
-ggplot(flights_scl) +
-  geom_col(aes(x = month, y = passenger_volume)) +
-  facet_wrap(~ Adm0) +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  labs(title =
-  "Numbers of passengers arrving to \nSantiago de Chile International Airport")
-
-
-
-## Summaries of incoming flights into Chile (excl. Santiago)
-# Flights by country
-ggplot(flights_other) +
-  geom_col(aes(x = month, y = passenger_volume, fill = Adm0)) +
-  theme_light() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  labs(title =
-
-
-# Total flights (coloured by country)
-ggplot(flights_other) +
-  geom_col(aes(x = month, y = passenger_volume)) +
-  facet_wrap(~ Adm0) +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  labs(title =
-  "Numbers of passengers arrving to \nother airports in Chile")
-
-ggplot(flights_cl) +
-  geom_col(aes(x = month, y = passenger_volume, fill = airport)) +
-  theme_light() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  labs(title =
-  "Numbers of passengers arrving to \ninternational airports in Chile")
-
-## Summaries of incoming flights into Santiago
-# Flights by country
-ggplot(flights_other) +
-  geom_col(aes(x = month, y = passenger_volume)) +
-  facet_wrap(~ Adm0)
-
 ############################### Data export ####################################
 ## Processed flight data
 write.csv(flights_cl, "Data/EII_data/CL_flights_Sep2020-Dec2021_processed.csv",

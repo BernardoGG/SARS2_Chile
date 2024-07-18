@@ -189,3 +189,45 @@ ggplot(tl_nosingletons, aes(x = tmrca, fill = earliest_taxa_state_comp)) +
        fill = "Earliest sequence detection") +
   scale_fill_manual(values = c("#EC9A29", "#126168", "#DAD2D8")) +
   theme_minimal()
+
+### Estimate CL cases per VOC ####
+lins_comm
+lockdowns_timeseries
+
+voc_cases_cl <- left_join(
+  lins_comm |> select(-count),
+  cases_timeseries_red |>
+    rename("epiweek_start" = "date") |>
+    select(epiweek_start, new_cases_smoothed) |>
+    mutate(new_cases_smoothed = as.numeric(new_cases_smoothed)),
+  by = "epiweek_start") |>
+  mutate(cases_voc = new_cases_smoothed * percentage)
+
+plot <- ggplot(data = voc_cases_cl |> filter(Variant != "Other")) +
+  geom_line(aes(x = epiweek_start, y = cases_voc, color = Variant)) +
+  geom_vline(xintercept = voc_cases_cl |>
+               as.data.frame() |>
+               filter(epiweek_start < last_CL_seq,
+                      Variant == "Lambda") |>
+               filter(cases_voc == max(cases_voc)) |>
+               pull(epiweek_start),
+             colour = vocs_colors[4],
+             linetype = "dotted") +
+  geom_vline(xintercept = voc_cases_cl |>
+               as.data.frame() |>
+               filter(epiweek_start < last_CL_seq,
+                      Variant == "Gamma") |>
+               filter(cases_voc == max(cases_voc)) |>
+               pull(epiweek_start),
+             colour = vocs_colors[3],
+             linetype = "dotted") +
+  scale_x_date(breaks = "1 month", date_labels = "%b %Y") +
+  labs(x = element_blank(),
+       y = "Estimated weekly\ncases per variant",
+       color = "Variant") +
+  scale_color_manual(values = vocs_colors) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+ggsave(plot = plot, "Figures/Chile_VOC_cases_timeline.png", dpi = 300,
+       height = 4.15, width = 10, bg = "white")
